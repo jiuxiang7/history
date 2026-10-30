@@ -1,0 +1,13 @@
+{
+  "name": "lineage-archive",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "零依赖的家族世系可视化静态站点",
+  "scripts": {
+    "start": "node serve.mjs",
+    "build:data": "node scripts/build-data.mjs",
+    "check": "node --check js/app.js && node --check js/genealogy.js && node --check js/layout.js && node --check serve.mjs",
+    "check:data": "node scripts/validate.mjs"
+  }
+}

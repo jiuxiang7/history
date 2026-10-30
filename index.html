@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3ecdf" />
+    <meta
+      name="description"
+      content="以树状图阅读帝王世系与家族谱系：可切换多套族谱，标记重点人物，展开人物小传。"
+    />
+    <title>世系 · 家族谱系图</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+
+      <aside class="sidebar" id="sidebar" aria-label="谱系目录">
+        <div class="sidebar-inner">
+          <header class="brand">
+            <div class="brand-seal" aria-hidden="true">世</div>
+            <div class="brand-text">
+              <p class="brand-eyebrow">LINEAGE ARCHIVE</p>
+              <h1>世系</h1>
+              <p class="brand-note">谱牒 · 帝王 · 家族</p>
+            </div>
+          </header>
+
+          <section class="sidebar-section">
+            <div class="section-heading">
+              <span>谱系</span>
+              <span class="section-count" id="lineage-count">—</span>
+            </div>
+            <nav class="lineage-list" id="lineage-list" aria-label="选择族谱"></nav>
+          </section>
+
+          <footer class="sidebar-footer">
+            <p>切换族谱，展开另一卷世系</p>
+            <p>双击 index.html 即可离线阅读</p>
+          </footer>
+        </div>
+      </aside>
+
+      <main class="main" id="main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button
+              class="icon-button"
+              id="sidebar-toggle"
+              type="button"
+              aria-label="显示或隐藏谱系侧栏"
+              aria-expanded="true"
+              aria-controls="sidebar"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+            <div class="topbar-heading">
+              <p class="topbar-period" id="current-period">正在载入</p>
+              <h2 class="topbar-title" id="current-title">世系</h2>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <p class="topbar-stats" id="current-stats"></p>
+            <button class="text-button" id="expand-all" type="button" hidden>
+              展开全部
+            </button>
+            <button class="text-button" id="fit-view" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5" />
+              </svg>
+              全览
+            </button>
+          </div>
+        </header>
+
+        <section class="canvas" id="canvas" aria-label="家族谱系树状图">
+          <div class="paper" aria-hidden="true"></div>
+
+          <svg
+            class="stage"
+            id="stage"
+            xmlns="http://www.w3.org/2000/svg"
+            role="group"
+            aria-label="谱系图"
+          >
+            <defs>
+              <filter id="node-shadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#3b2c1e" flood-opacity="0.13" />
+              </filter>
+              <filter id="seal-shadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#76251b" flood-opacity="0.35" />
+              </filter>
+              <marker
+                id="extra-arrow"
+                viewBox="0 0 10 10"
+                refX="8"
+                refY="5"
+                markerWidth="5"
+                markerHeight="5"
+                orient="auto-start-reverse"
+              >
+                <path d="M0 0 10 5 0 10z" fill="#8f6b35" />
+              </marker>
+            </defs>
+            <g class="viewport" id="viewport">
+              <g class="layer layer-links" id="layer-links"></g>
+              <g class="layer layer-extras" id="layer-extras"></g>
+              <g class="layer layer-nodes" id="layer-nodes"></g>
+            </g>
+          </svg>
+
+          <div class="generation-labels" id="generation-labels" aria-hidden="true"></div>
+
+          <aside class="left-rail" id="left-rail" aria-label="重点人物导览">
+            <div class="rail-panel" id="key-panel">
+              <div class="key-list rail-list" id="key-list"></div>
+            </div>
+          </aside>
+
+          <div class="view-hint" id="view-hint">
+            <span class="hint-dot" aria-hidden="true"></span>
+            <span>拖拽平移 · 滚轮上下滚动 · 点击人物</span>
+          </div>
+
+          <div class="stage-tools" aria-label="视图工具">
+            <button class="tool-button" id="zoom-out" type="button" aria-label="缩小">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /></svg>
+            </button>
+            <span class="zoom-readout" id="zoom-readout">100%</span>
+            <button class="tool-button" id="zoom-in" type="button" aria-label="放大">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <span class="tool-separator" aria-hidden="true"></span>
+            <button class="tool-button" id="reset-view" type="button" aria-label="回到初始视图">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10a8 8 0 1 1 2.3 6.7M4 4v6h6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="minimap" id="minimap" aria-label="缩略导航">
+            <svg
+              id="minimap-svg"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="xMidYMid meet"
+              aria-hidden="true"
+            ></svg>
+            <span class="minimap-label">全图</span>
+          </div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <p class="empty-mark" aria-hidden="true">空</p>
+            <p class="empty-title">暂无可见人物</p>
+            <p class="empty-copy">可展开被折叠的支系，或切换其他谱系。</p>
+            <button class="primary-button" id="empty-expand" type="button">展开全部</button>
+          </div>
+
+          <div class="loading" id="loading">
+            <span class="loading-seal" aria-hidden="true">世</span>
+            <p>正在展卷</p>
+          </div>
+
+          <div class="error-panel" id="error-panel" hidden>
+            <p class="error-title">谱系未能展开</p>
+            <p class="error-copy" id="error-copy"></p>
+            <button class="primary-button" id="error-retry" type="button">重新载入</button>
+          </div>
+        </section>
+      </main>
+
+      <aside
+        class="detail"
+        id="detail"
+        aria-label="人物详情"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <div class="detail-scroll" id="detail-scroll"></div>
+      </aside>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+
+    <noscript>
+      <div class="noscript">此页面需要启用 JavaScript 才能展卷。</div>
+    </noscript>
+
+    <script src="data/lineages.js"></script>
+    <script src="js/genealogy.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

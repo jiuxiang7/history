@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "pre-xia",
+  "title": "夏本纪",
+  "subtitle": "《史记·夏本纪》",
+  "shortTitle": "夏",
+  "period": "夏商周",
+  "description": "",
+  "source": "",
+  "defaultPortrait": "assets/portrait.svg",
+  "generations": [
+    { "index": 1, "label": "第一代" },
+    { "index": 2, "label": "第二代" },
+    { "index": 3, "label": "第三代" },
+    { "index": 4, "label": "第四代" },
+    { "index": 5, "label": "第五代" },
+    { "index": 6, "label": "第六代" },
+    { "index": 7, "label": "第七代" },
+    { "index": 8, "label": "第八代" },
+    { "index": 9, "label": "第九代" },
+    { "index": 10, "label": "第十代" },
+    { "index": 11, "label": "第十一代" },
+    { "index": 12, "label": "第十二代" },
+    { "index": 13, "label": "第十三代" },
+    { "index": 14, "label": "第十四代" }
+  ],
+  "people": [
+    {
+      "id": "yu",
+      "name": "禹",
+      "aliases": ["文命", "大禹"],
+      "generation": 1,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "夏禹，名曰文命。禹之父曰鲧，鲧之父曰帝颛顼，颛顼之父曰昌意，昌意之父曰黄帝。禹者，黄帝之玄孙而帝颛顼之孙也。禹之曾大父昌意及父鲧皆不得在帝位，为人臣。",
+        "禹为人敏给克勤，其德不违，其仁可亲，其言可信：声为律，身为度，称以出；亹亹穆穆，为纲为纪。",
+        "禹乃遂与益、后稷奉帝命，命诸侯百姓兴人徒以傅土，行山表木，定高山大川。禹伤先人父鲧功之不成受诛，乃劳身焦思，居外十三年，过家门不敢入。薄衣食，致孝于鬼神。卑宫室，致费于沟淢，陆行乘车，水行乘船，泥行乘橇，山行乘檋；左准绳，右规矩，载四时，以开九州，通九道，陂九泽，度九山。令益予众庶稻，可种卑湿。命后稷予众庶难得之食。食少，调有余相给，以均诸侯。禹乃行相地宜所有以贡，及山川之便利。",
+        "帝舜荐禹于天，为嗣。十七年而帝舜崩。三年丧毕，禹辞辟舜之子商均于阳城。天下诸侯皆去商均而朝禹。禹于是遂即天子位，南面朝天下，国号曰夏后，姓姒氏。"
+      ]
+    },
+    {
+      "id": "qi",
+      "name": "启",
+      "generation": 2,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "十年，帝禹东巡狩，至于会稽而崩。以天下授益。三年之丧毕，益让帝禹之子启，而辟居箕山之阳。禹子启贤，天下属意焉。及禹崩，虽授益，益之佐禹日浅，天下未洽。故诸侯皆去益而朝启，曰“吾君帝禹之子也。”于是启遂即天子之位，是为夏后帝启。",
+        "夏后帝启，禹之子，其母涂山氏之女也。",
+        "有扈氏不服，启伐之，大战于甘。将战，作《甘誓》，乃召六卿申之。启曰：“嗟！六事之人，予誓告女：有扈氏威侮五行，怠弃三正，天用剿绝其命。今予维共行天之罚。左不攻于左，右不攻于右，女不共命。御非其马之政，女不共命。用命，赏于祖；不用命，僇于社，予则帑僇女。”遂灭有扈氏。天下咸朝。"
+      ]
+    },
+    {
+      "id": "taikang",
+      "name": "太康",
+      "generation": 3,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "夏后帝启崩，子帝太康立。帝太康失国，昆弟五人，须于洛汭，作《五子之歌》。"
+      ]
+    },
+    {
+      "id": "zhongkang",
+      "name": "中康",
+      "generation": 3,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "太康崩，弟中康立，是为帝中康。帝中康时，羲、和湎淫，废时乱日。胤往征之，作《胤征》。"
+      ]
+    },
+    {
+      "id": "xiang2",
+      "name": "相",
+      "generation": 4,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "中康崩，子帝相立。"
+      ]
+    },
+    {
+      "id": "shaokang",
+      "name": "少康",
+      "generation": 5,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝相崩，子帝少康立。"
+      ]
+    },
+    {
+      "id": "yu2",
+      "name": "予",
+      "generation": 6,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝少康崩，子帝予立。"
+      ]
+    },
+    {
+      "id": "huai",
+      "name": "槐",
+      "generation": 7,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝予崩，子帝槐立。"
+      ]
+    },
+    {
+      "id": "mang",
+      "name": "芒",
+      "generation": 8,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝槐崩，子帝芒立。"
+      ]
+    },
+    {
+      "id": "xie",
+      "name": "泄",
+      "generation": 9,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝芒崩，子帝泄立。"
+      ]
+    },
+    {
+      "id": "bujiang",
+      "name": "不降",
+      "generation": 10,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝泄崩，子帝不降立。"
+      ]
+    },
+    {
+      "id": "jiong",
+      "name": "扃",
+      "generation": 10,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝不降崩，弟帝扃立。"
+      ]
+    },
+    {
+      "id": "jin",
+      "name": "廑",
+      "generation": 11,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝扃崩，子帝廑立。"
+      ]
+    },
+    {
+      "id": "kongjia",
+      "name": "孔甲",
+      "generation": 11,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝廑崩，立帝不降之子孔甲，是为帝孔甲。",
+        "帝孔甲立，好方鬼神，事淫乱。夏后氏德衰，诸侯畔之。天降龙二，有雌雄，孔甲不能食，未得豢龙氏。陶唐既衰，其后有刘累，学扰龙于豢龙氏，以事孔甲。孔甲赐之姓曰御龙氏，受豕韦之后。龙一雌死，以食夏后。夏后使求，惧而迁去。"
+      ]
+    },
+    {
+      "id": "gao",
+      "name": "皋",
+      "generation": 12,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "孔甲崩，子帝皋立。"
+      ]
+    },
+    {
+      "id": "fa",
+      "name": "发",
+      "generation": 13,
+      "importance": "key",
+      "honor": "emperor",
+      "indexed": false,
+      "bio": [
+        "帝皋崩，子帝发立。"
+      ]
+    },
+    {
+      "id": "jie",
+      "name": "桀",
+      "aliases": ["履癸"],
+      "generation": 14,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "帝发崩，子帝履癸立，是为桀。",
+        "帝桀之时，自孔甲以来而诸侯多畔夏，桀不务德而武伤百姓，百姓弗堪。乃召汤而囚之夏台，已而释之。汤修德，诸侯皆归汤，汤遂率兵伐夏桀。桀走鸣条，遂放而死。桀谓人曰：“吾悔不遂杀汤于夏台，使至此。”汤乃践天子位，代夏朝天下。汤封夏之后，至周封于杞也。"
+      ]
+    }
+  ],
+  "unions": [
+    {
+      "id": "u-yu-qi",
+      "parents": ["yu"],
+      "children": ["qi"]
+    },
+    {
+      "id": "u-qi",
+      "parents": ["qi"],
+      "children": ["taikang", "zhongkang"]
+    },
+    {
+      "id": "u-zhongkang-xiang",
+      "parents": ["zhongkang"],
+      "children": ["xiang2"]
+    },
+    {
+      "id": "u-xiang2-shaokang",
+      "parents": ["xiang2"],
+      "children": ["shaokang"]
+    },
+    {
+      "id": "u-shaokang-yu2",
+      "parents": ["shaokang"],
+      "children": ["yu2"]
+    },
+    {
+      "id": "u-yu2-huai",
+      "parents": ["yu2"],
+      "children": ["huai"]
+    },
+    {
+      "id": "u-huai-mang",
+      "parents": ["huai"],
+      "children": ["mang"]
+    },
+    {
+      "id": "u-mang-xie",
+      "parents": ["mang"],
+      "children": ["xie"]
+    },
+    {
+      "id": "u-xie",
+      "parents": ["xie"],
+      "children": ["bujiang", "jiong"]
+    },
+    {
+      "id": "u-jiong-jin",
+      "parents": ["jiong"],
+      "children": ["jin"]
+    },
+    {
+      "id": "u-bujiang-kongjia",
+      "parents": ["bujiang"],
+      "children": ["kongjia"]
+    },
+    {
+      "id": "u-kongjia-gao",
+      "parents": ["kongjia"],
+      "children": ["gao"]
+    },
+    {
+      "id": "u-gao-fa",
+      "parents": ["gao"],
+      "children": ["fa"]
+    },
+    {
+      "id": "u-fa-jie",
+      "parents": ["fa"],
+      "children": ["jie"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="人物半身像">
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#f7f0e2"/>
+      <stop offset="72%" stop-color="#eee3d0"/>
+      <stop offset="100%" stop-color="#e3d5bd"/>
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="url(#paper)"/>
+  <circle cx="120" cy="120" r="111" fill="none" stroke="#b08a4a" stroke-opacity=".36" stroke-width="1.4"/>
+  <circle cx="120" cy="120" r="102" fill="none" stroke="#8f6f3f" stroke-opacity=".14" stroke-width="1"/>
+
+  <!-- 圆头与半身直接相接，无脖子、无衣襟线 -->
+  <path d="M30 224c2-54 32-96 90-96s88 42 90 96Z" fill="#36312a"/>
+  <circle cx="120" cy="90" r="46" fill="#36312a"/>
+</svg>

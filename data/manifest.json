@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "title": "世系",
+    "subtitle": "LINEAGE ARCHIVE",
+    "description": "以树状谱系阅读古代帝王世系。",
+    "defaultPortrait": "assets/portrait.svg"
+  },
+  "defaultLineage": "all",
+  "lineages": [
+    {
+      "id": "all",
+      "file": "data/all.json",
+      "title": "总览",
+      "shortTitle": "总览",
+      "period": "古代",
+      "peopleCount": 86
+    },
+    {
+      "id": "five-emperors",
+      "file": "data/five-emperors.json",
+      "title": "五帝本纪",
+      "shortTitle": "五帝",
+      "period": "传说时代",
+      "peopleCount": 21
+    },
+    {
+      "id": "pre-xia",
+      "file": "data/pre-xia.json",
+      "title": "夏本纪",
+      "shortTitle": "夏",
+      "period": "夏商周",
+      "peopleCount": 17
+    },
+    {
+      "id": "pre-shang",
+      "file": "data/pre-shang.json",
+      "title": "殷本纪",
+      "shortTitle": "商",
+      "period": "夏商周",
+      "peopleCount": 32
+    },
+    {
+      "id": "zhou",
+      "file": "data/pre-zhou.json",
+      "title": "周本纪",
+      "shortTitle": "周",
+      "period": "夏商周",
+      "peopleCount": 40
+    }
+  ]
+}

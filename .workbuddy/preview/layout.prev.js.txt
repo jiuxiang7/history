@@ -1,0 +1,553 @@
+(function (global) {
+  'use strict';
+
+const NODE = {
+  width: 124,
+  height: 146,
+  portrait: 88,
+  colGap: 24,
+  top: 96,
+  left: 158,
+  right: 92,
+  bottom: 88,
+  labelX: 104,
+};
+
+// 同代两张卡片之间允许的最小间隙
+const NODE_STEP = NODE.width + NODE.colGap;
+
+// 兄弟分支的排布：按轮廓贴合会最省空间，但会把世代树压成一条竖线。
+// 这里把「按矩形块占位」和「按轮廓咬合」按比例混合，回收大块空白又保留树的展开感。
+const PACK_TIGHTNESS = 0.85;
+
+// 世代的纵向节奏：按这一层「往下要画什么」来给定高度。
+const STACK = {
+  bus: 62, // 有横向分支线（子女之间要拉一条线）
+  busLeaf: 56, // 有分支线，但子女都没有子嗣——下面没有东西，可以贴紧
+  chain: 56, // 单子相传，只有一根竖线
+  stem: 33, // 人物下沿 → 分支线，这一段是「向下延伸的线」
+  dropMin: 19, // 分支线 → 子女上沿的最小距离
+  topTighten: 8, // 靠前的世代结构简单，纵向再收紧一点
+  topFadeRows: 12,
+  minPitch: 50,
+  leafLift: 12, // 无子嗣者向上贴一点，让卡片浮到分支线下方
+};
+
+function round(value) {
+  return Math.round(value * 100) / 100;
+}
+
+function fmt(value) {
+  return String(round(value));
+}
+
+function cleanPoints(points) {
+  const result = [];
+  for (const point of points) {
+    const last = result[result.length - 1];
+    if (!last || Math.abs(last.x - point.x) > 0.5 || Math.abs(last.y - point.y) > 0.5) {
+      result.push(point);
+    }
+  }
+  return result;
+}
+
+function straightPath(inputPoints) {
+  const points = cleanPoints(inputPoints);
+  if (points.length === 0) return '';
+  return points
+    .map((point, index) => `${index === 0 ? 'M' : 'L'}${fmt(point.x)} ${fmt(point.y)}`)
+    .join(' ');
+}
+
+function buildUnionMaps(unions) {
+  const parentUnions = new Map();
+  const childUnions = new Map();
+  const push = (map, key, union) => {
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(union);
+  };
+  unions.forEach((union) => {
+    union.children.forEach((id) => push(parentUnions, id, union));
+    union.parents.forEach((id) => push(childUnions, id, union));
+  });
+  return { parentUnions, childUnions };
+}
+
+// 同一代内按人物原始顺序建立稳定的左右次序。
+function lineageOrderComparator(lineage) {
+  const order = new Map(lineage.people.map((person, index) => [person.id, index]));
+  return (a, b) => (order.get(a.id) ?? 0) - (order.get(b.id) ?? 0);
+}
+
+function computeLayout(lineage, hiddenIds = new Set()) {
+  const generations = [...lineage.generations].sort((a, b) => a.index - b.index);
+  const visiblePeople = lineage.people.filter((person) => !hiddenIds.has(person.id));
+
+  if (visiblePeople.length === 0) {
+    return {
+      empty: true,
+      nodes: new Map(),
+      unions: [],
+      extraLinks: [],
+      rows: [],
+      bounds: { minX: 0, minY: 0, maxX: 100, maxY: 100, width: 100, height: 100 },
+      generationIndex: new Map(),
+      visiblePeople,
+    };
+  }
+
+  const activeGenerations = generations.filter((generation) =>
+    visiblePeople.some((person) => Number(person.generation) === Number(generation.index))
+  );
+  const generationIndex = new Map(
+    activeGenerations.map((generation, index) => [generation.index, index])
+  );
+
+  const visibleIds = new Set(visiblePeople.map((person) => person.id));
+  const visibleUnions = lineage.unions
+    .map((union) => ({
+      ...union,
+      parents: union.parents.filter((id) => visibleIds.has(id)),
+      children: union.children.filter((id) => visibleIds.has(id)),
+    }))
+    .filter((union) => union.parents.length > 0 && union.children.length > 0);
+
+  const rows = activeGenerations.map((generation, rowIndex) => ({
+    generation,
+    rowIndex,
+    y: NODE.top,
+    nodes: visiblePeople
+      .filter((person) => Number(person.generation) === Number(generation.index))
+      .sort((a, b) => lineage.people.indexOf(a) - lineage.people.indexOf(b)),
+  }));
+
+  const rowOfPerson = new Map();
+  rows.forEach((row) => {
+    row.nodes.forEach((person) => rowOfPerson.set(person.id, row.rowIndex));
+  });
+
+  const { parentUnions } = buildUnionMaps(visibleUnions);
+
+  // 一对夫妻只保留一条血统主轴：有父母的一方作为主亲，另一方作为配偶节点。
+  const primaryParentOf = new Map();
+  const satelliteIds = new Set();
+
+  visibleUnions.forEach((union) => {
+    if (union.parents.length < 2) return;
+    const anchor = union.parents.find((id) => (parentUnions.get(id) || []).length) || union.parents[0];
+    union.parents.forEach((id) => {
+      if (id !== anchor && !(parentUnions.get(id) || []).length) {
+        satelliteIds.add(id);
+      }
+    });
+  });
+
+  visibleUnions.forEach((union) => {
+    const anchor = union.parents.find((id) => !satelliteIds.has(id)) || union.parents[0];
+    union.children.forEach((child) => {
+      if (!primaryParentOf.has(child)) primaryParentOf.set(child, anchor);
+    });
+  });
+
+  // 主亲树：每个孩子只挂在主亲名下；配偶不进入树宽计算。
+  const childrenByParent = new Map();
+  visibleUnions.forEach((union) => {
+    const anchor = union.parents.find((id) => !satelliteIds.has(id)) || union.parents[0];
+    union.children.forEach((child) => {
+      if (primaryParentOf.get(child) !== anchor) return;
+      if (!childrenByParent.has(anchor)) childrenByParent.set(anchor, []);
+      const list = childrenByParent.get(anchor);
+      if (!list.includes(child)) list.push(child);
+    });
+  });
+
+  const lineageIndex = new Map(lineage.people.map((person, index) => [person.id, index]));
+  childrenByParent.forEach((children) => {
+    children.sort((a, b) => (lineageIndex.get(a) ?? 0) - (lineageIndex.get(b) ?? 0));
+  });
+
+  const roots = visiblePeople.filter(
+    (person) => !primaryParentOf.has(person.id) && !satelliteIds.has(person.id)
+  );
+
+  /*
+   * 轮廓贴合的紧凑排布（contour packing）
+   * 每棵子树记录自己在各层的最左/最右轮廓，兄弟子树不是「各占一个矩形」，
+   * 而是按轮廓相互咬合：左边的窄支可以嵌进右边宽支的空隙里，
+   * 早期世代因此不会因为某个后代分支很宽就被拉开一大段空白。
+   */
+  const layoutCache = new Map();
+  const subtreeWidth = new Map();
+
+  function measure(id) {
+    if (subtreeWidth.has(id)) return subtreeWidth.get(id);
+    const children = childrenByParent.get(id) || [];
+    let width = NODE_STEP;
+    if (children.length) {
+      const childrenWidth = children.reduce((sum, childId) => sum + measure(childId), 0);
+      width = Math.max(NODE_STEP, childrenWidth);
+    }
+    subtreeWidth.set(id, width);
+    return width;
+  }
+  roots.forEach((person) => measure(person.id));
+
+  function packSubtree(id) {
+    if (layoutCache.has(id)) return layoutCache.get(id);
+    const children = childrenByParent.get(id) || [];
+
+    if (!children.length) {
+      const leaf = { offsets: [], left: [0], right: [0] };
+      layoutCache.set(id, leaf);
+      return leaf;
+    }
+
+    const subs = children.map((childId) => packSubtree(childId));
+    const blockCenters = [];
+    let blockLeft = 0;
+    children.forEach((childId) => {
+      const width = subtreeWidth.get(childId) || NODE_STEP;
+      blockCenters.push(blockLeft + width / 2);
+      blockLeft += width;
+    });
+    const blockPivot = (blockCenters[0] + blockCenters[blockCenters.length - 1]) / 2;
+
+    const offsets = [];
+    const cursorRight = [];
+
+    subs.forEach((sub, index) => {
+      let offset;
+      if (index === 0) {
+        offset = 0;
+      } else {
+        let tight = -Infinity;
+        const depth = Math.min(cursorRight.length, sub.left.length);
+        for (let d = 0; d < depth; d += 1) {
+          tight = Math.max(tight, cursorRight[d] - sub.left[d] + NODE_STEP);
+        }
+        if (!Number.isFinite(tight)) tight = NODE_STEP;
+        const block = blockCenters[index] - blockPivot;
+        offset = tight + (block - tight) * PACK_TIGHTNESS;
+        offset = Math.max(offset, offsets[index - 1] + 1, tight);
+      }
+      offsets.push(offset);
+      sub.right.forEach((value, d) => {
+        const edge = offset + value;
+        if (cursorRight[d] === undefined || edge > cursorRight[d]) cursorRight[d] = edge;
+      });
+    });
+
+    const maxDepth = Math.max(...subs.map((sub) => sub.left.length));
+    const left = [0];
+    const right = [0];
+    const pivot = (offsets[0] + offsets[offsets.length - 1]) / 2;
+
+    for (let d = 0; d < maxDepth; d += 1) {
+      let lo = Infinity;
+      let hi = -Infinity;
+      subs.forEach((sub, index) => {
+        if (sub.left[d] === undefined) return;
+        lo = Math.min(lo, offsets[index] + sub.left[d]);
+        hi = Math.max(hi, offsets[index] + sub.right[d]);
+      });
+      left[d + 1] = lo - pivot;
+      right[d + 1] = hi - pivot;
+    }
+
+    const result = {
+      offsets: offsets.map((value) => value - pivot),
+      left,
+      right,
+    };
+    layoutCache.set(id, result);
+    return result;
+  }
+
+  const positions = new Map();
+
+  function assign(id, x) {
+    positions.set(id, x);
+    const sub = layoutCache.get(id);
+    if (!sub) return;
+    const children = childrenByParent.get(id) || [];
+    children.forEach((childId, index) => assign(childId, x + (sub.offsets[index] || 0)));
+  }
+
+  let rootRight = [];
+  let rootCursor = -Infinity;
+  roots.forEach((person, index) => {
+    const sub = packSubtree(person.id);
+    let offset = 0;
+    if (index > 0) {
+      let shift = -Infinity;
+      const depth = Math.min(rootRight.length, sub.left.length);
+      for (let d = 0; d < depth; d += 1) {
+        shift = Math.max(shift, rootRight[d] - sub.left[d] + NODE_STEP * 1.3);
+      }
+      offset = Number.isFinite(shift) ? shift : NODE_STEP * 1.3;
+      offset = Math.max(offset, rootCursor + NODE_STEP * 1.3);
+    }
+    assign(person.id, offset);
+    sub.right.forEach((value, d) => {
+      const edge = offset + value;
+      if (rootRight[d] === undefined || edge > rootRight[d]) rootRight[d] = edge;
+    });
+    rootCursor = Math.max(rootCursor, offset);
+  });
+
+  /*
+   * 配偶（非血统主亲）贴着主亲放：先试靠子女那一侧，
+   * 位置被别的分支占了就往同一侧顺延，实在没地方再换另一侧。
+   */
+  const occupancy = new Map();
+  const addOccupant = (id, x) => {
+    const row = rowOfPerson.get(id);
+    if (row === undefined) return;
+    if (!occupancy.has(row)) occupancy.set(row, []);
+    occupancy.get(row).push(x);
+  };
+  positions.forEach((x, id) => addOccupant(id, x));
+
+  const slotFree = (id, x) => {
+    const row = rowOfPerson.get(id);
+    const list = occupancy.get(row) || [];
+    return list.every((other) => Math.abs(other - x) >= NODE_STEP - 0.01);
+  };
+
+  const satellitePlan = [];
+  visibleUnions.forEach((union) => {
+    if (union.parents.length < 2) return;
+    const anchor = union.parents.find((id) => !satelliteIds.has(id)) || union.parents[0];
+    const anchorX = positions.get(anchor);
+    const childXs = union.children
+      .map((id) => positions.get(id))
+      .filter((value) => Number.isFinite(value));
+    const childCenter = childXs.length
+      ? childXs.reduce((sum, value) => sum + value, 0) / childXs.length
+      : anchorX;
+
+    union.parents.forEach((id) => {
+      if (!satelliteIds.has(id)) return;
+      const preferred =
+        Number.isFinite(anchorX) && childCenter < anchorX - 10
+          ? -1
+          : Number.isFinite(anchorX) && childCenter > anchorX + 10
+            ? 1
+            : union.parents.indexOf(id) < union.parents.indexOf(anchor)
+              ? -1
+              : 1;
+      satellitePlan.push({ id, anchor, preferred });
+    });
+  });
+
+  satellitePlan.forEach(({ id, anchor, preferred }) => {
+    const anchorX = positions.get(anchor);
+    if (!Number.isFinite(anchorX)) return;
+    let placed = null;
+    for (const side of [preferred, -preferred]) {
+      for (let slot = 1; slot <= 8; slot += 1) {
+        const candidate = anchorX + side * NODE_STEP * slot;
+        if (slotFree(id, candidate)) {
+          placed = candidate;
+          break;
+        }
+      }
+      if (placed !== null) break;
+    }
+    positions.set(id, placed === null ? anchorX + preferred * NODE_STEP : placed);
+    addOccupant(id, positions.get(id));
+  });
+
+  // 兜底：同一代里若仍有卡片贴得太近，只做最小幅度的推开。
+  rows.forEach((row) => {
+    if (row.nodes.length < 2) return;
+    for (let pass = 0; pass < 4; pass += 1) {
+      row.nodes.sort((a, b) => {
+        const difference = (positions.get(a.id) ?? 0) - (positions.get(b.id) ?? 0);
+        if (Math.abs(difference) > 0.01) return difference;
+        return (lineageIndex.get(a.id) ?? 0) - (lineageIndex.get(b.id) ?? 0);
+      });
+
+      let changed = false;
+      for (let index = 1; index < row.nodes.length; index += 1) {
+        const left = row.nodes[index - 1];
+        const right = row.nodes[index];
+        const leftX = positions.get(left.id);
+        const rightX = positions.get(right.id);
+        const gap = rightX - leftX;
+        if (gap >= NODE_STEP - 0.01) continue;
+
+        const leftSatellite = satelliteIds.has(left.id);
+        const rightSatellite = satelliteIds.has(right.id);
+        if (leftSatellite && !rightSatellite) {
+          positions.set(left.id, rightX - NODE_STEP);
+        } else if (rightSatellite && !leftSatellite) {
+          positions.set(right.id, leftX + NODE_STEP);
+        } else {
+          const push = (NODE_STEP - gap) / 2;
+          positions.set(left.id, leftX - push);
+          positions.set(right.id, rightX + push);
+        }
+        changed = true;
+      }
+      if (!changed) break;
+    }
+  });
+
+  // 每一代需要多高，取决于这一层往下要画什么：横线、竖线，还是几乎什么都不画。
+  const gapFromRow = [];
+  rows.forEach((row, rowIndex) => {
+    let hasBus = false;
+    let allLeaves = true;
+    let hasUnion = false;
+    visibleUnions.forEach((union) => {
+      const parentRows = union.parents
+        .map((id) => rowOfPerson.get(id))
+        .filter((value) => value !== undefined);
+      const childRows = union.children
+        .map((id) => rowOfPerson.get(id))
+        .filter((value) => value !== undefined);
+      if (!parentRows.length || !childRows.length) return;
+      if (Math.max(...parentRows) !== rowIndex) return;
+      if (Math.min(...childRows) !== rowIndex + 1) return;
+      hasUnion = true;
+      const xs = union.children
+        .map((id) => positions.get(id))
+        .filter((value) => Number.isFinite(value));
+      if (xs.length > 1 && Math.max(...xs) - Math.min(...xs) > 0.5) hasBus = true;
+      if (union.children.some((id) => (childrenByParent.get(id) || []).length)) allLeaves = false;
+    });
+
+    let base = STACK.chain;
+    if (hasBus) base = allLeaves ? STACK.busLeaf : STACK.bus;
+    else if (!hasUnion) base = STACK.chain;
+
+    // 靠前的世代收得更紧
+    const fade = Math.max(0, 1 - rowIndex / STACK.topFadeRows);
+    gapFromRow[rowIndex] = Math.max(STACK.minPitch, base - fade * STACK.topTighten);
+  });
+
+  let rowY = NODE.top;
+  rows.forEach((row, rowIndex) => {
+    row.y = rowY;
+    rowY += NODE.height + (gapFromRow[rowIndex] || STACK.chain);
+  });
+
+  const rawMin = Math.min(...visiblePeople.map((person) => positions.get(person.id) - NODE.width / 2));
+  const shift = NODE.left - rawMin;
+
+  const nodes = new Map();
+  rows.forEach((row) => {
+    row.nodes.forEach((person) => {
+      nodes.set(person.id, {
+        id: person.id,
+        person,
+        x: positions.get(person.id) + shift,
+        y: row.y,
+        width: NODE.width,
+        height: NODE.height,
+        rowIndex: row.rowIndex,
+      });
+    });
+  });
+
+  // 没有子嗣的人不必为后代留出下方的空白，把卡片往上贴一点，
+  // 让它停在相邻分支线附近，整代看起来更聚拢。
+  nodes.forEach((node) => {
+    const hasChildren = (childrenByParent.get(node.id) || []).length > 0;
+    if (!hasChildren) node.y -= STACK.leafLift;
+  });
+
+  rows.forEach((row) => {
+    row.nodes = row.nodes.map((person) => nodes.get(person.id)).filter(Boolean);
+  });
+
+  const unionGeometry = visibleUnions.map((union) => {
+    const parents = union.parents.map((id) => nodes.get(id)).filter(Boolean);
+    const children = union.children.map((id) => nodes.get(id)).filter(Boolean);
+    if (!parents.length || !children.length) return null;
+
+    const anchorX = parents.reduce((sum, node) => sum + node.x, 0) / parents.length;
+    const parentBottom = Math.max(...parents.map((node) => node.y + node.height));
+    const childTop = Math.min(...children.map((node) => node.y));
+    // 一组亲缘只有一条水平总线：亲代从上方垂到总线，子女从总线垂直落下。
+    // 亲代到总线这一段刻意留长，人物向下延伸的线条更清楚。
+    const busY = Math.min(parentBottom + STACK.stem, childTop - STACK.dropMin);
+    const xs = [...parents.map((node) => node.x), ...children.map((node) => node.x)];
+    const busMin = Math.min(...xs);
+    const busMax = Math.max(...xs);
+    const paths = [];
+
+    if (busMax - busMin > 0.5) {
+      paths.push({
+        kind: 'branch',
+        d: straightPath([
+          { x: busMin, y: busY },
+          { x: busMax, y: busY },
+        ]),
+      });
+    }
+    parents.forEach((node) => {
+      paths.push({
+        kind: 'stem',
+        d: straightPath([
+          { x: node.x, y: node.y + node.height },
+          { x: node.x, y: busY },
+        ]),
+      });
+    });
+    children.forEach((node) => {
+      paths.push({
+        kind: 'branch',
+        d: straightPath([
+          { x: node.x, y: busY },
+          { x: node.x, y: node.y },
+        ]),
+      });
+    });
+
+    return {
+      union,
+      anchorX,
+      busY,
+      childBusY: busY,
+      parents,
+      children,
+      paths,
+      people: [...union.parents, ...union.children],
+    };
+  }).filter(Boolean);
+
+  const maxX = Math.max(...[...nodes.values()].map((node) => node.x + node.width / 2));
+  const minY = Math.min(...[...nodes.values()].map((node) => node.y));
+  const maxY = Math.max(...[...nodes.values()].map((node) => node.y + node.height));
+
+  const extraLinks = [];
+
+  const bounds = {
+    minX: 20,
+    minY: Math.max(18, minY - 50),
+    maxX: maxX + NODE.right,
+    maxY: maxY + NODE.bottom,
+  };
+  bounds.width = bounds.maxX - bounds.minX;
+  bounds.height = bounds.maxY - bounds.minY;
+
+  return {
+    empty: false,
+    nodes,
+    unions: unionGeometry,
+    extraLinks,
+    rows,
+    bounds,
+    generationIndex,
+    visiblePeople,
+  };
+}
+
+  global.LineageLayout = {
+    NODE,
+    computeLayout,
+  };
+})(typeof globalThis !== 'undefined' ? globalThis : window);
