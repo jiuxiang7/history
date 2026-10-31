@@ -14,7 +14,7 @@
       "title": "总览",
       "shortTitle": "总览",
       "period": "古代",
-      "peopleCount": 86
+      "peopleCount": 460
     },
     {
       "id": "five-emperors",
@@ -30,7 +30,7 @@
       "title": "夏本纪",
       "shortTitle": "夏",
       "period": "夏商周",
-      "peopleCount": 17
+      "peopleCount": 21
     },
     {
       "id": "pre-shang",
@@ -38,7 +38,7 @@
       "title": "殷本纪",
       "shortTitle": "商",
       "period": "夏商周",
-      "peopleCount": 32
+      "peopleCount": 49
     },
     {
       "id": "zhou",
@@ -46,7 +46,15 @@
       "title": "周本纪",
       "shortTitle": "周",
       "period": "夏商周",
-      "peopleCount": 40
+      "peopleCount": 60
+    },
+    {
+      "id": "qin",
+      "file": "data/qin.json",
+      "title": "秦本纪",
+      "shortTitle": "秦",
+      "period": "秦",
+      "peopleCount": 68
     }
   ]
 }

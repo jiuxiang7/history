@@ -373,6 +373,7 @@ function renderSvg() {
       const { person } = node;
       const honor = keyHonor(person);
       const key = Boolean(honor);
+      const indexed = key && person.indexed !== false;
       const mark = keyMark(honor);
       const selected = state.selectedId === person.id;
       const aliases = Array.isArray(person.aliases) ? person.aliases.filter(Boolean) : [];
@@ -381,6 +382,7 @@ function renderSvg() {
         'node',
         `node-${person.importance || 'normal'}`,
         key ? 'node-key' : '',
+        indexed ? 'node-indexed' : '',
         honor ? `node-honor-${honor}` : '',
         selected ? 'selected' : '',
       ]
@@ -459,7 +461,8 @@ function renderMinimap() {
   const nodes = [...layout.nodes.values()]
     .map((node) => {
       const honor = keyHonor(node.person);
-      const key = honor ? ` key mini-${honor}` : '';
+      const indexed = honor && node.person.indexed !== false;
+      const key = honor ? ` key mini-${honor}${indexed ? ' mini-indexed' : ''}` : '';
       return `<rect class="mini-node${key}" x="${node.x - card.width / 2}" y="${node.y}" width="${card.width}" height="${card.height}" rx="4"></rect>`;
     })
     .join('');

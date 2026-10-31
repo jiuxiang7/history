@@ -5,31 +5,142 @@
   "subtitle": "《史记·夏本纪》",
   "shortTitle": "夏",
   "period": "夏商周",
-  "description": "",
+  "description": "自黄帝至桀，夏后氏世系。",
   "source": "",
   "defaultPortrait": "assets/portrait.svg",
   "generations": [
-    { "index": 1, "label": "第一代" },
-    { "index": 2, "label": "第二代" },
-    { "index": 3, "label": "第三代" },
-    { "index": 4, "label": "第四代" },
-    { "index": 5, "label": "第五代" },
-    { "index": 6, "label": "第六代" },
-    { "index": 7, "label": "第七代" },
-    { "index": 8, "label": "第八代" },
-    { "index": 9, "label": "第九代" },
-    { "index": 10, "label": "第十代" },
-    { "index": 11, "label": "第十一代" },
-    { "index": 12, "label": "第十二代" },
-    { "index": 13, "label": "第十三代" },
-    { "index": 14, "label": "第十四代" }
+    {
+      "index": 1,
+      "label": "第一代"
+    },
+    {
+      "index": 2,
+      "label": "第二代"
+    },
+    {
+      "index": 3,
+      "label": "第三代"
+    },
+    {
+      "index": 4,
+      "label": "第四代"
+    },
+    {
+      "index": 5,
+      "label": "第五代"
+    },
+    {
+      "index": 6,
+      "label": "第六代"
+    },
+    {
+      "index": 7,
+      "label": "第七代"
+    },
+    {
+      "index": 8,
+      "label": "第八代"
+    },
+    {
+      "index": 9,
+      "label": "第九代"
+    },
+    {
+      "index": 10,
+      "label": "第十代"
+    },
+    {
+      "index": 11,
+      "label": "第十一代"
+    },
+    {
+      "index": 12,
+      "label": "第十二代"
+    },
+    {
+      "index": 13,
+      "label": "第十三代"
+    },
+    {
+      "index": 14,
+      "label": "第十四代"
+    },
+    {
+      "index": 15,
+      "label": "第十五代"
+    },
+    {
+      "index": 16,
+      "label": "第十六代"
+    },
+    {
+      "index": 17,
+      "label": "第十七代"
+    },
+    {
+      "index": 18,
+      "label": "第十八代"
+    }
   ],
   "people": [
     {
+      "id": "huangdi",
+      "name": "黄帝",
+      "aliases": [
+        "公孙轩辕"
+      ],
+      "generation": 1,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+        "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+        "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+      ]
+    },
+    {
+      "id": "changyi",
+      "name": "昌意",
+      "generation": 2,
+      "importance": "notable",
+      "bio": [
+        "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其二曰昌意，降居若水。"
+      ]
+    },
+    {
+      "id": "zhuanxu",
+      "name": "颛顼",
+      "aliases": [
+        "高阳"
+      ],
+      "generation": 3,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "帝颛顼高阳者，黄帝之孙而昌意之子也。静渊以有谋，疏通而知事；养材以任地，载时以象天，依鬼神以制义，治气以教化，絜诚以祭祀。北至于幽陵，南至于交趾，西至于流沙，东至于蟠木。动静之物，大小之神，日月所照，莫不砥属。",
+        "昌意娶蜀山氏女，曰昌仆，生高阳，高阳有圣德焉。黄帝崩，葬桥山。其孙昌意之子高阳立，是为帝颛顼也。"
+      ]
+    },
+    {
+      "id": "gun",
+      "name": "鲧",
+      "aliases": [
+        "崇伯鲧"
+      ],
+      "generation": 4,
+      "importance": "notable",
+      "bio": [
+        "当帝尧之时，鸿水滔天，浩浩怀山襄陵，下民其忧。尧求能治水者，群臣四岳皆曰鲧可。尧曰：“鲧为人负命毁族，不可。”四岳曰：“等之未有贤于鲧者，愿帝试之。”于是尧听四岳，用鲧治水。九年而水不息，功用不成。于是帝尧乃求人，更得舜。舜登用，摄行天子之政，巡狩。行视鲧之治水无状，乃殛鲧于羽山以死。天下皆以舜之诛为是。"
+      ]
+    },
+    {
       "id": "yu",
       "name": "禹",
-      "aliases": ["文命", "大禹"],
-      "generation": 1,
+      "aliases": [
+        "文命",
+        "大禹"
+      ],
+      "generation": 5,
       "importance": "key",
       "honor": "emperor",
       "bio": [
@@ -42,7 +153,7 @@
     {
       "id": "qi",
       "name": "启",
-      "generation": 2,
+      "generation": 6,
       "importance": "key",
       "honor": "emperor",
       "bio": [
@@ -54,7 +165,7 @@
     {
       "id": "taikang",
       "name": "太康",
-      "generation": 3,
+      "generation": 7,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -65,7 +176,7 @@
     {
       "id": "zhongkang",
       "name": "中康",
-      "generation": 3,
+      "generation": 7,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -76,7 +187,7 @@
     {
       "id": "xiang2",
       "name": "相",
-      "generation": 4,
+      "generation": 8,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -87,7 +198,7 @@
     {
       "id": "shaokang",
       "name": "少康",
-      "generation": 5,
+      "generation": 9,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -98,7 +209,7 @@
     {
       "id": "yu2",
       "name": "予",
-      "generation": 6,
+      "generation": 10,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -109,7 +220,7 @@
     {
       "id": "huai",
       "name": "槐",
-      "generation": 7,
+      "generation": 11,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -120,7 +231,7 @@
     {
       "id": "mang",
       "name": "芒",
-      "generation": 8,
+      "generation": 12,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -131,7 +242,7 @@
     {
       "id": "xie",
       "name": "泄",
-      "generation": 9,
+      "generation": 13,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -142,7 +253,7 @@
     {
       "id": "bujiang",
       "name": "不降",
-      "generation": 10,
+      "generation": 14,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -153,7 +264,7 @@
     {
       "id": "jiong",
       "name": "扃",
-      "generation": 10,
+      "generation": 14,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -164,7 +275,7 @@
     {
       "id": "jin",
       "name": "廑",
-      "generation": 11,
+      "generation": 15,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -175,7 +286,7 @@
     {
       "id": "kongjia",
       "name": "孔甲",
-      "generation": 11,
+      "generation": 15,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -187,7 +298,7 @@
     {
       "id": "gao",
       "name": "皋",
-      "generation": 12,
+      "generation": 16,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -198,7 +309,7 @@
     {
       "id": "fa",
       "name": "发",
-      "generation": 13,
+      "generation": 17,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -209,8 +320,10 @@
     {
       "id": "jie",
       "name": "桀",
-      "aliases": ["履癸"],
-      "generation": 14,
+      "aliases": [
+        "履癸"
+      ],
+      "generation": 18,
       "importance": "key",
       "honor": "emperor",
       "bio": [
@@ -222,73 +335,167 @@
   "unions": [
     {
       "id": "u-yu-qi",
-      "parents": ["yu"],
-      "children": ["qi"]
+      "parents": [
+        "yu"
+      ],
+      "children": [
+        "qi"
+      ]
     },
     {
       "id": "u-qi",
-      "parents": ["qi"],
-      "children": ["taikang", "zhongkang"]
+      "parents": [
+        "qi"
+      ],
+      "children": [
+        "taikang",
+        "zhongkang"
+      ]
     },
     {
       "id": "u-zhongkang-xiang",
-      "parents": ["zhongkang"],
-      "children": ["xiang2"]
+      "parents": [
+        "zhongkang"
+      ],
+      "children": [
+        "xiang2"
+      ]
     },
     {
       "id": "u-xiang2-shaokang",
-      "parents": ["xiang2"],
-      "children": ["shaokang"]
+      "parents": [
+        "xiang2"
+      ],
+      "children": [
+        "shaokang"
+      ]
     },
     {
       "id": "u-shaokang-yu2",
-      "parents": ["shaokang"],
-      "children": ["yu2"]
+      "parents": [
+        "shaokang"
+      ],
+      "children": [
+        "yu2"
+      ]
     },
     {
       "id": "u-yu2-huai",
-      "parents": ["yu2"],
-      "children": ["huai"]
+      "parents": [
+        "yu2"
+      ],
+      "children": [
+        "huai"
+      ]
     },
     {
       "id": "u-huai-mang",
-      "parents": ["huai"],
-      "children": ["mang"]
+      "parents": [
+        "huai"
+      ],
+      "children": [
+        "mang"
+      ]
     },
     {
       "id": "u-mang-xie",
-      "parents": ["mang"],
-      "children": ["xie"]
+      "parents": [
+        "mang"
+      ],
+      "children": [
+        "xie"
+      ]
     },
     {
       "id": "u-xie",
-      "parents": ["xie"],
-      "children": ["bujiang", "jiong"]
+      "parents": [
+        "xie"
+      ],
+      "children": [
+        "bujiang",
+        "jiong"
+      ]
     },
     {
       "id": "u-jiong-jin",
-      "parents": ["jiong"],
-      "children": ["jin"]
+      "parents": [
+        "jiong"
+      ],
+      "children": [
+        "jin"
+      ]
     },
     {
       "id": "u-bujiang-kongjia",
-      "parents": ["bujiang"],
-      "children": ["kongjia"]
+      "parents": [
+        "bujiang"
+      ],
+      "children": [
+        "kongjia"
+      ]
     },
     {
       "id": "u-kongjia-gao",
-      "parents": ["kongjia"],
-      "children": ["gao"]
+      "parents": [
+        "kongjia"
+      ],
+      "children": [
+        "gao"
+      ]
     },
     {
       "id": "u-gao-fa",
-      "parents": ["gao"],
-      "children": ["fa"]
+      "parents": [
+        "gao"
+      ],
+      "children": [
+        "fa"
+      ]
     },
     {
       "id": "u-fa-jie",
-      "parents": ["fa"],
-      "children": ["jie"]
+      "parents": [
+        "fa"
+      ],
+      "children": [
+        "jie"
+      ]
+    },
+    {
+      "id": "u-huangdi",
+      "parents": [
+        "huangdi"
+      ],
+      "children": [
+        "changyi"
+      ]
+    },
+    {
+      "id": "u-changyi",
+      "parents": [
+        "changyi"
+      ],
+      "children": [
+        "zhuanxu"
+      ]
+    },
+    {
+      "id": "u-zhuanxu",
+      "parents": [
+        "zhuanxu"
+      ],
+      "children": [
+        "gun"
+      ]
+    },
+    {
+      "id": "u-gun-yu",
+      "parents": [
+        "gun"
+      ],
+      "children": [
+        "yu"
+      ]
     }
   ]
 }

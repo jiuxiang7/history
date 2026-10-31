@@ -17,7 +17,7 @@ window.LINEAGE_LIBRARY = {
         "title": "总览",
         "shortTitle": "总览",
         "period": "古代",
-        "peopleCount": 146
+        "peopleCount": 460
       },
       {
         "id": "five-emperors",
@@ -33,7 +33,7 @@ window.LINEAGE_LIBRARY = {
         "title": "夏本纪",
         "shortTitle": "夏",
         "period": "夏商周",
-        "peopleCount": 17
+        "peopleCount": 21
       },
       {
         "id": "pre-shang",
@@ -41,7 +41,7 @@ window.LINEAGE_LIBRARY = {
         "title": "殷本纪",
         "shortTitle": "商",
         "period": "夏商周",
-        "peopleCount": 32
+        "peopleCount": 49
       },
       {
         "id": "zhou",
@@ -49,7 +49,15 @@ window.LINEAGE_LIBRARY = {
         "title": "周本纪",
         "shortTitle": "周",
         "period": "夏商周",
-        "peopleCount": 40
+        "peopleCount": 60
+      },
+      {
+        "id": "qin",
+        "file": "data/qin.json",
+        "title": "秦本纪",
+        "shortTitle": "秦",
+        "period": "秦",
+        "peopleCount": 68
       }
     ]
   },
@@ -268,6 +276,38 @@ window.LINEAGE_LIBRARY = {
         {
           "index": 51,
           "label": "第五十一代"
+        },
+        {
+          "index": 52,
+          "label": "第五十二代"
+        },
+        {
+          "index": 53,
+          "label": "第五十三代"
+        },
+        {
+          "index": 54,
+          "label": "第五十四代"
+        },
+        {
+          "index": 55,
+          "label": "第五十五代"
+        },
+        {
+          "index": 56,
+          "label": "第五十六代"
+        },
+        {
+          "index": 57,
+          "label": "第五十七代"
+        },
+        {
+          "index": 58,
+          "label": "第五十八代"
+        },
+        {
+          "index": 59,
+          "label": "第五十九代"
         }
       ],
       "people": [
@@ -567,6 +607,10 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "dafei",
           "name": "大费",
+          "aliases": [
+            "柏翳",
+            "伯翳"
+          ],
           "generation": 7,
           "importance": "normal",
           "bio": [
@@ -1389,11 +1433,16 @@ window.LINEAGE_LIBRARY = {
           "id": "taibo",
           "name": "太伯",
           "generation": 18,
-          "importance": "normal",
-          "indexed": false,
+          "importance": "key",
           "bio": [
-            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
-          ]
+            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。",
+            "吴太伯，太伯弟仲雍，皆周太王之子，而王季历之兄也。季历贤，而有圣子昌，太王欲立季历以及昌，于是太伯、仲雍二人乃奔荆蛮，文身断发，示不可用，以避季历。太伯之奔荆蛮，自号句吴。荆蛮义之，从而归之千余家，立为吴太伯。",
+            "太伯卒，无子，弟仲雍立，是为吴仲雍。"
+          ],
+          "aliases": [
+            "吴太伯"
+          ],
+          "honor": "other"
         },
         {
           "id": "yuzhong",
@@ -1402,7 +1451,12 @@ window.LINEAGE_LIBRARY = {
           "importance": "normal",
           "indexed": false,
           "bio": [
-            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
+            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。",
+            "太伯卒，无子，弟仲雍立，是为吴仲雍。仲雍卒，子季简立。"
+          ],
+          "aliases": [
+            "仲雍",
+            "吴仲"
           ]
         },
         {
@@ -2038,6 +2092,4172 @@ window.LINEAGE_LIBRARY = {
             "慎靓王立六年，崩，子赧王延立。王赧时东西周分治。王赧徙都西周。",
             "五十九年，秦取韩阳城、负黍，西周恐，倍秦，与诸侯约从，将天下锐师出伊阙攻秦，令秦无得通阳城。秦昭王怒，使将军摎攻西周。西周君奔秦，顿首受罪，尽献其邑三十六，口三万。秦受其献，归其君于周。",
             "周君、王赧卒，周民遂东亡。秦取九鼎宝器，而迁西周公于狐。后七岁，秦庄襄王灭东周。东西周皆入于秦，周既不祀。"
+          ]
+        },
+        {
+          "id": "qin-zhongyu",
+          "name": "中潏",
+          "generation": 16,
+          "importance": "notable",
+          "bio": [
+            "其玄孙曰中潏，在西戎，保西垂。生蜚廉。",
+            "申侯乃言孝王曰：“昔我先郦山之女，为戎胥轩妻，生中潏，以亲故归周，保西垂，西垂以其故和睦。……”"
+          ]
+        },
+        {
+          "id": "qin-feilian",
+          "name": "蜚廉",
+          "generation": 17,
+          "importance": "notable",
+          "bio": [
+            "蜚廉生恶来。恶来有力，蜚廉善走，父子俱以材力事殷纣。周武王之伐纣，并杀恶来。",
+            "是时蜚廉为纣石北方，还，无所报，为坛霍太山而报，得石棺，铭曰“帝令处父不与殷乱，赐尔石棺以华氏”。死，遂葬于霍太山。蜚廉复有子曰季胜。"
+          ]
+        },
+        {
+          "id": "qin-elai",
+          "name": "恶来",
+          "generation": 18,
+          "importance": "notable",
+          "bio": [
+            "蜚廉生恶来。恶来有力，蜚廉善走，父子俱以材力事殷纣。周武王之伐纣，并杀恶来。",
+            "恶来革者，蜚廉子也，蚤死。有子曰女防。"
+          ],
+          "aliases": [
+            "恶来革"
+          ]
+        },
+        {
+          "id": "qin-jisheng",
+          "name": "季胜",
+          "generation": 18,
+          "importance": "normal",
+          "bio": [
+            "蜚廉复有子曰季胜。季胜生孟增。孟增幸于周成王，是为宅皋狼。皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-mengzeng",
+          "name": "孟增",
+          "aliases": [
+            "宅皋狼"
+          ],
+          "generation": 19,
+          "importance": "normal",
+          "bio": [
+            "季胜生孟增。孟增幸于周成王，是为宅皋狼。皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-hengfu",
+          "name": "衡父",
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-zaofu",
+          "name": "造父",
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "造父以善御幸于周缪王，得骥、温骊、骅骝、騄耳之驷，西巡狩，乐而忘归。徐偃王作乱，造父为缪王御，长驱归周，一日千里以救乱。缪王以赵城封造父，造父族由此为赵氏。",
+            "自蜚廉生季胜已下五世至造父，别居赵。赵衰其后也。"
+          ]
+        },
+        {
+          "id": "qin-nvfang",
+          "name": "女防",
+          "generation": 19,
+          "importance": "normal",
+          "bio": [
+            "恶来革者，蜚廉子也，蚤死。有子曰女防。女防生旁皋，旁皋生太几，太几生大骆，大骆生非子。"
+          ]
+        },
+        {
+          "id": "qin-panggao",
+          "name": "旁皋",
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "女防生旁皋，旁皋生太几，太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。"
+          ]
+        },
+        {
+          "id": "qin-taiji",
+          "name": "太几",
+          "generation": 21,
+          "importance": "normal",
+          "bio": [
+            "旁皋生太几，太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。"
+          ]
+        },
+        {
+          "id": "qin-daluo",
+          "name": "大骆",
+          "generation": 22,
+          "importance": "notable",
+          "bio": [
+            "太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。",
+            "申侯之女为大骆妻，生子成为適。申侯乃言孝王曰：“……今我复与大骆妻，生適子成。申骆重婚，西戎皆服，所以为王。王其图之。”"
+          ]
+        },
+        {
+          "id": "qin-cheng",
+          "name": "成",
+          "generation": 23,
+          "importance": "normal",
+          "bio": [
+            "申侯之女为大骆妻，生子成为適。",
+            "亦不废申侯之女子为骆適者，以和西戎。"
+          ]
+        },
+        {
+          "id": "qin-feizi",
+          "name": "非子",
+          "aliases": [
+            "秦嬴"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "非子居犬丘，好马及畜，善养息之。犬丘人言之周孝王，孝王召使主马于汧渭之闲，马大蕃息。孝王欲以为大骆適嗣。",
+            "孝王曰：“昔伯翳为舜主畜，畜多息，故有土，赐姓嬴。今其后世亦为朕息马，朕其分土为附庸。”邑之秦，使复续嬴氏祀，号曰秦嬴。"
+          ]
+        },
+        {
+          "id": "qin-hou",
+          "name": "秦侯",
+          "generation": 24,
+          "importance": "normal",
+          "bio": [
+            "秦嬴生秦侯。秦侯立十年，卒。生公伯。"
+          ]
+        },
+        {
+          "id": "qin-gongbo",
+          "name": "公伯",
+          "generation": 25,
+          "importance": "normal",
+          "bio": [
+            "秦侯立十年，卒。生公伯。公伯立三年，卒。生秦仲。"
+          ]
+        },
+        {
+          "id": "qin-zhong",
+          "name": "秦仲",
+          "generation": 26,
+          "importance": "normal",
+          "bio": [
+            "公伯立三年，卒。生秦仲。",
+            "秦仲立三年，周厉王无道，诸侯或叛之。西戎反王室，灭犬丘大骆之族。周宣王即位，乃以秦仲为大夫，诛西戎。西戎杀秦仲。秦仲立二十三年，死于戎。有子五人，其长者曰庄公。"
+          ]
+        },
+        {
+          "id": "qin-zhuanggong",
+          "name": "庄公",
+          "generation": 27,
+          "importance": "normal",
+          "bio": [
+            "秦仲立二十三年，死于戎。有子五人，其长者曰庄公。周宣王乃召庄公昆弟五人，与兵七千人，使伐西戎，破之。于是复予秦仲后，及其先大骆地犬丘并有之，为西垂大夫。",
+            "庄公居其故西犬丘，生子三人，其长男世父。世父曰：“戎杀我大父仲，我非杀戎王则不敢入邑。”遂将击戎，让其弟襄公。襄公为太子。庄公立四十四年，卒，太子襄公代立。"
+          ]
+        },
+        {
+          "id": "qin-shifu",
+          "name": "世父",
+          "generation": 28,
+          "importance": "notable",
+          "bio": [
+            "庄公居其故西犬丘，生子三人，其长男世父。世父曰：“戎杀我大父仲，我非杀戎王则不敢入邑。”遂将击戎，让其弟襄公。襄公为太子。",
+            "襄公二年，戎围犬丘，世父击之，为戎人所虏。岁余，复归世父。"
+          ]
+        },
+        {
+          "id": "qin-xianggong",
+          "name": "襄公",
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "襄公元年，以女弟缪嬴为丰王妻。襄公二年，戎围犬丘，世父击之，为戎人所虏。岁余，复归世父。",
+            "七年春，周幽王用褒姒废太子，立褒姒子为嫡，数欺诸侯，诸侯叛之。西戎犬戎与申侯伐周，杀幽王郦山下。而秦襄公将兵救周，战甚力，有功。周避犬戎难，东徙雒邑，襄公以兵送周平王。平王封襄公为诸侯，赐之岐以西之地。曰：“戎无道，侵夺我岐、丰之地，秦能攻逐戎，即有其地。”与誓，封爵之。襄公于是始国，与诸侯通使聘享之礼，乃用骝驹、黄牛、羝羊各三，祠上帝西畤。",
+            "十二年，伐戎而至岐，卒。生文公。"
+          ]
+        },
+        {
+          "id": "qin-wengong",
+          "name": "文公",
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "文公元年，居西垂宫。三年，文公以兵七百人东猎。四年，至汧渭之会。曰：“昔周邑我先秦嬴于此，后卒获为诸侯。”乃卜居之，占曰吉，即营邑之。十年，初为鄜畤，用三牢。十三年，初有史以纪事，民多化者。",
+            "十六年，文公以兵伐戎，戎败走。于是文公遂收周余民有之，地至岐，岐以东献之周。十九年，得陈宝。二十年，法初有三族之罪。",
+            "四十八年，文公太子卒，赐谥为竫公。竫公之长子为太子，是文公孙也。五十年，文公卒，葬西山。竫公子立，是为宁公。"
+          ]
+        },
+        {
+          "id": "qin-jinggong",
+          "name": "竫公",
+          "aliases": [
+            "静公"
+          ],
+          "generation": 30,
+          "importance": "notable",
+          "bio": [
+            "四十八年，文公太子卒，赐谥为竫公。竫公之长子为太子，是文公孙也。五十年，文公卒，葬西山。竫公子立，是为宁公。"
+          ]
+        },
+        {
+          "id": "qin-ninggong",
+          "name": "宁公",
+          "aliases": [
+            "宪公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宁公二年，公徙居平阳。遣兵伐荡社。三年，与亳战，亳王奔戎，遂灭荡社。",
+            "十二年，伐荡氏，取之。宁公生十岁立，立十二年卒，葬西山。生子三人，长男武公为太子。武公弟德公，同母鲁姬子，生出子。宁公卒，大庶长弗忌、威垒、三父废太子而立出子为君。"
+          ]
+        },
+        {
+          "id": "qin-chuzi",
+          "name": "出子",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宁公卒，大庶长弗忌、威垒、三父废太子而立出子为君。出子六年，三父等复共令人贼杀出子。出子生五岁立，立六年卒。三父等乃复立故太子武公。"
+          ]
+        },
+        {
+          "id": "qin-wugong",
+          "name": "武公",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "武公元年，伐彭戏氏，至于华山下，居平阳封宫。三年，诛三父等而夷三族，以其杀出子也。",
+            "十年，伐邽、冀戎，初县之。十一年，初县杜、郑。灭小虢。",
+            "二十年，武公卒，葬雍平阳。初以人从死，从死者六十六人。有子一人，名曰白，白不立，封平阳。立其弟德公。"
+          ]
+        },
+        {
+          "id": "qin-degong",
+          "name": "德公",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "德公元年，初居雍城大郑宫。以牺三百牢祠鄜畤。卜居雍。后子孙饮马于河。梁伯、芮伯来朝。二年，初伏，以狗御蛊。",
+            "德公生三十三岁而立，立二年卒。生子三人：长子宣公，中子成公，少子穆公。长子宣公立。"
+          ]
+        },
+        {
+          "id": "qin-xuangong",
+          "name": "宣公",
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宣公元年，卫、燕伐周，出惠王，立王子穨。三年，郑伯、虢叔杀子穨而入惠王。四年，作密畤。与晋战河阳，胜之。",
+            "十二年，宣公卒。生子九人，莫立，立其弟成公。"
+          ]
+        },
+        {
+          "id": "qin-chenggong",
+          "name": "成公",
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "成公元年，梁伯、芮伯来朝。齐桓公伐山戎，次于孤竹。",
+            "成公立四年卒。子七人，莫立，立其弟缪公。"
+          ]
+        },
+        {
+          "id": "qin-mugong",
+          "name": "任好",
+          "aliases": [
+            "穆公",
+            "缪公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "缪公任好元年，自将伐茅津，胜之。四年，迎妇于晋，晋太子申生姊也。",
+            "五年，晋献公灭虞、虢，虏虞君与其大夫百里傒，以璧马赂于虞故也。既虏百里傒，以为秦缪公夫人媵于秦。……缪公释其囚，与语国事。……固问，语三日，缪公大说，授之国政，号曰五羖大夫。",
+            "三十七年，秦用由余谋伐戎王，益国十二，开地千里，遂霸西戎。天子使召公过贺缪公以金鼓。三十九年，缪公卒，葬雍。从死者百七十七人，秦之良臣子舆氏三人名曰奄息、仲行、针虎，亦在从死之中。秦人哀之，为作歌黄鸟之诗。",
+            "缪公子四十人，其太子嵤代立，是为康公。"
+          ],
+          "title": "穆公"
+        },
+        {
+          "id": "qin-kanggong",
+          "name": "嵤",
+          "aliases": [
+            "康公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "康公元年。往岁缪公之卒，晋襄公亦卒；襄公之弟名雍，秦出也，在秦。晋赵盾欲立之，使随会来迎雍，秦以兵送至令狐。晋立襄公子而反击秦师，秦师败，随会来奔。",
+            "二年，秦伐晋，取武城，报令狐之役。四年，晋伐秦，取少梁。六年，秦伐晋，取羁马。战于河曲，大败晋军。",
+            "康公立十二年卒，子共公立。"
+          ]
+        },
+        {
+          "id": "qin-gonggong",
+          "name": "共公",
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "共公二年，晋赵穿弑其君灵公。三年，楚庄王强，北兵至雒，问周鼎。共公立五年卒，子桓公立。"
+          ]
+        },
+        {
+          "id": "qin-huangong",
+          "name": "桓公",
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "桓公三年，晋败我一将。十年，楚庄王服郑，北败晋兵于河上。当是之时，楚霸，为会盟合诸侯。",
+            "二十四年，晋厉公初立，与秦桓公夹河而盟。归而秦倍盟，与翟合谋击晋。二十六年，晋率诸侯伐秦，秦军败走，追至泾而还。",
+            "桓公立二十七年卒，子景公立。"
+          ]
+        },
+        {
+          "id": "qin-jinggong2",
+          "name": "景公",
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "景公四年，晋栾书弑其君厉公。十五年，救郑，败晋兵于栎。是时晋悼公为盟主。十八年，晋悼公强，数会诸侯，率以伐秦，败秦军。",
+            "三十九年，楚灵王强，会诸侯于申，为盟主，杀齐庆封。景公立四十年卒，子哀公立。后子复来归秦。"
+          ]
+        },
+        {
+          "id": "qin-aigong",
+          "name": "哀公",
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "哀公八年，楚公子弃疾弑灵王而自立，是为平王。十一年，楚平王来求秦女为太子建妻。至国，女好而自娶之。十五年，楚平王欲诛建，建亡；伍子胥奔吴。",
+            "三十一年，吴王阖闾与伍子胥伐楚，楚王亡奔随，吴遂入郢。楚大夫申包胥来告急，七日不食，日夜哭泣。于是秦乃发五百乘救楚，败吴师。吴师归，楚昭王乃得复入郢。",
+            "哀公立三十六年卒。太子夷公，夷公蚤死，不得立，立夷公子，是为惠公。"
+          ]
+        },
+        {
+          "id": "qin-yigong",
+          "name": "夷公",
+          "generation": 39,
+          "importance": "notable",
+          "bio": [
+            "哀公立三十六年卒。太子夷公，夷公蚤死，不得立，立夷公子，是为惠公。"
+          ]
+        },
+        {
+          "id": "qin-huigong",
+          "name": "惠公",
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公元年，孔子行鲁相事。五年，晋卿中行、范氏反晋，晋使智氏、赵简子攻之，范、中行氏亡奔齐。",
+            "惠公立十年卒，子悼公立。"
+          ]
+        },
+        {
+          "id": "qin-daogong",
+          "name": "悼公",
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "悼公二年，齐臣田乞弑其君孺子，立其兄阳生，是为悼公。六年，吴败齐师。齐人弑悼公，立其子简公。九年，晋定公与吴王夫差盟，争长于黄池，卒先吴。吴强，陵中国。",
+            "十二年，齐田常弑简公，立其弟平公，常相之。十三年，楚灭陈。秦悼公立十四年卒，子厉共公立。孔子以悼公十二年卒。"
+          ]
+        },
+        {
+          "id": "qin-ligonggong",
+          "name": "厉共公",
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉共公二年，蜀人来赂。十六年，堑河旁。以兵二万伐大荔，取其王城。二十一年，初县频阳。晋取武成。",
+            "二十四年，晋乱，杀智伯，分其国与赵、韩、魏。二十五年，智开与邑人来奔。三十三年，伐义渠，虏其王。三十四年，日食。",
+            "厉共公卒，子躁公立。"
+          ]
+        },
+        {
+          "id": "qin-zaogong",
+          "name": "躁公",
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "躁公二年，南郑反。十三年，义渠来伐，至渭南。十四年，躁公卒，立其弟怀公。"
+          ]
+        },
+        {
+          "id": "qin-huaigong",
+          "name": "怀公",
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "怀公四年，庶长晁与大臣围怀公，怀公自杀。怀公太子曰昭子，蚤死，大臣乃立太子昭子之子，是为灵公。灵公，怀公孙也。"
+          ]
+        },
+        {
+          "id": "qin-zhaozi",
+          "name": "昭子",
+          "generation": 44,
+          "importance": "notable",
+          "bio": [
+            "怀公太子曰昭子，蚤死，大臣乃立太子昭子之子，是为灵公。灵公，怀公孙也。"
+          ]
+        },
+        {
+          "id": "qin-linggong",
+          "name": "灵公",
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "灵公六年，晋城少梁，秦击之。十三年，城籍姑。",
+            "灵公卒，子献公不得立，立灵公季父悼子，是为简公。简公，昭子之弟而怀公子也。"
+          ]
+        },
+        {
+          "id": "qin-jiangong",
+          "name": "简公",
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "灵公卒，子献公不得立，立灵公季父悼子，是为简公。简公，昭子之弟而怀公子也。",
+            "简公六年，令吏初带剑。堑洛。城重泉。十六年卒，子惠公立。"
+          ]
+        },
+        {
+          "id": "qin-huigong2",
+          "name": "惠公",
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公十二年，子出子生。十三年，伐蜀，取南郑。惠公卒，出子立。"
+          ]
+        },
+        {
+          "id": "qin-chuzi2",
+          "name": "出子",
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公十二年，子出子生。十三年，伐蜀，取南郑。惠公卒，出子立。",
+            "出子二年，庶长改迎灵公之子献公于河西而立之。杀出子及其母，沈之渊旁。秦以往者数易君，君臣乖乱，故晋复强，夺秦河西地。"
+          ]
+        },
+        {
+          "id": "qin-xiangong",
+          "name": "献公",
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "献公元年，止从死。二年，城栎阳。四年正月庚寅，孝公生。十一年，周太史儋见献公曰：“周故与秦国合而别，别五百岁复合，合十七岁而霸王出。”",
+            "二十一年，与晋战于石门，斩首六万，天子贺以黼黻。二十三年，与魏晋战少梁，虏其将公孙痤。二十四年，献公卒，子孝公立，年已二十一岁矣。"
+          ]
+        },
+        {
+          "id": "qin-xiaogong",
+          "name": "孝公",
+          "generation": 47,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "孝公元年，河山以东强国六，与齐威、楚宣、魏惠、燕悼、韩哀、赵成侯并。……秦僻在雍州，不与中国诸侯之会盟，夷翟遇之。孝公于是布惠，振孤寡，招战士，明功赏。下令国中曰：“昔我缪公自岐雍之间，修德行武，东平晋乱，以河为界，西霸戎翟，广地千里，天子致伯，诸侯毕贺，为后世开业，甚光美。……”于是乃出兵东围陕城，西斩戎之獂王。",
+            "三年，卫鞅说孝公变法修刑，内务耕稼，外劝战死之赏罚，孝公善之。……卒用鞅法，百姓苦之；居三年，百姓便之。乃拜鞅为左庶长。",
+            "孝公卒，子惠文君立。是岁，诛卫鞅。"
+          ]
+        },
+        {
+          "id": "qin-huiwenjun",
+          "name": "惠文君",
+          "aliases": [
+            "惠文王",
+            "惠王"
+          ],
+          "generation": 48,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "惠文君元年，楚、韩、赵、蜀人来朝。二年，天子贺。三年，王冠。四年，天子致文武胙。齐、魏为王。",
+            "十年，张仪相秦。魏纳上郡十五县。十一年，县义渠。……十三年四月戊午，魏君为王，韩亦为王。",
+            "十四年，更为元年。……九年，司马错伐蜀，灭之。……十三年，庶长章击楚于丹阳，虏其将屈丐，斩首八万；又攻楚汉中，取地六百里，置汉中郡。",
+            "惠王卒，子武王立。韩、魏、齐、楚、越皆宾从。"
+          ]
+        },
+        {
+          "id": "qin-wuwang",
+          "name": "武王",
+          "aliases": [
+            "悼武王"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "武王元年，与魏襄王会临晋。诛蜀相壮。张仪、魏章皆东出之魏。伐义渠、丹、犁。二年，初置丞相，樗里疾、甘茂为左右丞相。",
+            "四年，拔宜阳，斩首六万。涉河，城武遂。魏太子来朝。武王有力好戏，力士任鄙、乌获、孟说皆至大官。王与孟说举鼎，绝膑。八月，武王死。族孟说。武王取魏女为后，无子。立异母弟，是为昭襄王。"
+          ]
+        },
+        {
+          "id": "qin-zhaoxiangwang",
+          "name": "昭襄王",
+          "aliases": [
+            "昭王"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "昭襄王元年，严君疾为相。甘茂出之魏。……四十一年夏，攻魏，取邢丘、怀。四十二年，安国君为太子。",
+            "四十七年，秦攻韩上党，上党降赵，秦因攻赵，赵发兵击秦，相距。秦使武安君白起击，大破赵于长平，四十余万尽杀之。",
+            "五十一年，将军摎攻韩，取阳城、负黍，斩首四万。……五十二年，周民东亡，其器九鼎入秦。周初亡。",
+            "五十六年秋，昭襄王卒，子孝文王立。"
+          ]
+        },
+        {
+          "id": "qin-xiaowenwang",
+          "name": "孝文王",
+          "generation": 50,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "孝文王元年，赦罪人，修先王功臣，褒厚亲戚，弛苑囿。孝文王除丧，十月己亥即位，三日辛丑卒，子庄襄王立。"
+          ]
+        },
+        {
+          "id": "qin-zhuangxiangwang",
+          "name": "庄襄王",
+          "generation": 51,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "庄襄王元年，大赦罪人，修先王功臣，施德厚骨肉而布惠于民。东周君与诸侯谋秦，秦使相国吕不韦诛之，尽入其国。秦不绝其祀，以阳人地赐周君，奉其祭祀。使蒙骜伐韩，韩献成皋、巩。秦界至大梁，初置三川郡。",
+            "三年，蒙骜攻魏高都、汲，拔之。攻赵榆次、新城、狼孟，取三十七城。……五月丙午，庄襄王卒，子政立，是为秦始皇帝。"
+          ]
+        },
+        {
+          "id": "qin-shihuang",
+          "name": "政",
+          "aliases": [
+            "秦始皇",
+            "始皇帝",
+            "秦王政"
+          ],
+          "generation": 52,
+          "importance": "key",
+          "honor": "emperor",
+          "title": "始皇帝",
+          "bio": [
+            "秦始皇帝者，秦庄襄王子也。庄襄王为秦质子于赵，见吕不韦姬，悦而取之，生始皇。以秦昭王四十八年正月生于邯郸。及生，名为政，姓赵氏。年十三岁，庄襄王死，政代立为秦王。",
+            "秦王政立二十六年，初并天下为三十六郡，号为始皇帝。",
+            "王曰：“去‘泰’，著‘皇’，采上古‘帝’位号，号曰‘皇帝’。他如议。”制曰：“可。”追尊庄襄王为太上皇。制曰：“朕闻太古有号毋谥，中古有号，死而以行为谥。如此，则子议父，臣议君也，甚无谓，朕弗取焉。自今已来，除谥法。朕为始皇帝。后世以计数，二世三世至于万世，传之无穷。”",
+            "至平原津而病。始皇恶言死，群臣莫敢言死事。上病益甚，乃为玺书赐公子扶苏曰：“与丧会咸阳而葬。”……七月丙寅，始皇崩于沙丘平台。……太子胡亥袭位，为二世皇帝。"
+          ]
+        },
+        {
+          "id": "qin-chengjiao",
+          "name": "成蟜",
+          "aliases": [
+            "长安君"
+          ],
+          "generation": 52,
+          "importance": "notable",
+          "bio": [
+            "八年，王弟长安君成蟜将军击赵，反，死屯留，军吏皆斩死，迁其民于临洮。"
+          ]
+        },
+        {
+          "id": "qin-fusu",
+          "name": "扶苏",
+          "generation": 53,
+          "importance": "notable",
+          "bio": [
+            "始皇长子扶苏谏曰：“天下初定，远方黔首未集，诸生皆诵法孔子，今上皆重法绳之，臣恐天下不安。唯上察之。”始皇怒，使扶苏北监蒙恬于上郡。",
+            "上病益甚，乃为玺书赐公子扶苏曰：“与丧会咸阳而葬。”书已封，在中车府令赵高行符玺事所，未授使者。……高乃与公子胡亥、丞相斯阴谋破去始皇所封书赐公子扶苏者，而更诈为丞相斯受始皇遗诏沙丘，立子胡亥为太子。更为书赐公子扶苏、蒙恬，数以罪，赐死。"
+          ]
+        },
+        {
+          "id": "qin-jianglv",
+          "name": "将闾",
+          "generation": 53,
+          "importance": "normal",
+          "bio": [
+            "公子将闾昆弟三人囚于内宫，议其罪独后。二世使使令将闾曰：“公子不臣，罪当死，吏致法焉。”将闾曰：“阙廷之礼，吾未尝敢不从宾赞也；廊庙之位，吾未尝敢失节也；受命应对，吾未尝敢失辞也。何谓不臣？愿闻罪而死。”使者曰：“臣不得与谋，奉书从事。”将闾乃仰天大呼天者三，曰：“天乎！吾无罪！”昆弟三人皆流涕拔剑自杀。"
+          ]
+        },
+        {
+          "id": "qin-ershi",
+          "name": "胡亥",
+          "aliases": [
+            "二世皇帝"
+          ],
+          "generation": 53,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "始皇帝五十一年而崩，子胡亥立，是为二世皇帝。三年，诸侯并起叛秦，赵高杀二世，立子婴。子婴立月余，诸侯诛之，遂灭秦。其语在始皇本纪中。",
+            "二世皇帝元年，年二十一。赵高为郎中令，任用事。",
+            "阎乐前即二世数曰：“足下骄恣，诛杀无道，天下共畔足下，足下其自为计。”二世曰：“丞相可得见否？”乐曰：“不可。”……麾其兵进。二世自杀。……以黔首葬二世杜南宜春苑中。"
+          ]
+        },
+        {
+          "id": "qin-ziying",
+          "name": "婴",
+          "aliases": [
+            "子婴"
+          ],
+          "generation": 54,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "阎乐归报赵高，赵高乃悉召诸大臣公子，告以诛二世之状。……立二世之兄子公子婴为秦王。以黔首葬二世杜南宜春苑中。",
+            "子婴遂刺杀高于斋宫，三族高家以徇咸阳。子婴为秦王四十六日，楚将沛公破秦军入武关，遂至霸上，使人约降子婴。子婴即系颈以组，白马素车，奉天子玺符，降轵道旁。",
+            "居月余，诸侯兵至，项籍为从长，杀子婴及秦诸公子宗族。遂屠咸阳，烧其宫室，虏其子女，收其珍宝货财，诸侯共分之。"
+          ]
+        },
+        {
+          "id": "wu-jijian",
+          "name": "季简",
+          "aliases": [
+            "吴季简"
+          ],
+          "generation": 19,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "仲雍卒，子季简立。季简卒，子叔达立。"
+          ]
+        },
+        {
+          "id": "wu-shuda",
+          "name": "叔达",
+          "aliases": [
+            "吴叔达"
+          ],
+          "generation": 20,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "季简卒，子叔达立。叔达卒，子周章立。"
+          ]
+        },
+        {
+          "id": "wu-zhouzhang",
+          "name": "周章",
+          "aliases": [
+            "吴周章"
+          ],
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "叔达卒，子周章立。是时周武王克殷，求太伯、仲雍之后，得周章。周章已君吴，因而封之。"
+          ]
+        },
+        {
+          "id": "wu-xiongsui",
+          "name": "熊遂",
+          "aliases": [
+            "吴熊遂"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "周章卒，子熊遂立。熊遂卒，子柯相立。"
+          ]
+        },
+        {
+          "id": "wu-kexiang",
+          "name": "柯相",
+          "aliases": [
+            "吴柯相"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "熊遂卒，子柯相立。柯相卒，子强鸠夷立。"
+          ]
+        },
+        {
+          "id": "wu-qiangjiuyi",
+          "name": "强鸠夷",
+          "aliases": [
+            "吴强鸠夷"
+          ],
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "柯相卒，子强鸠夷立。强鸠夷卒，子余桥疑吾立。"
+          ]
+        },
+        {
+          "id": "wu-yuqiaoyiwu",
+          "name": "余桥疑吾",
+          "aliases": [
+            "吴余桥疑吾"
+          ],
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "强鸠夷卒，子余桥疑吾立。余桥疑吾卒，子柯卢立。"
+          ]
+        },
+        {
+          "id": "wu-kelu",
+          "name": "柯卢",
+          "aliases": [
+            "吴柯卢"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "余桥疑吾卒，子柯卢立。柯卢卒，子周繇立。"
+          ]
+        },
+        {
+          "id": "wu-zhouyao",
+          "name": "周繇",
+          "aliases": [
+            "吴周繇"
+          ],
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "柯卢卒，子周繇立。周繇卒，子屈羽立。"
+          ]
+        },
+        {
+          "id": "wu-quyu",
+          "name": "屈羽",
+          "aliases": [
+            "吴屈羽"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "周繇卒，子屈羽立。屈羽卒，子夷吾立。"
+          ]
+        },
+        {
+          "id": "wu-yiwu",
+          "name": "夷吾",
+          "aliases": [
+            "吴夷吾"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "屈羽卒，子夷吾立。夷吾卒，子禽处立。"
+          ]
+        },
+        {
+          "id": "wu-qinchu",
+          "name": "禽处",
+          "aliases": [
+            "吴禽处"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "夷吾卒，子禽处立。禽处卒，子转立。"
+          ]
+        },
+        {
+          "id": "wu-zhuan",
+          "name": "转",
+          "aliases": [
+            "吴转"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "禽处卒，子转立。转卒，子颇高立。"
+          ]
+        },
+        {
+          "id": "wu-pogao",
+          "name": "颇高",
+          "aliases": [
+            "吴颇高"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "转卒，子颇高立。颇高卒，子句卑立。"
+          ]
+        },
+        {
+          "id": "wu-jubei",
+          "name": "句卑",
+          "aliases": [
+            "吴句卑"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "颇高卒，子句卑立。是时晋献公灭周北虞公，以开晋伐虢也。句卑卒，子去齐立。"
+          ]
+        },
+        {
+          "id": "wu-quqi",
+          "name": "去齐",
+          "aliases": [
+            "吴去齐"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "句卑卒，子去齐立。去齐卒，子寿梦立。"
+          ]
+        },
+        {
+          "id": "wu-shoumeng",
+          "name": "寿梦",
+          "aliases": [
+            "吴王寿梦"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "去齐卒，子寿梦立。寿梦立而吴始益大，称王。二十五年，王寿梦卒。"
+          ]
+        },
+        {
+          "id": "wu-zhufan",
+          "name": "诸樊",
+          "aliases": [
+            "吴王诸樊"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "寿梦有子四人，长曰诸樊，次曰余祭，次曰余眜，次曰季札。……于是乃立长子诸樊，摄行事当国。十三年，王诸樊卒。"
+          ]
+        },
+        {
+          "id": "wu-yuji",
+          "name": "余祭",
+          "aliases": [
+            "吴王余祭"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "有命授弟余祭，欲传以次，必致国于季札而止，以称先王寿梦之意。……十七年，王余祭卒，弟余眜立。"
+          ]
+        },
+        {
+          "id": "wu-yumo",
+          "name": "余眜",
+          "aliases": [
+            "吴王余眜"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十七年，王余祭卒，弟余眜立。……四年，王余眜卒，欲授弟季札。季札让，逃去。"
+          ]
+        },
+        {
+          "id": "wu-jizha",
+          "name": "季札",
+          "aliases": [
+            "延陵季子",
+            "公子札"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "季札贤，而寿梦欲立之，季札让不可，于是乃立长子诸樊，摄行事当国。……季札封于延陵，故号曰延陵季子。",
+            "季子至，曰：“苟先君无废祀，民人无废主，社稷有奉，乃吾君也。吾敢谁怨乎？哀死事生，以待天命。非我生乱，立者从之，先人之道也。”"
+          ]
+        },
+        {
+          "id": "wu-liao",
+          "name": "僚",
+          "aliases": [
+            "吴王僚"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "季子今逃位，则王余眜后立。今卒，其子当代。”乃立王余眜之子僚为王。"
+          ]
+        },
+        {
+          "id": "wu-guang",
+          "name": "光",
+          "aliases": [
+            "阖闾",
+            "吴王阖闾"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "公子光者，王诸樊之子也。常以为吾父兄弟四人，当传至季子。季子即不受国，光父先立。……遂弑王僚。公子光竟代立为王，是为吴王阖闾。"
+          ]
+        },
+        {
+          "id": "wu-fuchai",
+          "name": "夫差",
+          "aliases": [
+            "吴王夫差"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "十九年夏，吴伐越……伤吴王阖闾指，军却七里。吴王病伤而死，阖闾使立太子夫差。",
+            "王夫差元年，以大夫伯嚭为太宰。习战射，常以报越为志。二十三年十一月丁卯，越败吴。……吴王曰：“孤老矣，不能事君王也。吾悔不用子胥之言，自令陷此。”遂自刭死。越王灭吴。"
+          ]
+        },
+        {
+          "id": "lu-boqin",
+          "name": "伯禽",
+          "aliases": [
+            "鲁公",
+            "鲁周公"
+          ],
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "周公卒，子伯禽固已前受封，是为鲁公。……鲁公伯禽卒，子考公酋立。"
+          ]
+        },
+        {
+          "id": "lu-kaogong",
+          "name": "酋",
+          "aliases": [
+            "考公"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "鲁公伯禽卒，子考公酋立。考公四年卒，立弟熙，是谓炀公。"
+          ]
+        },
+        {
+          "id": "lu-yanggong",
+          "name": "熙",
+          "aliases": [
+            "炀公"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "考公四年卒，立弟熙，是谓炀公。炀公筑茅阙门。六年卒，子幽公宰立。"
+          ]
+        },
+        {
+          "id": "lu-yougong",
+          "name": "宰",
+          "aliases": [
+            "幽公"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "六年卒，子幽公宰立。幽公十四年，幽公弟杀幽公而自立，是为魏公。"
+          ]
+        },
+        {
+          "id": "lu-weigong",
+          "name": "魏公",
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "幽公十四年，幽公弟杀幽公而自立，是为魏公。魏公五十年卒，子厉公擢立。"
+          ]
+        },
+        {
+          "id": "lu-ligong",
+          "name": "擢",
+          "aliases": [
+            "厉公"
+          ],
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "魏公五十年卒，子厉公擢立。厉公三十七年卒，鲁人立其弟具，是为献公。"
+          ]
+        },
+        {
+          "id": "lu-xiangong",
+          "name": "具",
+          "aliases": [
+            "献公"
+          ],
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉公三十七年卒，鲁人立其弟具，是为献公。献公三十二年卒，子真公濞立。"
+          ]
+        },
+        {
+          "id": "lu-zhengong",
+          "name": "濞",
+          "aliases": [
+            "真公"
+          ],
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "献公三十二年卒，子真公濞立。……三十年，真公卒，弟敖立，是为武公。"
+          ]
+        },
+        {
+          "id": "lu-wugong",
+          "name": "敖",
+          "aliases": [
+            "武公"
+          ],
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十年，真公卒，弟敖立，是为武公。武公九年春，武公与长子括，少子戏，西朝周宣王。"
+          ]
+        },
+        {
+          "id": "lu-kuo",
+          "name": "括",
+          "aliases": [
+            "公子括"
+          ],
+          "generation": 26,
+          "importance": "normal",
+          "bio": [
+            "武公九年春，武公与长子括，少子戏，西朝周宣王。……懿公九年，懿公兄括之子伯御与鲁人攻弑懿公。"
+          ]
+        },
+        {
+          "id": "lu-yigong",
+          "name": "戏",
+          "aliases": [
+            "懿公"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宣王爱戏，欲立戏为鲁太子。……夏，武公归而卒，戏立，是为懿公。懿公九年，懿公兄括之子伯御与鲁人攻弑懿公。"
+          ]
+        },
+        {
+          "id": "lu-boyu",
+          "name": "伯御",
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "懿公九年，懿公兄括之子伯御与鲁人攻弑懿公，而立伯御为君。伯御即位十一年，周宣王伐鲁，杀其君伯御。"
+          ]
+        },
+        {
+          "id": "lu-xiaogong",
+          "name": "称",
+          "aliases": [
+            "孝公"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "鲁懿公弟称，肃恭明神，敬事耆老……乃立称于夷宫，是为孝公。……二十七年，孝公卒，子弗湟立。"
+          ]
+        },
+        {
+          "id": "lu-huigong",
+          "name": "弗湟",
+          "aliases": [
+            "惠公"
+          ],
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十七年，孝公卒，子弗湟立，是为惠公。……四十六年，惠公卒。"
+          ]
+        },
+        {
+          "id": "lu-yingong",
+          "name": "息",
+          "aliases": [
+            "隐公"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "四十六年，惠公卒，长庶子息摄当国，行君事，是为隐公。……挥使人弑隐公于蒍氏。"
+          ]
+        },
+        {
+          "id": "lu-huangong",
+          "name": "允",
+          "aliases": [
+            "桓公"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "挥使人弑隐公于蒍氏，而立子允为君，是为桓公。……立太子同，是为庄公。"
+          ]
+        },
+        {
+          "id": "lu-zhuanggong",
+          "name": "同",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "立太子同，是为庄公。……庄公卒，季友竟立子斑为君，如庄公命。"
+          ]
+        },
+        {
+          "id": "lu-mingong",
+          "name": "开",
+          "aliases": [
+            "愍公",
+            "闵公"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "庆父竟立庄公子开，是为愍公。愍公二年……庆父使卜齮袭杀愍公于武闱。"
+          ]
+        },
+        {
+          "id": "lu-xigong",
+          "name": "申",
+          "aliases": [
+            "釐公",
+            "僖公"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "季友闻之，自陈与愍公弟申如邾，请鲁求内之。……立之，是为釐公。釐公亦庄公少子。"
+          ]
+        },
+        {
+          "id": "lu-wengong",
+          "name": "兴",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十三年，釐公卒，子兴立，是为文公。……十八年二月，文公卒。"
+          ]
+        },
+        {
+          "id": "lu-xuangong",
+          "name": "俀",
+          "aliases": [
+            "宣公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "文公有二妃……次妃敬嬴，嬖爱，生子俀。……襄仲杀子恶及视而立俀，是为宣公。"
+          ]
+        },
+        {
+          "id": "lu-chenggong",
+          "name": "黑肱",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，宣公卒，子成公黑肱立，是为成公。……十八年，成公卒，子午立。"
+          ]
+        },
+        {
+          "id": "lu-xianggong",
+          "name": "午",
+          "aliases": [
+            "襄公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，成公卒，子午立，是为襄公。是时襄公三岁也。……三十一年六月，襄公卒。"
+          ]
+        },
+        {
+          "id": "lu-zhaogong",
+          "name": "裯",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十一年六月，襄公卒。其九月，太子卒。鲁人立齐归之子裯为君，是为昭公。……三十二年，昭公卒于干侯。"
+          ]
+        },
+        {
+          "id": "lu-dinggong",
+          "name": "宋",
+          "aliases": [
+            "定公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "鲁人共立昭公弟宋为君，是为定公。……十五年，定公卒，子将立。"
+          ]
+        },
+        {
+          "id": "lu-aigong",
+          "name": "将",
+          "aliases": [
+            "哀公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十五年，定公卒，子将立，是为哀公。……国人迎哀公复归，卒于有山氏。子宁立。"
+          ]
+        },
+        {
+          "id": "lu-daogong",
+          "name": "宁",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "国人迎哀公复归，卒于有山氏。子宁立，是为悼公。三十七年，悼公卒，子嘉立。"
+          ]
+        },
+        {
+          "id": "lu-yuangong",
+          "name": "嘉",
+          "aliases": [
+            "元公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十七年，悼公卒，子嘉立，是为元公。元公二十一年卒，子显立。"
+          ]
+        },
+        {
+          "id": "lu-mugong",
+          "name": "显",
+          "aliases": [
+            "穆公"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "元公二十一年卒，子显立，是为穆公。穆公三十三年卒，子奋立。"
+          ]
+        },
+        {
+          "id": "lu-gonggong",
+          "name": "奋",
+          "aliases": [
+            "共公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "穆公三十三年卒，子奋立，是为共公。共公二十二年卒，子屯立。"
+          ]
+        },
+        {
+          "id": "lu-kanggong",
+          "name": "屯",
+          "aliases": [
+            "康公"
+          ],
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "共公二十二年卒，子屯立，是为康公。康公九年卒，子匽立。"
+          ]
+        },
+        {
+          "id": "lu-jinggong",
+          "name": "匽",
+          "aliases": [
+            "景公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "康公九年卒，子匽立，是为景公。景公二十九年卒，子叔立。"
+          ]
+        },
+        {
+          "id": "lu-pinggong",
+          "name": "叔",
+          "aliases": [
+            "平公"
+          ],
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "景公二十九年卒，子叔立，是为平公。是时六国皆称王。……二十年，平公卒，子贾立。"
+          ]
+        },
+        {
+          "id": "lu-wengong2",
+          "name": "贾",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十年，平公卒，子贾立，是为文公。……二十三年，文公卒，子雠立。"
+          ]
+        },
+        {
+          "id": "lu-qinggong",
+          "name": "雠",
+          "aliases": [
+            "顷公"
+          ],
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十三年，文公卒，子雠立，是为顷公。……二十四年，楚考烈王伐灭鲁。顷公亡，迁于下邑，为家人，鲁绝祀。"
+          ]
+        },
+        {
+          "id": "cai-shudu",
+          "name": "度",
+          "aliases": [
+            "蔡叔",
+            "蔡叔度"
+          ],
+          "generation": 20,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "管叔鲜、蔡叔度者，周文王子而武王弟也。……封叔度于蔡：二人相纣子武庚禄父，治殷遗民。周公旦承成王命伐诛武庚，杀管叔，而放蔡叔。蔡叔度既迁而死。"
+          ]
+        },
+        {
+          "id": "cai-zhonghu",
+          "name": "胡",
+          "aliases": [
+            "蔡仲"
+          ],
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "蔡叔度既迁而死。其子曰胡，胡乃改行，率德驯善。……复封胡于蔡，以奉蔡叔之祀，是为蔡仲。"
+          ]
+        },
+        {
+          "id": "cai-bohuang",
+          "name": "荒",
+          "aliases": [
+            "蔡伯荒"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "蔡仲卒，子蔡伯荒立。蔡伯荒卒，子宫侯立。"
+          ]
+        },
+        {
+          "id": "cai-gonghou",
+          "name": "宫侯",
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "蔡伯荒卒，子宫侯立。宫侯卒，子厉侯立。"
+          ]
+        },
+        {
+          "id": "cai-lihou",
+          "name": "厉侯",
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宫侯卒，子厉侯立。厉侯卒，子武侯立。"
+          ]
+        },
+        {
+          "id": "cai-wuhou",
+          "name": "武侯",
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉侯卒，子武侯立。武侯之时，周厉王失国，奔彘，共和行政，诸侯多叛周。"
+          ]
+        },
+        {
+          "id": "cai-yihou",
+          "name": "夷侯",
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "武侯卒，子夷侯立。夷侯十一年，周宣王即位。二十八年，夷侯卒，子厘侯所事立。"
+          ]
+        },
+        {
+          "id": "cai-lihousuoshi",
+          "name": "所事",
+          "aliases": [
+            "厘侯"
+          ],
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十八年，夷侯卒，子厘侯所事立。……四十八年，厘侯卒，子共侯兴立。"
+          ]
+        },
+        {
+          "id": "cai-gonghouxing",
+          "name": "兴",
+          "aliases": [
+            "共侯"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "四十八年，厘侯卒，子共侯兴立。共侯二年卒，子戴侯立。"
+          ]
+        },
+        {
+          "id": "cai-daihou",
+          "name": "戴侯",
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "共侯二年卒，子戴侯立。戴侯十年卒，子宣侯措父立。"
+          ]
+        },
+        {
+          "id": "cai-xuanhou",
+          "name": "措父",
+          "aliases": [
+            "宣侯"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "戴侯十年卒，子宣侯措父立。……三十五年，宣侯卒，子桓侯封人立。"
+          ]
+        },
+        {
+          "id": "cai-huanhou",
+          "name": "封人",
+          "aliases": [
+            "桓侯"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十五年，宣侯卒，子桓侯封人立。……二十年，桓侯卒，弟哀侯献舞立。"
+          ]
+        },
+        {
+          "id": "cai-aihou",
+          "name": "献舞",
+          "aliases": [
+            "哀侯"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十年，桓侯卒，弟哀侯献舞立。……哀侯留九岁，死于楚。凡立二十年卒。蔡人立其子肸。"
+          ]
+        },
+        {
+          "id": "cai-muhou",
+          "name": "肸",
+          "aliases": [
+            "缪侯"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "蔡人立其子肸，是为缪侯。……二十九年，缪侯卒，子庄侯甲午立。"
+          ]
+        },
+        {
+          "id": "cai-zhuanghou",
+          "name": "甲午",
+          "aliases": [
+            "庄侯"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十九年，缪侯卒，子庄侯甲午立。……三十四年，庄侯卒，子文侯申立。"
+          ]
+        },
+        {
+          "id": "cai-wenhou",
+          "name": "申",
+          "aliases": [
+            "文侯"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十四年，庄侯卒，子文侯申立。……二十年，文侯卒，子景侯固立。"
+          ]
+        },
+        {
+          "id": "cai-jinghou",
+          "name": "固",
+          "aliases": [
+            "景侯"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十年，文侯卒，子景侯固立。……四十九年，景侯为太子般娶妇于楚，而景侯通焉。太子弑景侯而自立。"
+          ]
+        },
+        {
+          "id": "cai-linghou",
+          "name": "般",
+          "aliases": [
+            "灵侯"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "太子弑景侯而自立，是为灵侯。……楚灵王以灵侯弑其父，诱蔡灵侯于申，伏甲饮之，醉而杀之。"
+          ]
+        },
+        {
+          "id": "cai-pinghou",
+          "name": "庐",
+          "aliases": [
+            "平侯"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "平王乃求蔡景侯少子庐，立之，是为平侯。平侯九年卒。"
+          ]
+        },
+        {
+          "id": "cai-yintai",
+          "name": "友",
+          "aliases": [
+            "隐太子"
+          ],
+          "generation": 37,
+          "importance": "normal",
+          "bio": [
+            "悼侯父曰隐太子友。隐太子友者，灵侯之太子，平侯立而杀隐太子。"
+          ]
+        },
+        {
+          "id": "cai-daohou",
+          "name": "东国",
+          "aliases": [
+            "悼侯"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "平侯九年卒，灵侯般之孙东国攻平侯子而自立，是为悼侯。悼侯三年卒，弟昭侯申立。"
+          ]
+        },
+        {
+          "id": "cai-zhaohou",
+          "name": "申",
+          "aliases": [
+            "昭侯"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "悼侯三年卒，弟昭侯申立。……乃令贼利杀昭侯；已而诛贼利以解过，而立昭侯子朔。"
+          ]
+        },
+        {
+          "id": "cai-chenghou",
+          "name": "朔",
+          "aliases": [
+            "成侯"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "而立昭侯子朔，是为成侯。……十九年，成侯卒，子声侯产立。"
+          ]
+        },
+        {
+          "id": "cai-shenghou",
+          "name": "产",
+          "aliases": [
+            "声侯"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十九年，成侯卒，子声侯产立。声侯十五年卒，子元侯立。"
+          ]
+        },
+        {
+          "id": "cai-yuanhou",
+          "name": "元侯",
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "声侯十五年卒，子元侯立。元侯六年卒，子侯齐立。"
+          ]
+        },
+        {
+          "id": "cai-houqi",
+          "name": "齐",
+          "aliases": [
+            "蔡侯齐"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "元侯六年卒，子侯齐立。侯齐四年，楚惠王灭蔡，蔡侯齐亡，蔡遂绝祀。"
+          ]
+        },
+        {
+          "id": "cao-shuzhenduo",
+          "name": "振铎",
+          "aliases": [
+            "曹叔",
+            "曹叔振铎"
+          ],
+          "generation": 20,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "曹叔振铎者，周武王弟也。武王已克殷纣，封叔振铎于曹。"
+          ]
+        },
+        {
+          "id": "cao-taibo",
+          "name": "脾",
+          "aliases": [
+            "曹太伯"
+          ],
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "叔振铎卒，子太伯脾立。太伯卒，子仲君平立。"
+          ]
+        },
+        {
+          "id": "cao-zhongjun",
+          "name": "平",
+          "aliases": [
+            "仲君"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "太伯卒，子仲君平立。仲君平卒，子宫伯侯立。"
+          ]
+        },
+        {
+          "id": "cao-gongbo",
+          "name": "侯",
+          "aliases": [
+            "宫伯"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "仲君平卒，子宫伯侯立。宫伯侯卒，子孝伯云立。"
+          ]
+        },
+        {
+          "id": "cao-xiaobo",
+          "name": "云",
+          "aliases": [
+            "孝伯"
+          ],
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宫伯侯卒，子孝伯云立。孝伯云卒，子夷伯喜立。"
+          ]
+        },
+        {
+          "id": "cao-yibo",
+          "name": "喜",
+          "aliases": [
+            "夷伯"
+          ],
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "孝伯云卒，子夷伯喜立。夷伯二十三年，周厉王奔于彘。三十年卒，弟幽伯强立。"
+          ]
+        },
+        {
+          "id": "cao-youbo",
+          "name": "强",
+          "aliases": [
+            "幽伯"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十年卒，弟幽伯强立。幽伯九年，弟苏杀幽伯代立，是为戴伯。"
+          ]
+        },
+        {
+          "id": "cao-daibo",
+          "name": "苏",
+          "aliases": [
+            "戴伯"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "幽伯九年，弟苏杀幽伯代立，是为戴伯。……三十年，戴伯卒，子惠伯兕立。"
+          ]
+        },
+        {
+          "id": "cao-huibo",
+          "name": "兕",
+          "aliases": [
+            "惠伯"
+          ],
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十年，戴伯卒，子惠伯兕立。……三十六年，惠伯卒，子石甫立。"
+          ]
+        },
+        {
+          "id": "cao-shifu",
+          "name": "石甫",
+          "generation": 28,
+          "importance": "normal",
+          "bio": [
+            "三十六年，惠伯卒，子石甫立，其弟武杀之代立，是为缪公。"
+          ]
+        },
+        {
+          "id": "cao-mugong",
+          "name": "武",
+          "aliases": [
+            "缪公"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "其弟武杀之代立，是为缪公。缪公三年卒，子桓公终生立。"
+          ]
+        },
+        {
+          "id": "cao-huangong",
+          "name": "终生",
+          "aliases": [
+            "桓公"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "缪公三年卒，子桓公终生立。……五十五年，桓公卒，子庄公夕姑立。"
+          ]
+        },
+        {
+          "id": "cao-zhuanggong",
+          "name": "夕姑",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "五十五年，桓公卒，子庄公夕姑立。……三十一年，庄公卒，子厘公夷立。"
+          ]
+        },
+        {
+          "id": "cao-ligong",
+          "name": "夷",
+          "aliases": [
+            "厘公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十一年，庄公卒，子厘公夷立。厘公九年卒，子昭公班立。"
+          ]
+        },
+        {
+          "id": "cao-zhaogong",
+          "name": "班",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厘公九年卒，子昭公班立。……九年，昭公卒，子共公襄立。"
+          ]
+        },
+        {
+          "id": "cao-gonggong",
+          "name": "襄",
+          "aliases": [
+            "共公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "九年，昭公卒，子共公襄立。……三十五年，共公卒，子文公寿立。"
+          ]
+        },
+        {
+          "id": "cao-wengong",
+          "name": "寿",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十五年，共公卒，子文公寿立。文公二十三年卒，子宣公强立。"
+          ]
+        },
+        {
+          "id": "cao-xuangong",
+          "name": "强",
+          "aliases": [
+            "宣公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "文公二十三年卒，子宣公强立。宣公十七年卒，弟成公负刍立。"
+          ]
+        },
+        {
+          "id": "cao-chenggong",
+          "name": "负刍",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宣公十七年卒，弟成公负刍立。……二十三年，成公卒，子武公胜立。"
+          ]
+        },
+        {
+          "id": "cao-wugong",
+          "name": "胜",
+          "aliases": [
+            "武公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十三年，成公卒，子武公胜立。……二十七年，武公卒，子平公须立。"
+          ]
+        },
+        {
+          "id": "cao-pinggong",
+          "name": "须",
+          "aliases": [
+            "平公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十七年，武公卒，子平公须立。平公四年卒，子悼公午立。"
+          ]
+        },
+        {
+          "id": "cao-daogong",
+          "name": "午",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "平公四年卒，子悼公午立。……九年，悼公朝于宋，宋囚之；曹立其弟野，是为声公。"
+          ]
+        },
+        {
+          "id": "cao-yingong",
+          "name": "通",
+          "aliases": [
+            "隐公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "声公五年，平公弟通弑声公代立，是为隐公。隐公四年，声公弟露弑隐公代立。"
+          ]
+        },
+        {
+          "id": "cao-shenggong",
+          "name": "野",
+          "aliases": [
+            "声公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "曹立其弟野，是为声公。……声公五年，平公弟通弑声公代立。"
+          ]
+        },
+        {
+          "id": "cao-jinggong",
+          "name": "露",
+          "aliases": [
+            "靖公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "隐公四年，声公弟露弑隐公代立，是为靖公。靖公四年卒，子伯阳立。"
+          ]
+        },
+        {
+          "id": "cao-boyang",
+          "name": "伯阳",
+          "aliases": [
+            "曹伯阳"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "靖公四年卒，子伯阳立。……十五年，宋灭曹，执曹伯阳及公孙强以归而杀之。曹遂绝其祀。"
+          ]
+        },
+        {
+          "id": "boyikao",
+          "name": "伯邑考",
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "其长子曰伯邑考，次曰武王发……伯邑考既已前卒矣。"
+          ]
+        },
+        {
+          "id": "guan-shuxian",
+          "name": "鲜",
+          "aliases": [
+            "管叔",
+            "管叔鲜"
+          ],
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "管叔鲜、蔡叔度者，周文王子而武王弟也。……封叔鲜于管。周公旦承成王命伐诛武庚，杀管叔。"
+          ]
+        },
+        {
+          "id": "cheng-shuwu",
+          "name": "武",
+          "aliases": [
+            "成叔"
+          ],
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "封叔武于成……成叔武，其后世无所见。"
+          ]
+        },
+        {
+          "id": "huo-shuchu",
+          "name": "处",
+          "aliases": [
+            "霍叔"
+          ],
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "封叔处于霍……霍叔处，其后晋献公时灭霍。"
+          ]
+        },
+        {
+          "id": "ran-jizai",
+          "name": "季载",
+          "aliases": [
+            "厓季载",
+            "冉季载"
+          ],
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "封季载于厓……厓季、康叔皆有驯行，于是周公举康叔为周司寇，厓季为周司空。"
+          ]
+        },
+        {
+          "id": "wei-kangshu",
+          "name": "封",
+          "aliases": [
+            "康叔",
+            "卫康叔"
+          ],
+          "generation": 20,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "卫康叔名封，周武王同母少弟也。……以武庚殷余民封康叔为卫君，居河、淇间故商墟。"
+          ]
+        },
+        {
+          "id": "wei-kangbo",
+          "name": "康伯",
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "康叔卒，子康伯代立。康伯卒，子考伯立。"
+          ]
+        },
+        {
+          "id": "wei-kaobo",
+          "name": "考伯",
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "康伯卒，子考伯立。考伯卒，子嗣伯立。"
+          ]
+        },
+        {
+          "id": "wei-sibo",
+          "name": "嗣伯",
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "考伯卒，子嗣伯立。嗣伯卒，子榅伯立。"
+          ]
+        },
+        {
+          "id": "wei-wenbo",
+          "name": "榅伯",
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "嗣伯卒，子榅伯立。榅伯卒，子靖伯立。"
+          ]
+        },
+        {
+          "id": "wei-jingbo",
+          "name": "靖伯",
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "榅伯卒，子靖伯立。靖伯卒，子贞伯立。"
+          ]
+        },
+        {
+          "id": "wei-zhenbo",
+          "name": "贞伯",
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "靖伯卒，子贞伯立。贞伯卒，子顷侯立。"
+          ]
+        },
+        {
+          "id": "wei-qinghou",
+          "name": "顷侯",
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "贞伯卒，子顷侯立。顷侯厚赂周夷王，夷王命卫为侯。"
+          ]
+        },
+        {
+          "id": "wei-lihou",
+          "name": "厘侯",
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "顷侯立十二年卒，子厘侯立。……四十二年，厘侯卒。"
+          ]
+        },
+        {
+          "id": "wei-gongboyu",
+          "name": "余",
+          "aliases": [
+            "共伯"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厘侯卒，太子共伯余立为君。共伯弟和有宠于厘侯……共伯入厘侯羡自杀。"
+          ]
+        },
+        {
+          "id": "wei-wugong",
+          "name": "和",
+          "aliases": [
+            "武公"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "卫人因葬之厘侯旁，谥曰共伯，而立和为卫侯，是为武公。……五十五年，卒，子庄公扬立。"
+          ]
+        },
+        {
+          "id": "wei-zhuanggong",
+          "name": "扬",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "五十五年，卒，子庄公扬立。……二十三年，庄公卒，太子完立。"
+          ]
+        },
+        {
+          "id": "wei-huangong",
+          "name": "完",
+          "aliases": [
+            "桓公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十三年，庄公卒，太子完立，是为桓公。……州吁收聚卫亡人以袭杀桓公。"
+          ]
+        },
+        {
+          "id": "wei-zhouxu",
+          "name": "州吁",
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "州吁收聚卫亡人以袭杀桓公，州吁自立为卫君。……石碏与陈侯共谋，使右宰丑进食，因杀州吁于濮。"
+          ]
+        },
+        {
+          "id": "wei-xuangong",
+          "name": "晋",
+          "aliases": [
+            "宣公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "石碏……迎桓公弟晋于邢而立之，是为宣公。……十九年，宣公卒，太子朔立。"
+          ]
+        },
+        {
+          "id": "wei-huigong",
+          "name": "朔",
+          "aliases": [
+            "惠公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十九年，宣公卒，太子朔立，是为惠公。……三十一年，惠公卒，子懿公赤立。"
+          ]
+        },
+        {
+          "id": "wei-qianmou",
+          "name": "黔牟",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "左右公子……攻惠公，立太子伋之弟黔牟为君，惠公奔齐。"
+          ]
+        },
+        {
+          "id": "wei-zhaobo",
+          "name": "顽",
+          "aliases": [
+            "昭伯"
+          ],
+          "generation": 32,
+          "importance": "normal",
+          "bio": [
+            "太子伋同母弟二人：其一曰黔牟……其二曰昭伯。……故立昭伯子申为戴公。"
+          ]
+        },
+        {
+          "id": "wei-yigong",
+          "name": "赤",
+          "aliases": [
+            "懿公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十一年，惠公卒，子懿公赤立。懿公即位，好鹤，淫乐奢侈。九年，翟伐卫……杀懿公。"
+          ]
+        },
+        {
+          "id": "wei-daigong",
+          "name": "申",
+          "aliases": [
+            "戴公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "更立黔牟之弟昭伯顽之子申为君，是为戴公。戴公申元年卒。"
+          ]
+        },
+        {
+          "id": "wei-wengong",
+          "name": "燬",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "立戴公弟燬为卫君，是为文公。……二十五年，文公卒，子成公郑立。"
+          ]
+        },
+        {
+          "id": "wei-chenggong",
+          "name": "郑",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十五年，文公卒，子成公郑立。……三十五年，成公卒，子穆公遬立。"
+          ]
+        },
+        {
+          "id": "wei-mugong",
+          "name": "遬",
+          "aliases": [
+            "穆公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十五年，成公卒，子穆公遬立。……穆公卒，子定公臧立。"
+          ]
+        },
+        {
+          "id": "wei-dinggong",
+          "name": "臧",
+          "aliases": [
+            "定公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "穆公卒，子定公臧立。定公十二年卒，子献公衎立。"
+          ]
+        },
+        {
+          "id": "wei-xiangong",
+          "name": "衎",
+          "aliases": [
+            "献公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "定公十二年卒，子献公衎立。……孙文子、宁惠子共立定公弟秋为卫君，是为殇公。"
+          ]
+        },
+        {
+          "id": "wei-shanggong",
+          "name": "秋",
+          "aliases": [
+            "殇公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "孙文子、宁惠子共立定公弟秋为卫君，是为殇公。……卫殇公会晋平公，平公执殇公与宁喜而复入卫献公。"
+          ]
+        },
+        {
+          "id": "wei-xianggong2",
+          "name": "恶",
+          "aliases": [
+            "襄公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "是年，献公卒，子襄公恶立。九年，襄公卒。……乃立元为嗣，是为灵公。"
+          ]
+        },
+        {
+          "id": "wei-linggong",
+          "name": "元",
+          "aliases": [
+            "灵公"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "襄公夫人无子，于是乃立元为嗣，是为灵公。……夏，灵公卒。"
+          ]
+        },
+        {
+          "id": "wei-chugong",
+          "name": "辄",
+          "aliases": [
+            "出公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "亡人太子蒯聩之子辄在也，不敢当。于是卫乃以辄为君，是为出公。……出公季父黔攻出公子而自立，是为悼公。"
+          ]
+        },
+        {
+          "id": "wei-zhuanggong2",
+          "name": "蒯聩",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "孔悝竟立太子蒯聩，是为庄公。庄公蒯聩者，出公父也。"
+          ]
+        },
+        {
+          "id": "wei-daogong",
+          "name": "黔",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "出公季父黔攻出公子而自立，是为悼公。悼公五年卒，子敬公弗立。"
+          ]
+        },
+        {
+          "id": "wei-jinggong",
+          "name": "弗",
+          "aliases": [
+            "敬公"
+          ],
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "悼公五年卒，子敬公弗立。敬公十九年卒，子昭公纠立。"
+          ]
+        },
+        {
+          "id": "wei-zhaogong",
+          "name": "纠",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "敬公十九年卒，子昭公纠立。……公子亹弑之代立，是为怀公。"
+          ]
+        },
+        {
+          "id": "wei-shengong",
+          "name": "颓",
+          "aliases": [
+            "慎公"
+          ],
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "公子颓弑怀公而代立，是为慎公。慎公父，公子适；适父，敬公也。"
+          ]
+        },
+        {
+          "id": "wei-shenggong",
+          "name": "训",
+          "aliases": [
+            "声公"
+          ],
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "慎公四十二年卒，子声公训立。声公十一年卒，子成侯遬立。"
+          ]
+        },
+        {
+          "id": "wei-chenghou",
+          "name": "遬",
+          "aliases": [
+            "成侯"
+          ],
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "声公十一年卒，子成侯遬立。……二十九年，成侯卒，子平侯立。"
+          ]
+        },
+        {
+          "id": "wei-pinghou",
+          "name": "平侯",
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十九年，成侯卒，子平侯立。平侯八年卒，子嗣君立。"
+          ]
+        },
+        {
+          "id": "wei-sijun",
+          "name": "嗣君",
+          "generation": 47,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "平侯八年卒，子嗣君立。……四十二年卒，子怀君立。"
+          ]
+        },
+        {
+          "id": "wei-huaijun",
+          "name": "怀君",
+          "generation": 48,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "四十二年卒，子怀君立。怀君三十一年，朝魏，魏囚杀怀君。"
+          ]
+        },
+        {
+          "id": "wei-yuanjun",
+          "name": "元君",
+          "generation": 48,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "魏更立嗣君弟，是为元君。……二十五年，元君卒，子君角立。"
+          ]
+        },
+        {
+          "id": "wei-junjiao",
+          "name": "角",
+          "aliases": [
+            "君角"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十五年，元君卒，子君角立。君角九年，秦并天下……二十一年，二世废君角为庶人，卫绝祀。"
+          ]
+        },
+        {
+          "id": "song-weizhong",
+          "name": "衍",
+          "aliases": [
+            "微仲"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "微子开卒，立其弟衍，是为微仲。微仲卒，子宋公稽立。"
+          ]
+        },
+        {
+          "id": "song-gongji",
+          "name": "稽",
+          "aliases": [
+            "宋公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "微仲卒，子宋公稽立。宋公稽卒，子丁公申立。"
+          ]
+        },
+        {
+          "id": "song-dinggong",
+          "name": "申",
+          "aliases": [
+            "丁公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宋公稽卒，子丁公申立。丁公申卒，子愍公共立。"
+          ]
+        },
+        {
+          "id": "song-mingong",
+          "name": "共",
+          "aliases": [
+            "愍公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "丁公申卒，子愍公共立。愍公共卒，弟炀公熙立。"
+          ]
+        },
+        {
+          "id": "song-yanggong",
+          "name": "熙",
+          "aliases": [
+            "炀公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "愍公共卒，弟炀公熙立。炀公即位，愍公子鲋祀弑炀公而自立。"
+          ]
+        },
+        {
+          "id": "song-ligong",
+          "name": "鲋祀",
+          "aliases": [
+            "厉公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "愍公子鲋祀弑炀公而自立，曰“我当立”，是为厉公。厉公卒，子厘公举立。"
+          ]
+        },
+        {
+          "id": "song-xigong",
+          "name": "举",
+          "aliases": [
+            "厘公"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉公卒，子厘公举立。……二十八年，厘公卒，子惠公覵立。"
+          ]
+        },
+        {
+          "id": "song-huigong",
+          "name": "覵",
+          "aliases": [
+            "惠公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十八年，厘公卒，子惠公覵立。……三十年，惠公卒，子哀公立。"
+          ]
+        },
+        {
+          "id": "song-aigong",
+          "name": "哀公",
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十年，惠公卒，子哀公立。哀公元年卒，子戴公立。"
+          ]
+        },
+        {
+          "id": "song-daigong",
+          "name": "戴公",
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "哀公元年卒，子戴公立。……三十四年，戴公卒，子武公司空立。"
+          ]
+        },
+        {
+          "id": "song-wugong",
+          "name": "司空",
+          "aliases": [
+            "武公"
+          ],
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十四年，戴公卒，子武公司空立。……十八年，武公卒，子宣公力立。"
+          ]
+        },
+        {
+          "id": "song-xuangong",
+          "name": "力",
+          "aliases": [
+            "宣公"
+          ],
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，武公卒，子宣公力立。……宣公卒，弟和立，是为穆公。"
+          ]
+        },
+        {
+          "id": "song-mugong",
+          "name": "和",
+          "aliases": [
+            "穆公"
+          ],
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宣公卒，弟和立，是为穆公。……八月庚辰，穆公卒。"
+          ]
+        },
+        {
+          "id": "song-shanggong",
+          "name": "与夷",
+          "aliases": [
+            "殇公"
+          ],
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "穆公卒，兄宣公子与夷立，是为殇公。……华督攻杀孔父，取其妻。殇公怒，遂弑殇公。"
+          ]
+        },
+        {
+          "id": "song-zhuanggong",
+          "name": "冯",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "殇公怒，遂弑殇公，而迎穆公子冯于郑而立之，是为庄公。……十九年，庄公卒，子愍公捷立。"
+          ]
+        },
+        {
+          "id": "song-mingong2",
+          "name": "捷",
+          "aliases": [
+            "愍公"
+          ],
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十九年，庄公卒，子愍公捷立。……万有力，病此言，遂以局杀愍公于蒙泽。"
+          ]
+        },
+        {
+          "id": "song-huangong",
+          "name": "御说",
+          "aliases": [
+            "桓公"
+          ],
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "弑宋新君游而立愍公弟御说，是为桓公。……三十一年春，桓公卒，太子兹甫立。"
+          ]
+        },
+        {
+          "id": "song-xianggong",
+          "name": "兹甫",
+          "aliases": [
+            "襄公"
+          ],
+          "generation": 47,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "三十一年春，桓公卒，太子兹甫立，是为襄公。……冬，十一月，襄公与楚成王战于泓……宋师大败，襄公伤股。"
+          ]
+        },
+        {
+          "id": "song-chenggong",
+          "name": "王臣",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 48,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十四年夏，襄公病伤于泓而竟卒，子成公王臣立。……十七年，成公卒。"
+          ]
+        },
+        {
+          "id": "song-zhaogong",
+          "name": "杵臼",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宋人共杀君御而立成公少子杵臼，是为昭公。……弟鲍革立，是为文公。"
+          ]
+        },
+        {
+          "id": "song-wengong",
+          "name": "鲍革",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "昭公弟鲍革贤而下士。……弟鲍革立，是为文公。……二十二年，文公卒，子共公瑕立。"
+          ]
+        },
+        {
+          "id": "song-gonggong",
+          "name": "瑕",
+          "aliases": [
+            "共公"
+          ],
+          "generation": 50,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十二年，文公卒，子共公瑕立。……乃立共公少子成，是为平公。"
+          ]
+        },
+        {
+          "id": "song-pinggong",
+          "name": "成",
+          "aliases": [
+            "平公"
+          ],
+          "generation": 51,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "乃立共公少子成，是为平公。……四十四年，平公卒，子元公佐立。"
+          ]
+        },
+        {
+          "id": "song-yuangong",
+          "name": "佐",
+          "aliases": [
+            "元公"
+          ],
+          "generation": 52,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "四十四年，平公卒，子元公佐立。……行道卒，子景公头曼立。"
+          ]
+        },
+        {
+          "id": "song-jinggong",
+          "name": "头曼",
+          "aliases": [
+            "景公"
+          ],
+          "generation": 53,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "行道卒，子景公头曼立。……六十四年，景公卒。"
+          ]
+        },
+        {
+          "id": "song-zhaogong2",
+          "name": "特",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 55,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宋公子特攻杀太子而自立，是为昭公。昭公者，元公之曾庶孙也。昭公父公孙纠，纠父公子褍秦，褍秦即元公少子也。"
+          ]
+        },
+        {
+          "id": "song-daogong",
+          "name": "购由",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 56,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "昭公四十七年卒，子悼公购由立。悼公八年卒，子休公田立。"
+          ]
+        },
+        {
+          "id": "song-xiugong",
+          "name": "田",
+          "aliases": [
+            "休公"
+          ],
+          "generation": 57,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "悼公八年卒，子休公田立。休公田二十三年卒，子辟公辟兵立。"
+          ]
+        },
+        {
+          "id": "song-bigong",
+          "name": "辟兵",
+          "aliases": [
+            "辟公"
+          ],
+          "generation": 58,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "休公田二十三年卒，子辟公辟兵立。辟公三年卒，子剔成立。"
+          ]
+        },
+        {
+          "id": "song-ticheng",
+          "name": "剔成",
+          "generation": 59,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "辟公三年卒，子剔成立。剔成四十一年，剔成弟偃攻袭剔成，剔成败奔齐。"
+          ]
+        },
+        {
+          "id": "song-yan",
+          "name": "偃",
+          "aliases": [
+            "宋王偃",
+            "君偃"
+          ],
+          "generation": 59,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "偃自立为宋君。君偃十一年，自立为王。……王偃立四十七年，齐愍王与魏、楚伐宋，杀王偃，遂灭宋而三分其地。"
+          ]
+        },
+        {
+          "id": "zheng-huangong",
+          "name": "友",
+          "aliases": [
+            "郑桓公"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "郑桓公友者，周厉王少子而宣王庶弟也。宣王立二十二年，友初封于郑。……二岁，犬戎杀幽王于骊山下，并杀桓公。"
+          ]
+        },
+        {
+          "id": "zheng-wugong",
+          "name": "掘突",
+          "aliases": [
+            "武公"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "郑人共立其子掘突，是为武公。……是岁，武公卒，寤生立，是为庄公。"
+          ]
+        },
+        {
+          "id": "zheng-zhuanggong",
+          "name": "寤生",
+          "aliases": [
+            "庄公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "是岁，武公卒，寤生立，是为庄公。……四十三年，郑庄公卒。"
+          ]
+        },
+        {
+          "id": "zheng-zhaogong",
+          "name": "忽",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "祭仲立之，是为昭公。……渠弥与昭公出猎，射杀昭公于野。"
+          ]
+        },
+        {
+          "id": "zheng-ligong",
+          "name": "突",
+          "aliases": [
+            "厉公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "己亥，突至郑，立，是为厉公。……秋，厉公卒，子文公踕立。"
+          ]
+        },
+        {
+          "id": "zheng-zimei",
+          "name": "亹",
+          "aliases": [
+            "子亹"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "乃更立昭公弟子亹为君，是为子亹也，无谥号。……齐侯怒，遂伏甲而杀子亹。"
+          ]
+        },
+        {
+          "id": "zheng-ziying",
+          "name": "婴",
+          "aliases": [
+            "郑子"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "召子亹弟公子婴于陈而立之，是为郑子。……假杀郑子及其二子而迎厉公突。"
+          ]
+        },
+        {
+          "id": "zheng-wengong",
+          "name": "踕",
+          "aliases": [
+            "文公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉公卒，子文公踕立。……子兰立，是为穆公。"
+          ]
+        },
+        {
+          "id": "zheng-mugong",
+          "name": "兰",
+          "aliases": [
+            "穆公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "初，郑文公有三夫人……子兰奔晋……乃立兰为太子。……二十二年，郑缪公卒，子夷立。"
+          ]
+        },
+        {
+          "id": "zheng-linggong",
+          "name": "夷",
+          "aliases": [
+            "灵公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十二年，郑缪公卒，子夷立，是为灵公。……子公与子家谋先。夏，弑灵公。"
+          ]
+        },
+        {
+          "id": "zheng-xianggong",
+          "name": "坚",
+          "aliases": [
+            "襄公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "坚者，灵公庶弟……于是乃立子坚，是为襄公。……十八年，襄公卒，子悼公晞立。"
+          ]
+        },
+        {
+          "id": "zheng-daogong",
+          "name": "晞",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，襄公卒，子悼公晞立。……是岁，悼公卒，立其弟睔。"
+          ]
+        },
+        {
+          "id": "zheng-chenggong",
+          "name": "睔",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "是岁，悼公卒，立其弟睔，是为成公。……十四年，成公卒，子恽立。"
+          ]
+        },
+        {
+          "id": "zheng-xigong",
+          "name": "恽",
+          "aliases": [
+            "釐公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十四年，成公卒，子恽立。是为釐公。……立釐公子嘉。"
+          ]
+        },
+        {
+          "id": "zheng-jiangong",
+          "name": "嘉",
+          "aliases": [
+            "简公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "立釐公子嘉，嘉时年五岁，是为简公。……三十六年，简公卒，子定公宁立。"
+          ]
+        },
+        {
+          "id": "zheng-dinggong",
+          "name": "宁",
+          "aliases": [
+            "定公"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十六年，简公卒，子定公宁立。……十三年，定公卒，子献公虿立。"
+          ]
+        },
+        {
+          "id": "zheng-xiangong",
+          "name": "虿",
+          "aliases": [
+            "献公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十三年，定公卒，子献公虿立。献公十三年卒，子声公胜立。"
+          ]
+        },
+        {
+          "id": "zheng-shenggong",
+          "name": "胜",
+          "aliases": [
+            "声公"
+          ],
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "献公十三年卒，子声公胜立。……三十七年，声公卒，子哀公易立。"
+          ]
+        },
+        {
+          "id": "zheng-aigong",
+          "name": "易",
+          "aliases": [
+            "哀公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十七年，声公卒，子哀公易立。哀公八年，郑人弑哀公而立声公弟丑。"
+          ]
+        },
+        {
+          "id": "zheng-gonggong",
+          "name": "丑",
+          "aliases": [
+            "共公"
+          ],
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "郑人弑哀公而立声公弟丑，是为共公。……三十一年，共公卒，子幽公已立。"
+          ]
+        },
+        {
+          "id": "zheng-yougong",
+          "name": "已",
+          "aliases": [
+            "幽公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十一年，共公卒，子幽公已立。幽公元年，韩武子伐郑，杀幽公。"
+          ]
+        },
+        {
+          "id": "zheng-xugong",
+          "name": "骀",
+          "aliases": [
+            "繻公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "郑人立幽公弟骀，是为繻公。……子阳之党共弑繻公骀。"
+          ]
+        },
+        {
+          "id": "zheng-junyi",
+          "name": "乙",
+          "aliases": [
+            "郑君"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "子阳之党共弑繻公骀而立幽公弟乙为君，是为郑君。……二十一年，韩哀侯灭郑，并其国。"
+          ]
+        },
+        {
+          "id": "jin-tangshu",
+          "name": "虞",
+          "aliases": [
+            "唐叔虞"
+          ],
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "晋唐叔虞者，周武王子而成王弟。……于是遂封叔虞于唐。唐在河、汾之东，方百里，故曰唐叔虞。"
+          ]
+        },
+        {
+          "id": "jin-xie",
+          "name": "燮",
+          "aliases": [
+            "晋侯"
+          ],
+          "generation": 22,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "唐叔子燮，是为晋侯。晋侯子宁族，是为武侯。"
+          ]
+        },
+        {
+          "id": "jin-ningzu",
+          "name": "宁族",
+          "aliases": [
+            "武侯"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "晋侯子宁族，是为武侯。武侯之子服人，是为成侯。"
+          ]
+        },
+        {
+          "id": "jin-furen",
+          "name": "服人",
+          "aliases": [
+            "成侯"
+          ],
+          "generation": 24,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "武侯之子服人，是为成侯。成侯子福，是为厉侯。"
+          ]
+        },
+        {
+          "id": "jin-fu",
+          "name": "福",
+          "aliases": [
+            "厉侯"
+          ],
+          "generation": 25,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "成侯子福，是为厉侯。厉侯之子宜臼，是为靖侯。"
+          ]
+        },
+        {
+          "id": "jin-yijiu",
+          "name": "宜臼",
+          "aliases": [
+            "靖侯"
+          ],
+          "generation": 26,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉侯之子宜臼，是为靖侯。……十八年，靖侯卒，子厘侯司徒立。"
+          ]
+        },
+        {
+          "id": "jin-situ",
+          "name": "司徒",
+          "aliases": [
+            "厘侯"
+          ],
+          "generation": 27,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，靖侯卒，子厘侯司徒立。……十八年，厘侯卒，子献侯籍立。"
+          ]
+        },
+        {
+          "id": "jin-ji",
+          "name": "籍",
+          "aliases": [
+            "献侯"
+          ],
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，厘侯卒，子献侯籍立。献侯十一年卒，子穆侯费王立。"
+          ]
+        },
+        {
+          "id": "jin-feiwang",
+          "name": "费王",
+          "aliases": [
+            "穆侯"
+          ],
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "献侯十一年卒，子穆侯费王立。……二十七年，穆侯卒，弟殇叔自立。"
+          ]
+        },
+        {
+          "id": "jin-chou",
+          "name": "仇",
+          "aliases": [
+            "文侯"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "穆侯太子仇率其徒袭殇叔而立，是为文侯。……三十五年，文侯仇卒，子昭侯伯立。"
+          ]
+        },
+        {
+          "id": "jin-chengshi",
+          "name": "成师",
+          "aliases": [
+            "曲沃桓叔",
+            "桓叔"
+          ],
+          "generation": 30,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "昭侯元年，封文侯弟成师于曲沃。……成师封曲沃，号为桓叔。"
+          ]
+        },
+        {
+          "id": "jin-bo",
+          "name": "伯",
+          "aliases": [
+            "昭侯"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十五年，文侯仇卒，子昭侯伯立。……晋大臣潘父弑其君昭侯而迎曲沃桓叔。"
+          ]
+        },
+        {
+          "id": "jin-shan",
+          "name": "鳝",
+          "aliases": [
+            "曲沃庄伯"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "孝侯八年，曲沃桓叔卒，子鳝代桓叔，是为曲沃庄伯。"
+          ]
+        },
+        {
+          "id": "jin-ping",
+          "name": "平",
+          "aliases": [
+            "孝侯"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "晋人共立昭侯子平为君，是为孝侯。……曲沃庄伯弑其君晋孝侯于翼。"
+          ]
+        },
+        {
+          "id": "jin-cheng",
+          "name": "称",
+          "aliases": [
+            "曲沃武公",
+            "晋武公"
+          ],
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "哀侯二年，曲沃庄伯卒，子称代庄伯立，是为曲沃武公。……曲沃武公已即位三十七年矣，更号曰晋武公。"
+          ]
+        },
+        {
+          "id": "jin-xi",
+          "name": "郄",
+          "aliases": [
+            "鄂侯"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "晋人复立孝侯子郄为君，是为鄂侯。鄂侯六年卒。"
+          ]
+        },
+        {
+          "id": "jin-guizhu",
+          "name": "诡诸",
+          "aliases": [
+            "献公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "子献公诡诸立。……献公子八人，而太子申生、重耳、夷吾皆有贤行。"
+          ]
+        },
+        {
+          "id": "jin-guang",
+          "name": "光",
+          "aliases": [
+            "哀侯"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "晋人共立鄂侯子光，是为哀侯。……陉廷与曲沃武公谋，九年，伐晋于汾旁，虏哀侯。"
+          ]
+        },
+        {
+          "id": "jin-min",
+          "name": "缗",
+          "aliases": [
+            "晋侯缗"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "乃立晋哀侯弟缗为晋侯。……曲沃武公伐晋侯缗，灭之。"
+          ]
+        },
+        {
+          "id": "jin-shensheng",
+          "name": "申生",
+          "aliases": [
+            "太子申生"
+          ],
+          "generation": 34,
+          "importance": "normal",
+          "bio": [
+            "太子申生，其母齐桓公女也，曰齐姜，早死。……十二月戊申，申生自杀于新城。"
+          ]
+        },
+        {
+          "id": "jin-chonger",
+          "name": "重耳",
+          "aliases": [
+            "文公",
+            "晋文公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "公子重耳居蒲……重耳遂奔翟。……壬寅，重耳入于晋师。丙午，入于曲沃。丁未，朝于武宫，即位为晋君，是为文公。"
+          ]
+        },
+        {
+          "id": "jin-yiwu",
+          "name": "夷吾",
+          "aliases": [
+            "惠公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "公子夷吾居屈。……夷吾立，是为惠公。"
+          ]
+        },
+        {
+          "id": "jin-xiqi",
+          "name": "傒齐",
+          "aliases": [
+            "奚齐"
+          ],
+          "generation": 34,
+          "importance": "normal",
+          "bio": [
+            "十二年，骊姬生傒齐。献公有意废太子……乃属傒齐于荀息。"
+          ]
+        },
+        {
+          "id": "jin-daoz",
+          "name": "悼子",
+          "aliases": [
+            "卓子"
+          ],
+          "generation": 34,
+          "importance": "normal",
+          "bio": [
+            "骊姬弟生悼子。……荀息立悼子。"
+          ]
+        },
+        {
+          "id": "jin-xiaozi",
+          "name": "小子",
+          "aliases": [
+            "小子侯"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "晋人乃立哀侯子小子为君，是为小子侯。……曲沃武公诱召晋小子杀之。"
+          ]
+        },
+        {
+          "id": "jin-yu",
+          "name": "圉",
+          "aliases": [
+            "怀公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "怀公圉奔高梁。戊申，使人杀怀公。"
+          ]
+        },
+        {
+          "id": "jin-huan",
+          "name": "欢",
+          "aliases": [
+            "襄公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "九年冬，晋文公卒，子襄公欢立。"
+          ]
+        },
+        {
+          "id": "jin-yigao",
+          "name": "夷皋",
+          "aliases": [
+            "灵公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "襄公卒，太子夷皋少……赵盾使赵穿迎襄公弟黑臀于周而立之。"
+          ]
+        },
+        {
+          "id": "jin-heitun",
+          "name": "黑臀",
+          "aliases": [
+            "成公"
+          ],
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "赵盾使赵穿迎襄公弟黑臀于周而立之，是为成公。成公者，文公少子，其母周女也。"
+          ]
+        },
+        {
+          "id": "jin-ju",
+          "name": "据",
+          "aliases": [
+            "景公"
+          ],
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "是年，成公卒，子景公据立。"
+          ]
+        },
+        {
+          "id": "jin-shouman",
+          "name": "寿曼",
+          "aliases": [
+            "厉公"
+          ],
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十九年夏，景公病，立其太子寿曼为君，是为厉公。"
+          ]
+        },
+        {
+          "id": "jin-jie",
+          "name": "捷",
+          "aliases": [
+            "桓叔"
+          ],
+          "generation": 36,
+          "importance": "normal",
+          "bio": [
+            "悼公周者，其大父捷，晋襄公少子也，不得立，号为桓叔。"
+          ]
+        },
+        {
+          "id": "jin-tan",
+          "name": "谈",
+          "aliases": [
+            "惠伯"
+          ],
+          "generation": 37,
+          "importance": "normal",
+          "bio": [
+            "桓叔生惠伯谈，谈生悼公周。"
+          ]
+        },
+        {
+          "id": "jin-zhou",
+          "name": "周",
+          "aliases": [
+            "悼公"
+          ],
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "智罃迎公子周来，至绛……而立之，是为悼公。……冬，悼公卒，子平公彪立。"
+          ]
+        },
+        {
+          "id": "jin-biao",
+          "name": "彪",
+          "aliases": [
+            "平公"
+          ],
+          "generation": 39,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "冬，悼公卒，子平公彪立。……二十六年，平公卒，子昭公夷立。"
+          ]
+        },
+        {
+          "id": "jin-yi",
+          "name": "夷",
+          "aliases": [
+            "昭公"
+          ],
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十六年，平公卒，子昭公夷立。昭公六年卒。……子顷公去疾立。"
+          ]
+        },
+        {
+          "id": "jin-quji",
+          "name": "去疾",
+          "aliases": [
+            "顷公"
+          ],
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "昭公六年卒……子顷公去疾立。……十四年，顷公卒，子定公午立。"
+          ]
+        },
+        {
+          "id": "jin-wu",
+          "name": "午",
+          "aliases": [
+            "定公"
+          ],
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十四年，顷公卒，子定公午立。……三十七年，定公卒，子出公凿立。"
+          ]
+        },
+        {
+          "id": "jin-zao",
+          "name": "凿",
+          "aliases": [
+            "出公"
+          ],
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "三十七年，定公卒，子出公凿立。……出公奔齐，道死。"
+          ]
+        },
+        {
+          "id": "jin-yong",
+          "name": "雍",
+          "aliases": [
+            "戴子"
+          ],
+          "generation": 41,
+          "importance": "normal",
+          "bio": [
+            "哀公大父雍，晋昭公少子也，号为戴子。"
+          ]
+        },
+        {
+          "id": "jin-ji2",
+          "name": "忌",
+          "generation": 42,
+          "importance": "normal",
+          "bio": [
+            "戴子生忌。忌善知伯，蚤死……乃立忌子骄为君。"
+          ]
+        },
+        {
+          "id": "jin-jiao",
+          "name": "骄",
+          "aliases": [
+            "哀公"
+          ],
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "知伯乃立昭公曾孙骄为晋君，是为哀公。……十八年，哀公卒，子幽公柳立。"
+          ]
+        },
+        {
+          "id": "jin-liu",
+          "name": "柳",
+          "aliases": [
+            "幽公"
+          ],
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十八年，哀公卒，子幽公柳立。……盗杀幽公。"
+          ]
+        },
+        {
+          "id": "jin-zhi",
+          "name": "止",
+          "aliases": [
+            "烈公"
+          ],
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "魏文侯以兵诛晋乱，立幽公子止，是为烈公。……二十七年，烈公卒，子孝公颀立。"
+          ]
+        },
+        {
+          "id": "jin-qi",
+          "name": "颀",
+          "aliases": [
+            "孝公"
+          ],
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "二十七年，烈公卒，子孝公颀立。……十七年，孝公卒，子静公俱酒立。"
+          ]
+        },
+        {
+          "id": "jin-jujiu",
+          "name": "俱酒",
+          "aliases": [
+            "静公"
+          ],
+          "generation": 47,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "十七年，孝公卒，子静公俱酒立。……静公二年，魏武侯、韩哀侯、赵敬侯灭晋后而三分其地。"
           ]
         }
       ],
@@ -2867,7 +7087,15 @@ window.LINEAGE_LIBRARY = {
           ],
           "children": [
             "wuwang",
-            "zhougong"
+            "zhougong",
+            "cai-shudu",
+            "cao-shuzhenduo",
+            "boyikao",
+            "guan-shuxian",
+            "cheng-shuwu",
+            "huo-shuchu",
+            "ran-jizai",
+            "wei-kangshu"
           ]
         },
         {
@@ -2876,7 +7104,8 @@ window.LINEAGE_LIBRARY = {
             "wuwang"
           ],
           "children": [
-            "chengwang"
+            "chengwang",
+            "jin-tangshu"
           ]
         },
         {
@@ -2949,7 +7178,8 @@ window.LINEAGE_LIBRARY = {
             "liwang"
           ],
           "children": [
-            "xuanwang"
+            "xuanwang",
+            "zheng-huangong"
           ]
         },
         {
@@ -3153,6 +7383,2208 @@ window.LINEAGE_LIBRARY = {
           ],
           "children": [
             "nanwang"
+          ]
+        },
+        {
+          "id": "u-qin-zhongyan",
+          "parents": [
+            "zhongyan"
+          ],
+          "children": [
+            "qin-zhongyu"
+          ]
+        },
+        {
+          "id": "u-qin-zhongyu",
+          "parents": [
+            "qin-zhongyu"
+          ],
+          "children": [
+            "qin-feilian"
+          ]
+        },
+        {
+          "id": "u-qin-feilian",
+          "parents": [
+            "qin-feilian"
+          ],
+          "children": [
+            "qin-elai",
+            "qin-jisheng"
+          ]
+        },
+        {
+          "id": "u-qin-elai",
+          "parents": [
+            "qin-elai"
+          ],
+          "children": [
+            "qin-nvfang"
+          ]
+        },
+        {
+          "id": "u-qin-jisheng",
+          "parents": [
+            "qin-jisheng"
+          ],
+          "children": [
+            "qin-mengzeng"
+          ]
+        },
+        {
+          "id": "u-qin-mengzeng",
+          "parents": [
+            "qin-mengzeng"
+          ],
+          "children": [
+            "qin-hengfu"
+          ]
+        },
+        {
+          "id": "u-qin-hengfu",
+          "parents": [
+            "qin-hengfu"
+          ],
+          "children": [
+            "qin-zaofu"
+          ]
+        },
+        {
+          "id": "u-qin-nvfang",
+          "parents": [
+            "qin-nvfang"
+          ],
+          "children": [
+            "qin-panggao"
+          ]
+        },
+        {
+          "id": "u-qin-panggao",
+          "parents": [
+            "qin-panggao"
+          ],
+          "children": [
+            "qin-taiji"
+          ]
+        },
+        {
+          "id": "u-qin-taiji",
+          "parents": [
+            "qin-taiji"
+          ],
+          "children": [
+            "qin-daluo"
+          ]
+        },
+        {
+          "id": "u-qin-daluo",
+          "parents": [
+            "qin-daluo"
+          ],
+          "children": [
+            "qin-feizi",
+            "qin-cheng"
+          ]
+        },
+        {
+          "id": "u-qin-feizi",
+          "parents": [
+            "qin-feizi"
+          ],
+          "children": [
+            "qin-hou"
+          ]
+        },
+        {
+          "id": "u-qin-hou",
+          "parents": [
+            "qin-hou"
+          ],
+          "children": [
+            "qin-gongbo"
+          ]
+        },
+        {
+          "id": "u-qin-gongbo",
+          "parents": [
+            "qin-gongbo"
+          ],
+          "children": [
+            "qin-zhong"
+          ]
+        },
+        {
+          "id": "u-qin-zhong",
+          "parents": [
+            "qin-zhong"
+          ],
+          "children": [
+            "qin-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-qin-zhuanggong",
+          "parents": [
+            "qin-zhuanggong"
+          ],
+          "children": [
+            "qin-shifu",
+            "qin-xianggong"
+          ]
+        },
+        {
+          "id": "u-qin-xianggong",
+          "parents": [
+            "qin-xianggong"
+          ],
+          "children": [
+            "qin-wengong"
+          ]
+        },
+        {
+          "id": "u-qin-wengong",
+          "parents": [
+            "qin-wengong"
+          ],
+          "children": [
+            "qin-jinggong"
+          ]
+        },
+        {
+          "id": "u-qin-jinggong",
+          "parents": [
+            "qin-jinggong"
+          ],
+          "children": [
+            "qin-ninggong"
+          ]
+        },
+        {
+          "id": "u-qin-ninggong",
+          "parents": [
+            "qin-ninggong"
+          ],
+          "children": [
+            "qin-wugong",
+            "qin-degong",
+            "qin-chuzi"
+          ]
+        },
+        {
+          "id": "u-qin-degong",
+          "parents": [
+            "qin-degong"
+          ],
+          "children": [
+            "qin-xuangong",
+            "qin-chenggong",
+            "qin-mugong"
+          ]
+        },
+        {
+          "id": "u-qin-mugong",
+          "parents": [
+            "qin-mugong"
+          ],
+          "children": [
+            "qin-kanggong"
+          ]
+        },
+        {
+          "id": "u-qin-kanggong",
+          "parents": [
+            "qin-kanggong"
+          ],
+          "children": [
+            "qin-gonggong"
+          ]
+        },
+        {
+          "id": "u-qin-gonggong",
+          "parents": [
+            "qin-gonggong"
+          ],
+          "children": [
+            "qin-huangong"
+          ]
+        },
+        {
+          "id": "u-qin-huangong",
+          "parents": [
+            "qin-huangong"
+          ],
+          "children": [
+            "qin-jinggong2"
+          ]
+        },
+        {
+          "id": "u-qin-jinggong2",
+          "parents": [
+            "qin-jinggong2"
+          ],
+          "children": [
+            "qin-aigong"
+          ]
+        },
+        {
+          "id": "u-qin-aigong",
+          "parents": [
+            "qin-aigong"
+          ],
+          "children": [
+            "qin-yigong"
+          ]
+        },
+        {
+          "id": "u-qin-yigong",
+          "parents": [
+            "qin-yigong"
+          ],
+          "children": [
+            "qin-huigong"
+          ]
+        },
+        {
+          "id": "u-qin-huigong",
+          "parents": [
+            "qin-huigong"
+          ],
+          "children": [
+            "qin-daogong"
+          ]
+        },
+        {
+          "id": "u-qin-daogong",
+          "parents": [
+            "qin-daogong"
+          ],
+          "children": [
+            "qin-ligonggong"
+          ]
+        },
+        {
+          "id": "u-qin-ligonggong",
+          "parents": [
+            "qin-ligonggong"
+          ],
+          "children": [
+            "qin-zaogong",
+            "qin-huaigong"
+          ]
+        },
+        {
+          "id": "u-qin-huaigong",
+          "parents": [
+            "qin-huaigong"
+          ],
+          "children": [
+            "qin-zhaozi",
+            "qin-jiangong"
+          ]
+        },
+        {
+          "id": "u-qin-zhaozi",
+          "parents": [
+            "qin-zhaozi"
+          ],
+          "children": [
+            "qin-linggong"
+          ]
+        },
+        {
+          "id": "u-qin-linggong",
+          "parents": [
+            "qin-linggong"
+          ],
+          "children": [
+            "qin-xiangong"
+          ]
+        },
+        {
+          "id": "u-qin-jiangong",
+          "parents": [
+            "qin-jiangong"
+          ],
+          "children": [
+            "qin-huigong2"
+          ]
+        },
+        {
+          "id": "u-qin-huigong2",
+          "parents": [
+            "qin-huigong2"
+          ],
+          "children": [
+            "qin-chuzi2"
+          ]
+        },
+        {
+          "id": "u-qin-xiangong",
+          "parents": [
+            "qin-xiangong"
+          ],
+          "children": [
+            "qin-xiaogong"
+          ]
+        },
+        {
+          "id": "u-qin-xiaogong",
+          "parents": [
+            "qin-xiaogong"
+          ],
+          "children": [
+            "qin-huiwenjun"
+          ]
+        },
+        {
+          "id": "u-qin-huiwenjun",
+          "parents": [
+            "qin-huiwenjun"
+          ],
+          "children": [
+            "qin-wuwang",
+            "qin-zhaoxiangwang"
+          ]
+        },
+        {
+          "id": "u-qin-zhaoxiangwang",
+          "parents": [
+            "qin-zhaoxiangwang"
+          ],
+          "children": [
+            "qin-xiaowenwang"
+          ]
+        },
+        {
+          "id": "u-qin-xiaowenwang",
+          "parents": [
+            "qin-xiaowenwang"
+          ],
+          "children": [
+            "qin-zhuangxiangwang"
+          ]
+        },
+        {
+          "id": "u-qin-zhuangxiangwang",
+          "parents": [
+            "qin-zhuangxiangwang"
+          ],
+          "children": [
+            "qin-shihuang",
+            "qin-chengjiao"
+          ]
+        },
+        {
+          "id": "u-qin-shihuang",
+          "parents": [
+            "qin-shihuang"
+          ],
+          "children": [
+            "qin-fusu",
+            "qin-jianglv",
+            "qin-ershi"
+          ]
+        },
+        {
+          "id": "u-qin-ziying",
+          "parents": [
+            "qin-shihuang"
+          ],
+          "children": [
+            "qin-ziying"
+          ],
+          "label": "二世之兄子"
+        },
+        {
+          "id": "u-yuzhong",
+          "parents": [
+            "yuzhong"
+          ],
+          "children": [
+            "wu-jijian"
+          ]
+        },
+        {
+          "id": "u-wu-jijian",
+          "parents": [
+            "wu-jijian"
+          ],
+          "children": [
+            "wu-shuda"
+          ]
+        },
+        {
+          "id": "u-wu-shuda",
+          "parents": [
+            "wu-shuda"
+          ],
+          "children": [
+            "wu-zhouzhang"
+          ]
+        },
+        {
+          "id": "u-wu-zhouzhang",
+          "parents": [
+            "wu-zhouzhang"
+          ],
+          "children": [
+            "wu-xiongsui"
+          ]
+        },
+        {
+          "id": "u-wu-xiongsui",
+          "parents": [
+            "wu-xiongsui"
+          ],
+          "children": [
+            "wu-kexiang"
+          ]
+        },
+        {
+          "id": "u-wu-kexiang",
+          "parents": [
+            "wu-kexiang"
+          ],
+          "children": [
+            "wu-qiangjiuyi"
+          ]
+        },
+        {
+          "id": "u-wu-qiangjiuyi",
+          "parents": [
+            "wu-qiangjiuyi"
+          ],
+          "children": [
+            "wu-yuqiaoyiwu"
+          ]
+        },
+        {
+          "id": "u-wu-yuqiaoyiwu",
+          "parents": [
+            "wu-yuqiaoyiwu"
+          ],
+          "children": [
+            "wu-kelu"
+          ]
+        },
+        {
+          "id": "u-wu-kelu",
+          "parents": [
+            "wu-kelu"
+          ],
+          "children": [
+            "wu-zhouyao"
+          ]
+        },
+        {
+          "id": "u-wu-zhouyao",
+          "parents": [
+            "wu-zhouyao"
+          ],
+          "children": [
+            "wu-quyu"
+          ]
+        },
+        {
+          "id": "u-wu-quyu",
+          "parents": [
+            "wu-quyu"
+          ],
+          "children": [
+            "wu-yiwu"
+          ]
+        },
+        {
+          "id": "u-wu-yiwu",
+          "parents": [
+            "wu-yiwu"
+          ],
+          "children": [
+            "wu-qinchu"
+          ]
+        },
+        {
+          "id": "u-wu-qinchu",
+          "parents": [
+            "wu-qinchu"
+          ],
+          "children": [
+            "wu-zhuan"
+          ]
+        },
+        {
+          "id": "u-wu-zhuan",
+          "parents": [
+            "wu-zhuan"
+          ],
+          "children": [
+            "wu-pogao"
+          ]
+        },
+        {
+          "id": "u-wu-pogao",
+          "parents": [
+            "wu-pogao"
+          ],
+          "children": [
+            "wu-jubei"
+          ]
+        },
+        {
+          "id": "u-wu-jubei",
+          "parents": [
+            "wu-jubei"
+          ],
+          "children": [
+            "wu-quqi"
+          ]
+        },
+        {
+          "id": "u-wu-quqi",
+          "parents": [
+            "wu-quqi"
+          ],
+          "children": [
+            "wu-shoumeng"
+          ]
+        },
+        {
+          "id": "u-wu-shoumeng",
+          "parents": [
+            "wu-shoumeng"
+          ],
+          "children": [
+            "wu-zhufan",
+            "wu-yuji",
+            "wu-yumo",
+            "wu-jizha"
+          ]
+        },
+        {
+          "id": "u-wu-yumo",
+          "parents": [
+            "wu-yumo"
+          ],
+          "children": [
+            "wu-liao"
+          ]
+        },
+        {
+          "id": "u-wu-zhufan",
+          "parents": [
+            "wu-zhufan"
+          ],
+          "children": [
+            "wu-guang"
+          ]
+        },
+        {
+          "id": "u-wu-guang",
+          "parents": [
+            "wu-guang"
+          ],
+          "children": [
+            "wu-fuchai"
+          ]
+        },
+        {
+          "id": "u-zhougong",
+          "parents": [
+            "zhougong"
+          ],
+          "children": [
+            "lu-boqin"
+          ]
+        },
+        {
+          "id": "u-lu-boqin",
+          "parents": [
+            "lu-boqin"
+          ],
+          "children": [
+            "lu-kaogong",
+            "lu-yanggong"
+          ]
+        },
+        {
+          "id": "u-lu-yanggong",
+          "parents": [
+            "lu-yanggong"
+          ],
+          "children": [
+            "lu-yougong",
+            "lu-weigong"
+          ]
+        },
+        {
+          "id": "u-lu-weigong",
+          "parents": [
+            "lu-weigong"
+          ],
+          "children": [
+            "lu-ligong",
+            "lu-xiangong"
+          ]
+        },
+        {
+          "id": "u-lu-xiangong",
+          "parents": [
+            "lu-xiangong"
+          ],
+          "children": [
+            "lu-zhengong",
+            "lu-wugong"
+          ]
+        },
+        {
+          "id": "u-lu-wugong",
+          "parents": [
+            "lu-wugong"
+          ],
+          "children": [
+            "lu-kuo",
+            "lu-yigong",
+            "lu-xiaogong"
+          ]
+        },
+        {
+          "id": "u-lu-kuo",
+          "parents": [
+            "lu-kuo"
+          ],
+          "children": [
+            "lu-boyu"
+          ]
+        },
+        {
+          "id": "u-lu-xiaogong",
+          "parents": [
+            "lu-xiaogong"
+          ],
+          "children": [
+            "lu-huigong"
+          ]
+        },
+        {
+          "id": "u-lu-huigong",
+          "parents": [
+            "lu-huigong"
+          ],
+          "children": [
+            "lu-yingong",
+            "lu-huangong"
+          ]
+        },
+        {
+          "id": "u-lu-huangong",
+          "parents": [
+            "lu-huangong"
+          ],
+          "children": [
+            "lu-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-lu-zhuanggong",
+          "parents": [
+            "lu-zhuanggong"
+          ],
+          "children": [
+            "lu-mingong",
+            "lu-xigong"
+          ]
+        },
+        {
+          "id": "u-lu-xigong",
+          "parents": [
+            "lu-xigong"
+          ],
+          "children": [
+            "lu-wengong"
+          ]
+        },
+        {
+          "id": "u-lu-wengong",
+          "parents": [
+            "lu-wengong"
+          ],
+          "children": [
+            "lu-xuangong"
+          ]
+        },
+        {
+          "id": "u-lu-xuangong",
+          "parents": [
+            "lu-xuangong"
+          ],
+          "children": [
+            "lu-chenggong"
+          ]
+        },
+        {
+          "id": "u-lu-chenggong",
+          "parents": [
+            "lu-chenggong"
+          ],
+          "children": [
+            "lu-xianggong"
+          ]
+        },
+        {
+          "id": "u-lu-xianggong",
+          "parents": [
+            "lu-xianggong"
+          ],
+          "children": [
+            "lu-zhaogong",
+            "lu-dinggong"
+          ]
+        },
+        {
+          "id": "u-lu-dinggong",
+          "parents": [
+            "lu-dinggong"
+          ],
+          "children": [
+            "lu-aigong"
+          ]
+        },
+        {
+          "id": "u-lu-aigong",
+          "parents": [
+            "lu-aigong"
+          ],
+          "children": [
+            "lu-daogong"
+          ]
+        },
+        {
+          "id": "u-lu-daogong",
+          "parents": [
+            "lu-daogong"
+          ],
+          "children": [
+            "lu-yuangong"
+          ]
+        },
+        {
+          "id": "u-lu-yuangong",
+          "parents": [
+            "lu-yuangong"
+          ],
+          "children": [
+            "lu-mugong"
+          ]
+        },
+        {
+          "id": "u-lu-mugong",
+          "parents": [
+            "lu-mugong"
+          ],
+          "children": [
+            "lu-gonggong"
+          ]
+        },
+        {
+          "id": "u-lu-gonggong",
+          "parents": [
+            "lu-gonggong"
+          ],
+          "children": [
+            "lu-kanggong"
+          ]
+        },
+        {
+          "id": "u-lu-kanggong",
+          "parents": [
+            "lu-kanggong"
+          ],
+          "children": [
+            "lu-jinggong"
+          ]
+        },
+        {
+          "id": "u-lu-jinggong",
+          "parents": [
+            "lu-jinggong"
+          ],
+          "children": [
+            "lu-pinggong"
+          ]
+        },
+        {
+          "id": "u-lu-pinggong",
+          "parents": [
+            "lu-pinggong"
+          ],
+          "children": [
+            "lu-wengong2"
+          ]
+        },
+        {
+          "id": "u-lu-wengong2",
+          "parents": [
+            "lu-wengong2"
+          ],
+          "children": [
+            "lu-qinggong"
+          ]
+        },
+        {
+          "id": "u-cai-shudu",
+          "parents": [
+            "cai-shudu"
+          ],
+          "children": [
+            "cai-zhonghu"
+          ]
+        },
+        {
+          "id": "u-cai-zhonghu",
+          "parents": [
+            "cai-zhonghu"
+          ],
+          "children": [
+            "cai-bohuang"
+          ]
+        },
+        {
+          "id": "u-cai-bohuang",
+          "parents": [
+            "cai-bohuang"
+          ],
+          "children": [
+            "cai-gonghou"
+          ]
+        },
+        {
+          "id": "u-cai-gonghou",
+          "parents": [
+            "cai-gonghou"
+          ],
+          "children": [
+            "cai-lihou"
+          ]
+        },
+        {
+          "id": "u-cai-lihou",
+          "parents": [
+            "cai-lihou"
+          ],
+          "children": [
+            "cai-wuhou"
+          ]
+        },
+        {
+          "id": "u-cai-wuhou",
+          "parents": [
+            "cai-wuhou"
+          ],
+          "children": [
+            "cai-yihou"
+          ]
+        },
+        {
+          "id": "u-cai-yihou",
+          "parents": [
+            "cai-yihou"
+          ],
+          "children": [
+            "cai-lihousuoshi"
+          ]
+        },
+        {
+          "id": "u-cai-lihousuoshi",
+          "parents": [
+            "cai-lihousuoshi"
+          ],
+          "children": [
+            "cai-gonghouxing"
+          ]
+        },
+        {
+          "id": "u-cai-gonghouxing",
+          "parents": [
+            "cai-gonghouxing"
+          ],
+          "children": [
+            "cai-daihou"
+          ]
+        },
+        {
+          "id": "u-cai-daihou",
+          "parents": [
+            "cai-daihou"
+          ],
+          "children": [
+            "cai-xuanhou"
+          ]
+        },
+        {
+          "id": "u-cai-xuanhou",
+          "parents": [
+            "cai-xuanhou"
+          ],
+          "children": [
+            "cai-huanhou",
+            "cai-aihou"
+          ]
+        },
+        {
+          "id": "u-cai-aihou",
+          "parents": [
+            "cai-aihou"
+          ],
+          "children": [
+            "cai-muhou"
+          ]
+        },
+        {
+          "id": "u-cai-muhou",
+          "parents": [
+            "cai-muhou"
+          ],
+          "children": [
+            "cai-zhuanghou"
+          ]
+        },
+        {
+          "id": "u-cai-zhuanghou",
+          "parents": [
+            "cai-zhuanghou"
+          ],
+          "children": [
+            "cai-wenhou"
+          ]
+        },
+        {
+          "id": "u-cai-wenhou",
+          "parents": [
+            "cai-wenhou"
+          ],
+          "children": [
+            "cai-jinghou"
+          ]
+        },
+        {
+          "id": "u-cai-jinghou",
+          "parents": [
+            "cai-jinghou"
+          ],
+          "children": [
+            "cai-linghou",
+            "cai-pinghou"
+          ]
+        },
+        {
+          "id": "u-cai-linghou",
+          "parents": [
+            "cai-linghou"
+          ],
+          "children": [
+            "cai-yintai"
+          ]
+        },
+        {
+          "id": "u-cai-yintai",
+          "parents": [
+            "cai-yintai"
+          ],
+          "children": [
+            "cai-daohou",
+            "cai-zhaohou"
+          ]
+        },
+        {
+          "id": "u-cai-zhaohou",
+          "parents": [
+            "cai-zhaohou"
+          ],
+          "children": [
+            "cai-chenghou"
+          ]
+        },
+        {
+          "id": "u-cai-chenghou",
+          "parents": [
+            "cai-chenghou"
+          ],
+          "children": [
+            "cai-shenghou"
+          ]
+        },
+        {
+          "id": "u-cai-shenghou",
+          "parents": [
+            "cai-shenghou"
+          ],
+          "children": [
+            "cai-yuanhou"
+          ]
+        },
+        {
+          "id": "u-cai-yuanhou",
+          "parents": [
+            "cai-yuanhou"
+          ],
+          "children": [
+            "cai-houqi"
+          ]
+        },
+        {
+          "id": "u-cao-shuzhenduo",
+          "parents": [
+            "cao-shuzhenduo"
+          ],
+          "children": [
+            "cao-taibo"
+          ]
+        },
+        {
+          "id": "u-cao-taibo",
+          "parents": [
+            "cao-taibo"
+          ],
+          "children": [
+            "cao-zhongjun"
+          ]
+        },
+        {
+          "id": "u-cao-zhongjun",
+          "parents": [
+            "cao-zhongjun"
+          ],
+          "children": [
+            "cao-gongbo"
+          ]
+        },
+        {
+          "id": "u-cao-gongbo",
+          "parents": [
+            "cao-gongbo"
+          ],
+          "children": [
+            "cao-xiaobo"
+          ]
+        },
+        {
+          "id": "u-cao-xiaobo",
+          "parents": [
+            "cao-xiaobo"
+          ],
+          "children": [
+            "cao-yibo"
+          ]
+        },
+        {
+          "id": "u-cao-yibo",
+          "parents": [
+            "cao-yibo"
+          ],
+          "children": [
+            "cao-youbo",
+            "cao-daibo"
+          ]
+        },
+        {
+          "id": "u-cao-daibo",
+          "parents": [
+            "cao-daibo"
+          ],
+          "children": [
+            "cao-huibo"
+          ]
+        },
+        {
+          "id": "u-cao-huibo",
+          "parents": [
+            "cao-huibo"
+          ],
+          "children": [
+            "cao-shifu",
+            "cao-mugong"
+          ]
+        },
+        {
+          "id": "u-cao-mugong",
+          "parents": [
+            "cao-mugong"
+          ],
+          "children": [
+            "cao-huangong"
+          ]
+        },
+        {
+          "id": "u-cao-huangong",
+          "parents": [
+            "cao-huangong"
+          ],
+          "children": [
+            "cao-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-cao-zhuanggong",
+          "parents": [
+            "cao-zhuanggong"
+          ],
+          "children": [
+            "cao-ligong"
+          ]
+        },
+        {
+          "id": "u-cao-ligong",
+          "parents": [
+            "cao-ligong"
+          ],
+          "children": [
+            "cao-zhaogong"
+          ]
+        },
+        {
+          "id": "u-cao-zhaogong",
+          "parents": [
+            "cao-zhaogong"
+          ],
+          "children": [
+            "cao-gonggong"
+          ]
+        },
+        {
+          "id": "u-cao-gonggong",
+          "parents": [
+            "cao-gonggong"
+          ],
+          "children": [
+            "cao-wengong"
+          ]
+        },
+        {
+          "id": "u-cao-wengong",
+          "parents": [
+            "cao-wengong"
+          ],
+          "children": [
+            "cao-xuangong",
+            "cao-chenggong"
+          ]
+        },
+        {
+          "id": "u-cao-chenggong",
+          "parents": [
+            "cao-chenggong"
+          ],
+          "children": [
+            "cao-wugong"
+          ]
+        },
+        {
+          "id": "u-cao-wugong",
+          "parents": [
+            "cao-wugong"
+          ],
+          "children": [
+            "cao-pinggong",
+            "cao-yingong"
+          ]
+        },
+        {
+          "id": "u-cao-pinggong",
+          "parents": [
+            "cao-pinggong"
+          ],
+          "children": [
+            "cao-daogong",
+            "cao-shenggong",
+            "cao-jinggong"
+          ]
+        },
+        {
+          "id": "u-cao-jinggong",
+          "parents": [
+            "cao-jinggong"
+          ],
+          "children": [
+            "cao-boyang"
+          ]
+        },
+        {
+          "id": "u-wei-kangshu",
+          "parents": [
+            "wei-kangshu"
+          ],
+          "children": [
+            "wei-kangbo"
+          ]
+        },
+        {
+          "id": "u-wei-kangbo",
+          "parents": [
+            "wei-kangbo"
+          ],
+          "children": [
+            "wei-kaobo"
+          ]
+        },
+        {
+          "id": "u-wei-kaobo",
+          "parents": [
+            "wei-kaobo"
+          ],
+          "children": [
+            "wei-sibo"
+          ]
+        },
+        {
+          "id": "u-wei-sibo",
+          "parents": [
+            "wei-sibo"
+          ],
+          "children": [
+            "wei-wenbo"
+          ]
+        },
+        {
+          "id": "u-wei-wenbo",
+          "parents": [
+            "wei-wenbo"
+          ],
+          "children": [
+            "wei-jingbo"
+          ]
+        },
+        {
+          "id": "u-wei-jingbo",
+          "parents": [
+            "wei-jingbo"
+          ],
+          "children": [
+            "wei-zhenbo"
+          ]
+        },
+        {
+          "id": "u-wei-zhenbo",
+          "parents": [
+            "wei-zhenbo"
+          ],
+          "children": [
+            "wei-qinghou"
+          ]
+        },
+        {
+          "id": "u-wei-qinghou",
+          "parents": [
+            "wei-qinghou"
+          ],
+          "children": [
+            "wei-lihou"
+          ]
+        },
+        {
+          "id": "u-wei-lihou",
+          "parents": [
+            "wei-lihou"
+          ],
+          "children": [
+            "wei-gongboyu",
+            "wei-wugong"
+          ]
+        },
+        {
+          "id": "u-wei-wugong",
+          "parents": [
+            "wei-wugong"
+          ],
+          "children": [
+            "wei-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-wei-zhuanggong",
+          "parents": [
+            "wei-zhuanggong"
+          ],
+          "children": [
+            "wei-huangong",
+            "wei-zhouxu",
+            "wei-xuangong"
+          ]
+        },
+        {
+          "id": "u-wei-xuangong",
+          "parents": [
+            "wei-xuangong"
+          ],
+          "children": [
+            "wei-huigong",
+            "wei-qianmou",
+            "wei-zhaobo"
+          ]
+        },
+        {
+          "id": "u-wei-huigong",
+          "parents": [
+            "wei-huigong"
+          ],
+          "children": [
+            "wei-yigong"
+          ]
+        },
+        {
+          "id": "u-wei-zhaobo",
+          "parents": [
+            "wei-zhaobo"
+          ],
+          "children": [
+            "wei-daigong",
+            "wei-wengong"
+          ]
+        },
+        {
+          "id": "u-wei-wengong",
+          "parents": [
+            "wei-wengong"
+          ],
+          "children": [
+            "wei-chenggong"
+          ]
+        },
+        {
+          "id": "u-wei-chenggong",
+          "parents": [
+            "wei-chenggong"
+          ],
+          "children": [
+            "wei-mugong"
+          ]
+        },
+        {
+          "id": "u-wei-mugong",
+          "parents": [
+            "wei-mugong"
+          ],
+          "children": [
+            "wei-dinggong",
+            "wei-shanggong"
+          ]
+        },
+        {
+          "id": "u-wei-dinggong",
+          "parents": [
+            "wei-dinggong"
+          ],
+          "children": [
+            "wei-xiangong"
+          ]
+        },
+        {
+          "id": "u-wei-xiangong",
+          "parents": [
+            "wei-xiangong"
+          ],
+          "children": [
+            "wei-xianggong2"
+          ]
+        },
+        {
+          "id": "u-wei-xianggong2",
+          "parents": [
+            "wei-xianggong2"
+          ],
+          "children": [
+            "wei-linggong"
+          ]
+        },
+        {
+          "id": "u-wei-linggong",
+          "parents": [
+            "wei-linggong"
+          ],
+          "children": [
+            "wei-chugong",
+            "wei-zhuanggong2",
+            "wei-daogong"
+          ]
+        },
+        {
+          "id": "u-wei-daogong",
+          "parents": [
+            "wei-daogong"
+          ],
+          "children": [
+            "wei-jinggong"
+          ]
+        },
+        {
+          "id": "u-wei-jinggong",
+          "parents": [
+            "wei-jinggong"
+          ],
+          "children": [
+            "wei-zhaogong"
+          ]
+        },
+        {
+          "id": "u-wei-zhaogong",
+          "parents": [
+            "wei-zhaogong"
+          ],
+          "children": [
+            "wei-shengong"
+          ]
+        },
+        {
+          "id": "u-wei-shengong",
+          "parents": [
+            "wei-shengong"
+          ],
+          "children": [
+            "wei-shenggong"
+          ]
+        },
+        {
+          "id": "u-wei-shenggong",
+          "parents": [
+            "wei-shenggong"
+          ],
+          "children": [
+            "wei-chenghou"
+          ]
+        },
+        {
+          "id": "u-wei-chenghou",
+          "parents": [
+            "wei-chenghou"
+          ],
+          "children": [
+            "wei-pinghou"
+          ]
+        },
+        {
+          "id": "u-wei-pinghou",
+          "parents": [
+            "wei-pinghou"
+          ],
+          "children": [
+            "wei-sijun"
+          ]
+        },
+        {
+          "id": "u-wei-sijun",
+          "parents": [
+            "wei-sijun"
+          ],
+          "children": [
+            "wei-huaijun",
+            "wei-yuanjun"
+          ]
+        },
+        {
+          "id": "u-wei-yuanjun",
+          "parents": [
+            "wei-yuanjun"
+          ],
+          "children": [
+            "wei-junjiao"
+          ]
+        },
+        {
+          "id": "u-yi",
+          "parents": [
+            "yi"
+          ],
+          "children": [
+            "weiziqi",
+            "song-weizhong"
+          ]
+        },
+        {
+          "id": "u-song-weizhong",
+          "parents": [
+            "song-weizhong"
+          ],
+          "children": [
+            "song-gongji"
+          ]
+        },
+        {
+          "id": "u-song-gongji",
+          "parents": [
+            "song-gongji"
+          ],
+          "children": [
+            "song-dinggong"
+          ]
+        },
+        {
+          "id": "u-song-dinggong",
+          "parents": [
+            "song-dinggong"
+          ],
+          "children": [
+            "song-mingong",
+            "song-yanggong"
+          ]
+        },
+        {
+          "id": "u-song-mingong",
+          "parents": [
+            "song-mingong"
+          ],
+          "children": [
+            "song-ligong"
+          ]
+        },
+        {
+          "id": "u-song-ligong",
+          "parents": [
+            "song-ligong"
+          ],
+          "children": [
+            "song-xigong"
+          ]
+        },
+        {
+          "id": "u-song-xigong",
+          "parents": [
+            "song-xigong"
+          ],
+          "children": [
+            "song-huigong"
+          ]
+        },
+        {
+          "id": "u-song-huigong",
+          "parents": [
+            "song-huigong"
+          ],
+          "children": [
+            "song-aigong"
+          ]
+        },
+        {
+          "id": "u-song-aigong",
+          "parents": [
+            "song-aigong"
+          ],
+          "children": [
+            "song-daigong"
+          ]
+        },
+        {
+          "id": "u-song-daigong",
+          "parents": [
+            "song-daigong"
+          ],
+          "children": [
+            "song-wugong"
+          ]
+        },
+        {
+          "id": "u-song-wugong",
+          "parents": [
+            "song-wugong"
+          ],
+          "children": [
+            "song-xuangong",
+            "song-mugong"
+          ]
+        },
+        {
+          "id": "u-song-xuangong",
+          "parents": [
+            "song-xuangong"
+          ],
+          "children": [
+            "song-shanggong"
+          ]
+        },
+        {
+          "id": "u-song-mugong",
+          "parents": [
+            "song-mugong"
+          ],
+          "children": [
+            "song-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-song-zhuanggong",
+          "parents": [
+            "song-zhuanggong"
+          ],
+          "children": [
+            "song-mingong2",
+            "song-huangong"
+          ]
+        },
+        {
+          "id": "u-song-huangong",
+          "parents": [
+            "song-huangong"
+          ],
+          "children": [
+            "song-xianggong"
+          ]
+        },
+        {
+          "id": "u-song-xianggong",
+          "parents": [
+            "song-xianggong"
+          ],
+          "children": [
+            "song-chenggong"
+          ]
+        },
+        {
+          "id": "u-song-chenggong",
+          "parents": [
+            "song-chenggong"
+          ],
+          "children": [
+            "song-zhaogong",
+            "song-wengong"
+          ]
+        },
+        {
+          "id": "u-song-wengong",
+          "parents": [
+            "song-wengong"
+          ],
+          "children": [
+            "song-gonggong"
+          ]
+        },
+        {
+          "id": "u-song-gonggong",
+          "parents": [
+            "song-gonggong"
+          ],
+          "children": [
+            "song-pinggong"
+          ]
+        },
+        {
+          "id": "u-song-pinggong",
+          "parents": [
+            "song-pinggong"
+          ],
+          "children": [
+            "song-yuangong"
+          ]
+        },
+        {
+          "id": "u-song-yuangong",
+          "parents": [
+            "song-yuangong"
+          ],
+          "children": [
+            "song-jinggong",
+            "song-zhaogong2"
+          ]
+        },
+        {
+          "id": "u-song-zhaogong2",
+          "parents": [
+            "song-zhaogong2"
+          ],
+          "children": [
+            "song-daogong"
+          ]
+        },
+        {
+          "id": "u-song-daogong",
+          "parents": [
+            "song-daogong"
+          ],
+          "children": [
+            "song-xiugong"
+          ]
+        },
+        {
+          "id": "u-song-xiugong",
+          "parents": [
+            "song-xiugong"
+          ],
+          "children": [
+            "song-bigong"
+          ]
+        },
+        {
+          "id": "u-song-bigong",
+          "parents": [
+            "song-bigong"
+          ],
+          "children": [
+            "song-ticheng",
+            "song-yan"
+          ]
+        },
+        {
+          "id": "u-zheng-huangong",
+          "parents": [
+            "zheng-huangong"
+          ],
+          "children": [
+            "zheng-wugong"
+          ]
+        },
+        {
+          "id": "u-zheng-wugong",
+          "parents": [
+            "zheng-wugong"
+          ],
+          "children": [
+            "zheng-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-zheng-zhuanggong",
+          "parents": [
+            "zheng-zhuanggong"
+          ],
+          "children": [
+            "zheng-zhaogong",
+            "zheng-ligong",
+            "zheng-zimei",
+            "zheng-ziying"
+          ]
+        },
+        {
+          "id": "u-zheng-ligong",
+          "parents": [
+            "zheng-ligong"
+          ],
+          "children": [
+            "zheng-wengong"
+          ]
+        },
+        {
+          "id": "u-zheng-wengong",
+          "parents": [
+            "zheng-wengong"
+          ],
+          "children": [
+            "zheng-mugong"
+          ]
+        },
+        {
+          "id": "u-zheng-mugong",
+          "parents": [
+            "zheng-mugong"
+          ],
+          "children": [
+            "zheng-linggong",
+            "zheng-xianggong"
+          ]
+        },
+        {
+          "id": "u-zheng-xianggong",
+          "parents": [
+            "zheng-xianggong"
+          ],
+          "children": [
+            "zheng-daogong",
+            "zheng-chenggong"
+          ]
+        },
+        {
+          "id": "u-zheng-chenggong",
+          "parents": [
+            "zheng-chenggong"
+          ],
+          "children": [
+            "zheng-xigong"
+          ]
+        },
+        {
+          "id": "u-zheng-xigong",
+          "parents": [
+            "zheng-xigong"
+          ],
+          "children": [
+            "zheng-jiangong"
+          ]
+        },
+        {
+          "id": "u-zheng-jiangong",
+          "parents": [
+            "zheng-jiangong"
+          ],
+          "children": [
+            "zheng-dinggong"
+          ]
+        },
+        {
+          "id": "u-zheng-dinggong",
+          "parents": [
+            "zheng-dinggong"
+          ],
+          "children": [
+            "zheng-xiangong"
+          ]
+        },
+        {
+          "id": "u-zheng-xiangong",
+          "parents": [
+            "zheng-xiangong"
+          ],
+          "children": [
+            "zheng-shenggong",
+            "zheng-gonggong"
+          ]
+        },
+        {
+          "id": "u-zheng-shenggong",
+          "parents": [
+            "zheng-shenggong"
+          ],
+          "children": [
+            "zheng-aigong"
+          ]
+        },
+        {
+          "id": "u-zheng-gonggong",
+          "parents": [
+            "zheng-gonggong"
+          ],
+          "children": [
+            "zheng-yougong",
+            "zheng-xugong",
+            "zheng-junyi"
+          ]
+        },
+        {
+          "id": "u-jin-tangshu",
+          "parents": [
+            "jin-tangshu"
+          ],
+          "children": [
+            "jin-xie"
+          ]
+        },
+        {
+          "id": "u-jin-xie",
+          "parents": [
+            "jin-xie"
+          ],
+          "children": [
+            "jin-ningzu"
+          ]
+        },
+        {
+          "id": "u-jin-ningzu",
+          "parents": [
+            "jin-ningzu"
+          ],
+          "children": [
+            "jin-furen"
+          ]
+        },
+        {
+          "id": "u-jin-furen",
+          "parents": [
+            "jin-furen"
+          ],
+          "children": [
+            "jin-fu"
+          ]
+        },
+        {
+          "id": "u-jin-fu",
+          "parents": [
+            "jin-fu"
+          ],
+          "children": [
+            "jin-yijiu"
+          ]
+        },
+        {
+          "id": "u-jin-yijiu",
+          "parents": [
+            "jin-yijiu"
+          ],
+          "children": [
+            "jin-situ"
+          ]
+        },
+        {
+          "id": "u-jin-situ",
+          "parents": [
+            "jin-situ"
+          ],
+          "children": [
+            "jin-ji"
+          ]
+        },
+        {
+          "id": "u-jin-ji",
+          "parents": [
+            "jin-ji"
+          ],
+          "children": [
+            "jin-feiwang"
+          ]
+        },
+        {
+          "id": "u-jin-feiwang",
+          "parents": [
+            "jin-feiwang"
+          ],
+          "children": [
+            "jin-chou",
+            "jin-chengshi"
+          ]
+        },
+        {
+          "id": "u-jin-chou",
+          "parents": [
+            "jin-chou"
+          ],
+          "children": [
+            "jin-bo"
+          ]
+        },
+        {
+          "id": "u-jin-chengshi",
+          "parents": [
+            "jin-chengshi"
+          ],
+          "children": [
+            "jin-shan"
+          ]
+        },
+        {
+          "id": "u-jin-bo",
+          "parents": [
+            "jin-bo"
+          ],
+          "children": [
+            "jin-ping"
+          ]
+        },
+        {
+          "id": "u-jin-shan",
+          "parents": [
+            "jin-shan"
+          ],
+          "children": [
+            "jin-cheng"
+          ]
+        },
+        {
+          "id": "u-jin-ping",
+          "parents": [
+            "jin-ping"
+          ],
+          "children": [
+            "jin-xi"
+          ]
+        },
+        {
+          "id": "u-jin-cheng",
+          "parents": [
+            "jin-cheng"
+          ],
+          "children": [
+            "jin-guizhu"
+          ]
+        },
+        {
+          "id": "u-jin-xi",
+          "parents": [
+            "jin-xi"
+          ],
+          "children": [
+            "jin-guang",
+            "jin-min"
+          ]
+        },
+        {
+          "id": "u-jin-guang",
+          "parents": [
+            "jin-guang"
+          ],
+          "children": [
+            "jin-xiaozi"
+          ]
+        },
+        {
+          "id": "u-jin-guizhu",
+          "parents": [
+            "jin-guizhu"
+          ],
+          "children": [
+            "jin-shensheng",
+            "jin-chonger",
+            "jin-yiwu",
+            "jin-xiqi",
+            "jin-daoz"
+          ]
+        },
+        {
+          "id": "u-jin-yiwu",
+          "parents": [
+            "jin-yiwu"
+          ],
+          "children": [
+            "jin-yu"
+          ]
+        },
+        {
+          "id": "u-jin-chonger",
+          "parents": [
+            "jin-chonger"
+          ],
+          "children": [
+            "jin-huan",
+            "jin-heitun"
+          ]
+        },
+        {
+          "id": "u-jin-huan",
+          "parents": [
+            "jin-huan"
+          ],
+          "children": [
+            "jin-yigao",
+            "jin-jie"
+          ]
+        },
+        {
+          "id": "u-jin-jie",
+          "parents": [
+            "jin-jie"
+          ],
+          "children": [
+            "jin-tan"
+          ]
+        },
+        {
+          "id": "u-jin-tan",
+          "parents": [
+            "jin-tan"
+          ],
+          "children": [
+            "jin-zhou"
+          ]
+        },
+        {
+          "id": "u-jin-heitun",
+          "parents": [
+            "jin-heitun"
+          ],
+          "children": [
+            "jin-ju"
+          ]
+        },
+        {
+          "id": "u-jin-ju",
+          "parents": [
+            "jin-ju"
+          ],
+          "children": [
+            "jin-shouman"
+          ]
+        },
+        {
+          "id": "u-jin-zhou",
+          "parents": [
+            "jin-zhou"
+          ],
+          "children": [
+            "jin-biao"
+          ]
+        },
+        {
+          "id": "u-jin-biao",
+          "parents": [
+            "jin-biao"
+          ],
+          "children": [
+            "jin-yi"
+          ]
+        },
+        {
+          "id": "u-jin-yi",
+          "parents": [
+            "jin-yi"
+          ],
+          "children": [
+            "jin-quji",
+            "jin-yong"
+          ]
+        },
+        {
+          "id": "u-jin-yong",
+          "parents": [
+            "jin-yong"
+          ],
+          "children": [
+            "jin-ji2"
+          ]
+        },
+        {
+          "id": "u-jin-ji2",
+          "parents": [
+            "jin-ji2"
+          ],
+          "children": [
+            "jin-jiao"
+          ]
+        },
+        {
+          "id": "u-jin-quji",
+          "parents": [
+            "jin-quji"
+          ],
+          "children": [
+            "jin-wu"
+          ]
+        },
+        {
+          "id": "u-jin-wu",
+          "parents": [
+            "jin-wu"
+          ],
+          "children": [
+            "jin-zao"
+          ]
+        },
+        {
+          "id": "u-jin-jiao",
+          "parents": [
+            "jin-jiao"
+          ],
+          "children": [
+            "jin-liu"
+          ]
+        },
+        {
+          "id": "u-jin-liu",
+          "parents": [
+            "jin-liu"
+          ],
+          "children": [
+            "jin-zhi"
+          ]
+        },
+        {
+          "id": "u-jin-zhi",
+          "parents": [
+            "jin-zhi"
+          ],
+          "children": [
+            "jin-qi"
+          ]
+        },
+        {
+          "id": "u-jin-qi",
+          "parents": [
+            "jin-qi"
+          ],
+          "children": [
+            "jin-jujiu"
           ]
         }
       ]
@@ -3625,7 +10057,7 @@ window.LINEAGE_LIBRARY = {
       "subtitle": "《史记·夏本纪》",
       "shortTitle": "夏",
       "period": "夏商周",
-      "description": "",
+      "description": "自黄帝至桀，夏后氏世系。",
       "source": "",
       "defaultPortrait": "assets/portrait.svg",
       "generations": [
@@ -3684,9 +10116,75 @@ window.LINEAGE_LIBRARY = {
         {
           "index": 14,
           "label": "第十四代"
+        },
+        {
+          "index": 15,
+          "label": "第十五代"
+        },
+        {
+          "index": 16,
+          "label": "第十六代"
+        },
+        {
+          "index": 17,
+          "label": "第十七代"
+        },
+        {
+          "index": 18,
+          "label": "第十八代"
         }
       ],
       "people": [
+        {
+          "id": "huangdi",
+          "name": "黄帝",
+          "aliases": [
+            "公孙轩辕"
+          ],
+          "generation": 1,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+            "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+            "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+          ]
+        },
+        {
+          "id": "changyi",
+          "name": "昌意",
+          "generation": 2,
+          "importance": "notable",
+          "bio": [
+            "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其二曰昌意，降居若水。"
+          ]
+        },
+        {
+          "id": "zhuanxu",
+          "name": "颛顼",
+          "aliases": [
+            "高阳"
+          ],
+          "generation": 3,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "帝颛顼高阳者，黄帝之孙而昌意之子也。静渊以有谋，疏通而知事；养材以任地，载时以象天，依鬼神以制义，治气以教化，絜诚以祭祀。北至于幽陵，南至于交趾，西至于流沙，东至于蟠木。动静之物，大小之神，日月所照，莫不砥属。",
+            "昌意娶蜀山氏女，曰昌仆，生高阳，高阳有圣德焉。黄帝崩，葬桥山。其孙昌意之子高阳立，是为帝颛顼也。"
+          ]
+        },
+        {
+          "id": "gun",
+          "name": "鲧",
+          "aliases": [
+            "崇伯鲧"
+          ],
+          "generation": 4,
+          "importance": "notable",
+          "bio": [
+            "当帝尧之时，鸿水滔天，浩浩怀山襄陵，下民其忧。尧求能治水者，群臣四岳皆曰鲧可。尧曰：“鲧为人负命毁族，不可。”四岳曰：“等之未有贤于鲧者，愿帝试之。”于是尧听四岳，用鲧治水。九年而水不息，功用不成。于是帝尧乃求人，更得舜。舜登用，摄行天子之政，巡狩。行视鲧之治水无状，乃殛鲧于羽山以死。天下皆以舜之诛为是。"
+          ]
+        },
         {
           "id": "yu",
           "name": "禹",
@@ -3694,7 +10192,7 @@ window.LINEAGE_LIBRARY = {
             "文命",
             "大禹"
           ],
-          "generation": 1,
+          "generation": 5,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -3707,7 +10205,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "qi",
           "name": "启",
-          "generation": 2,
+          "generation": 6,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -3719,7 +10217,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taikang",
           "name": "太康",
-          "generation": 3,
+          "generation": 7,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3730,7 +10228,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zhongkang",
           "name": "中康",
-          "generation": 3,
+          "generation": 7,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3741,7 +10239,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "xiang2",
           "name": "相",
-          "generation": 4,
+          "generation": 8,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3752,7 +10250,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "shaokang",
           "name": "少康",
-          "generation": 5,
+          "generation": 9,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3763,7 +10261,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "yu2",
           "name": "予",
-          "generation": 6,
+          "generation": 10,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3774,7 +10272,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "huai",
           "name": "槐",
-          "generation": 7,
+          "generation": 11,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3785,7 +10283,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "mang",
           "name": "芒",
-          "generation": 8,
+          "generation": 12,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3796,7 +10294,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "xie",
           "name": "泄",
-          "generation": 9,
+          "generation": 13,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3807,7 +10305,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "bujiang",
           "name": "不降",
-          "generation": 10,
+          "generation": 14,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3818,7 +10316,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "jiong",
           "name": "扃",
-          "generation": 10,
+          "generation": 14,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3829,7 +10327,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "jin",
           "name": "廑",
-          "generation": 11,
+          "generation": 15,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3840,7 +10338,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "kongjia",
           "name": "孔甲",
-          "generation": 11,
+          "generation": 15,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3852,7 +10350,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "gao",
           "name": "皋",
-          "generation": 12,
+          "generation": 16,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3863,7 +10361,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "fa",
           "name": "发",
-          "generation": 13,
+          "generation": 17,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -3877,7 +10375,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "履癸"
           ],
-          "generation": 14,
+          "generation": 18,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -4014,6 +10512,42 @@ window.LINEAGE_LIBRARY = {
           "children": [
             "jie"
           ]
+        },
+        {
+          "id": "u-huangdi",
+          "parents": [
+            "huangdi"
+          ],
+          "children": [
+            "changyi"
+          ]
+        },
+        {
+          "id": "u-changyi",
+          "parents": [
+            "changyi"
+          ],
+          "children": [
+            "zhuanxu"
+          ]
+        },
+        {
+          "id": "u-zhuanxu",
+          "parents": [
+            "zhuanxu"
+          ],
+          "children": [
+            "gun"
+          ]
+        },
+        {
+          "id": "u-gun-yu",
+          "parents": [
+            "gun"
+          ],
+          "children": [
+            "yu"
+          ]
         }
       ]
     },
@@ -4024,7 +10558,7 @@ window.LINEAGE_LIBRARY = {
       "subtitle": "《史记·殷本纪》",
       "shortTitle": "商",
       "period": "夏商周",
-      "description": "",
+      "description": "自黄帝至纣，殷人世系。",
       "source": "",
       "defaultPortrait": "assets/portrait.svg",
       "generations": [
@@ -4095,16 +10629,255 @@ window.LINEAGE_LIBRARY = {
         {
           "index": 17,
           "label": "第十七代"
+        },
+        {
+          "index": 18,
+          "label": "第十八代"
+        },
+        {
+          "index": 19,
+          "label": "第十九代"
+        },
+        {
+          "index": 20,
+          "label": "第二十代"
+        },
+        {
+          "index": 21,
+          "label": "第二十一代"
+        },
+        {
+          "index": 22,
+          "label": "第二十二代"
+        },
+        {
+          "index": 23,
+          "label": "第二十三代"
+        },
+        {
+          "index": 24,
+          "label": "第二十四代"
+        },
+        {
+          "index": 25,
+          "label": "第二十五代"
+        },
+        {
+          "index": 26,
+          "label": "第二十六代"
+        },
+        {
+          "index": 27,
+          "label": "第二十七代"
+        },
+        {
+          "index": 28,
+          "label": "第二十八代"
+        },
+        {
+          "index": 29,
+          "label": "第二十九代"
+        },
+        {
+          "index": 30,
+          "label": "第三十代"
+        },
+        {
+          "index": 31,
+          "label": "第三十一代"
+        },
+        {
+          "index": 32,
+          "label": "第三十二代"
+        },
+        {
+          "index": 33,
+          "label": "第三十三代"
+        },
+        {
+          "index": 34,
+          "label": "第三十四代"
         }
       ],
       "people": [
+        {
+          "id": "huangdi",
+          "name": "黄帝",
+          "aliases": [
+            "公孙轩辕"
+          ],
+          "generation": 1,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+            "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+            "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+          ]
+        },
+        {
+          "id": "xuanxiao",
+          "name": "玄嚣",
+          "aliases": [
+            "青阳"
+          ],
+          "generation": 2,
+          "importance": "notable",
+          "bio": [
+            "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其一曰玄嚣，是为青阳，青阳降居江水"
+          ]
+        },
+        {
+          "id": "jiaoji",
+          "name": "蟜极",
+          "generation": 3,
+          "importance": "normal",
+          "bio": [
+            "高辛父曰蟜极，蟜极父曰玄嚣"
+          ]
+        },
+        {
+          "id": "diku",
+          "name": "帝喾",
+          "aliases": [
+            "高辛"
+          ],
+          "generation": 4,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "帝喾高辛者，黄帝之曾孙也。高辛父曰蟜极，蟜极父曰玄嚣，玄嚣父曰黄帝。自玄嚣与蟜极皆不得在位，至高辛即帝位。高辛于颛顼为族子。",
+            "高辛生而神灵，自言其名。普施利物，不于其身。聪以知远，明以察微。顺天之义，知民之急。仁而威，惠而信，修身而天下服。取地之财而节用之，抚教万民而利诲之，历日月而迎送之，明鬼神而敬事之。其色郁郁，其德嶷嶷。其动也时，其服也士。帝喾溉执中而遍天下，日月所照，风雨所至，莫不从服。"
+          ]
+        },
+        {
+          "id": "yinqi",
+          "name": "契",
+          "aliases": [
+            "殷契"
+          ],
+          "generation": 5,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "殷契，母曰简狄，有娀氏之女，为帝喾次妃。三人行浴，见玄鸟堕其卵，简狄取吞之，因孕生契。契长而佐禹治水有功。帝舜乃命契曰：“百姓不亲，五品不训，汝为司徒而敬敷五教，五教在宽。”封于商，赐姓子氏。契兴於唐、虞、大禹之际，功业著於百姓，百姓以平。"
+          ]
+        },
+        {
+          "id": "zhaoming",
+          "name": "昭明",
+          "generation": 6,
+          "importance": "normal",
+          "bio": [
+            "契卒，子昭明立。"
+          ]
+        },
+        {
+          "id": "xiangtu",
+          "name": "相土",
+          "generation": 7,
+          "importance": "normal",
+          "bio": [
+            "昭明卒，子相土立。"
+          ]
+        },
+        {
+          "id": "changruo",
+          "name": "昌若",
+          "generation": 8,
+          "importance": "normal",
+          "bio": [
+            "相土卒，子昌若立。"
+          ]
+        },
+        {
+          "id": "caoyu",
+          "name": "曹圉",
+          "generation": 9,
+          "importance": "normal",
+          "bio": [
+            "昌若卒，子曹圉立。"
+          ]
+        },
+        {
+          "id": "ming",
+          "name": "冥",
+          "generation": 10,
+          "importance": "normal",
+          "bio": [
+            "曹圉卒，子冥立。"
+          ]
+        },
+        {
+          "id": "zhen",
+          "name": "振",
+          "generation": 11,
+          "importance": "normal",
+          "bio": [
+            "冥卒，子振立。"
+          ]
+        },
+        {
+          "id": "wei",
+          "name": "微",
+          "generation": 12,
+          "importance": "normal",
+          "bio": [
+            "振卒，子微立。"
+          ]
+        },
+        {
+          "id": "baoding",
+          "name": "报丁",
+          "generation": 13,
+          "importance": "normal",
+          "bio": [
+            "微卒，子报丁立。"
+          ]
+        },
+        {
+          "id": "baoyi",
+          "name": "报乙",
+          "generation": 14,
+          "importance": "normal",
+          "bio": [
+            "报丁卒，子报乙立。"
+          ]
+        },
+        {
+          "id": "baobing",
+          "name": "报丙",
+          "generation": 15,
+          "importance": "normal",
+          "bio": [
+            "报乙卒，子报丙立。"
+          ]
+        },
+        {
+          "id": "zhuren",
+          "name": "主壬",
+          "generation": 16,
+          "importance": "normal",
+          "bio": [
+            "报丙卒，子主壬立。"
+          ]
+        },
+        {
+          "id": "zhugui",
+          "name": "主癸",
+          "generation": 17,
+          "importance": "normal",
+          "bio": [
+            "主壬卒，子主癸立。"
+          ]
+        },
         {
           "id": "chengtang",
           "name": "成汤",
           "aliases": [
             "天乙"
           ],
-          "generation": 1,
+          "generation": 18,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -4122,7 +10895,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taiding",
           "name": "太丁",
-          "generation": 2,
+          "generation": 19,
           "importance": "normal",
           "bio": [
             "汤崩，太子太丁未立而卒。"
@@ -4131,7 +10904,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "waibing",
           "name": "外丙",
-          "generation": 2,
+          "generation": 19,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4142,7 +10915,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zhongren",
           "name": "中壬",
-          "generation": 2,
+          "generation": 19,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4153,7 +10926,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taijia",
           "name": "太甲",
-          "generation": 3,
+          "generation": 20,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -4165,7 +10938,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "woding",
           "name": "沃丁",
-          "generation": 4,
+          "generation": 21,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4176,7 +10949,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taigeng",
           "name": "太庚",
-          "generation": 4,
+          "generation": 21,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4187,7 +10960,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "xiaojia",
           "name": "小甲",
-          "generation": 5,
+          "generation": 22,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4198,7 +10971,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "yongji",
           "name": "雍己",
-          "generation": 5,
+          "generation": 22,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4209,7 +10982,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taiwu",
           "name": "太戊",
-          "generation": 5,
+          "generation": 22,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4220,7 +10993,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zhongding",
           "name": "中丁",
-          "generation": 6,
+          "generation": 23,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4231,7 +11004,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "wairen",
           "name": "外壬",
-          "generation": 6,
+          "generation": 23,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4242,7 +11015,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "hedanjia",
           "name": "河亶甲",
-          "generation": 6,
+          "generation": 23,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4253,7 +11026,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zuyi",
           "name": "祖乙",
-          "generation": 7,
+          "generation": 24,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4264,7 +11037,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zuxin",
           "name": "祖辛",
-          "generation": 8,
+          "generation": 25,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4275,7 +11048,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "wojia",
           "name": "沃甲",
-          "generation": 8,
+          "generation": 25,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4286,7 +11059,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zuding",
           "name": "祖丁",
-          "generation": 9,
+          "generation": 26,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4297,7 +11070,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "nangeng",
           "name": "南庚",
-          "generation": 9,
+          "generation": 26,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4308,7 +11081,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "yangjia",
           "name": "阳甲",
-          "generation": 10,
+          "generation": 27,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4320,7 +11093,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "pangeng",
           "name": "盘庚",
-          "generation": 10,
+          "generation": 27,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4331,7 +11104,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "xiaoxin",
           "name": "小辛",
-          "generation": 10,
+          "generation": 27,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4342,7 +11115,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "xiaoyi",
           "name": "小乙",
-          "generation": 10,
+          "generation": 27,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4353,7 +11126,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "wuding",
           "name": "武丁",
-          "generation": 11,
+          "generation": 28,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -4364,7 +11137,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zugeng",
           "name": "祖庚",
-          "generation": 12,
+          "generation": 29,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4375,7 +11148,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "zujia",
           "name": "祖甲",
-          "generation": 12,
+          "generation": 29,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4386,7 +11159,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "linxin",
           "name": "廪辛",
-          "generation": 13,
+          "generation": 30,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4397,7 +11170,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "geng",
           "name": "庚丁",
-          "generation": 13,
+          "generation": 30,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4408,7 +11181,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "wuyi",
           "name": "武乙",
-          "generation": 14,
+          "generation": 31,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4420,7 +11193,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "taiding2",
           "name": "太丁",
-          "generation": 15,
+          "generation": 32,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4431,7 +11204,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "yi",
           "name": "乙",
-          "generation": 16,
+          "generation": 33,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4442,7 +11215,7 @@ window.LINEAGE_LIBRARY = {
         {
           "id": "weiziqi",
           "name": "微子启",
-          "generation": 17,
+          "generation": 34,
           "importance": "notable",
           "bio": [
             "帝乙长子曰微子启，启母贱，不得嗣。"
@@ -4454,7 +11227,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "辛"
           ],
-          "generation": 17,
+          "generation": 34,
           "importance": "key",
           "honor": "emperor",
           "bio": [
@@ -4729,6 +11502,159 @@ window.LINEAGE_LIBRARY = {
           "children": [
             "zhou"
           ]
+        },
+        {
+          "id": "u-huangdi",
+          "parents": [
+            "huangdi"
+          ],
+          "children": [
+            "xuanxiao"
+          ]
+        },
+        {
+          "id": "u-xuanxiao-jiaoji",
+          "parents": [
+            "xuanxiao"
+          ],
+          "children": [
+            "jiaoji"
+          ]
+        },
+        {
+          "id": "u-jiaoji-diku",
+          "parents": [
+            "jiaoji"
+          ],
+          "children": [
+            "diku"
+          ]
+        },
+        {
+          "id": "u-diku",
+          "parents": [
+            "diku"
+          ],
+          "children": [
+            "yinqi"
+          ]
+        },
+        {
+          "id": "u-yinqi-zhaoming",
+          "parents": [
+            "yinqi"
+          ],
+          "children": [
+            "zhaoming"
+          ]
+        },
+        {
+          "id": "u-zhaoming-xiangtu",
+          "parents": [
+            "zhaoming"
+          ],
+          "children": [
+            "xiangtu"
+          ]
+        },
+        {
+          "id": "u-xiangtu-changruo",
+          "parents": [
+            "xiangtu"
+          ],
+          "children": [
+            "changruo"
+          ]
+        },
+        {
+          "id": "u-changruo-caoyu",
+          "parents": [
+            "changruo"
+          ],
+          "children": [
+            "caoyu"
+          ]
+        },
+        {
+          "id": "u-caoyu-ming",
+          "parents": [
+            "caoyu"
+          ],
+          "children": [
+            "ming"
+          ]
+        },
+        {
+          "id": "u-ming-zhen",
+          "parents": [
+            "ming"
+          ],
+          "children": [
+            "zhen"
+          ]
+        },
+        {
+          "id": "u-zhen-wei",
+          "parents": [
+            "zhen"
+          ],
+          "children": [
+            "wei"
+          ]
+        },
+        {
+          "id": "u-wei-baoding",
+          "parents": [
+            "wei"
+          ],
+          "children": [
+            "baoding"
+          ]
+        },
+        {
+          "id": "u-baoding-baoyi",
+          "parents": [
+            "baoding"
+          ],
+          "children": [
+            "baoyi"
+          ]
+        },
+        {
+          "id": "u-baoyi-baobing",
+          "parents": [
+            "baoyi"
+          ],
+          "children": [
+            "baobing"
+          ]
+        },
+        {
+          "id": "u-baobing-zhuren",
+          "parents": [
+            "baobing"
+          ],
+          "children": [
+            "zhuren"
+          ]
+        },
+        {
+          "id": "u-zhuren-zhugui",
+          "parents": [
+            "zhuren"
+          ],
+          "children": [
+            "zhugui"
+          ]
+        },
+        {
+          "id": "u-zhugui-chengtang",
+          "parents": [
+            "zhugui"
+          ],
+          "children": [
+            "chengtang"
+          ]
         }
       ]
     },
@@ -4739,7 +11665,7 @@ window.LINEAGE_LIBRARY = {
       "subtitle": "《史记·周本纪》",
       "shortTitle": "周",
       "period": "夏商周",
-      "description": "自文王受命至赧王，周室三十七王之世。",
+      "description": "自黄帝至赧王，周室先公与列王之世。",
       "source": "据《史记·周本纪》整理。文王以前先公世系见「总览」。",
       "defaultPortrait": "assets/portrait.svg",
       "generations": [
@@ -4874,9 +11800,293 @@ window.LINEAGE_LIBRARY = {
         {
           "index": 33,
           "label": "第三十三代"
+        },
+        {
+          "index": 34,
+          "label": "第三十四代"
+        },
+        {
+          "index": 35,
+          "label": "第三十五代"
+        },
+        {
+          "index": 36,
+          "label": "第三十六代"
+        },
+        {
+          "index": 37,
+          "label": "第三十七代"
+        },
+        {
+          "index": 38,
+          "label": "第三十八代"
+        },
+        {
+          "index": 39,
+          "label": "第三十九代"
+        },
+        {
+          "index": 40,
+          "label": "第四十代"
+        },
+        {
+          "index": 41,
+          "label": "第四十一代"
+        },
+        {
+          "index": 42,
+          "label": "第四十二代"
+        },
+        {
+          "index": 43,
+          "label": "第四十三代"
+        },
+        {
+          "index": 44,
+          "label": "第四十四代"
+        },
+        {
+          "index": 45,
+          "label": "第四十五代"
+        },
+        {
+          "index": 46,
+          "label": "第四十六代"
+        },
+        {
+          "index": 47,
+          "label": "第四十七代"
+        },
+        {
+          "index": 48,
+          "label": "第四十八代"
+        },
+        {
+          "index": 49,
+          "label": "第四十九代"
+        },
+        {
+          "index": 50,
+          "label": "第五十代"
+        },
+        {
+          "index": 51,
+          "label": "第五十一代"
         }
       ],
       "people": [
+        {
+          "id": "huangdi",
+          "name": "黄帝",
+          "aliases": [
+            "公孙轩辕"
+          ],
+          "generation": 1,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+            "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+            "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+          ]
+        },
+        {
+          "id": "xuanxiao",
+          "name": "玄嚣",
+          "aliases": [
+            "青阳"
+          ],
+          "generation": 2,
+          "importance": "notable",
+          "bio": [
+            "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其一曰玄嚣，是为青阳，青阳降居江水"
+          ]
+        },
+        {
+          "id": "jiaoji",
+          "name": "蟜极",
+          "generation": 3,
+          "importance": "normal",
+          "bio": [
+            "高辛父曰蟜极，蟜极父曰玄嚣"
+          ]
+        },
+        {
+          "id": "diku",
+          "name": "帝喾",
+          "aliases": [
+            "高辛"
+          ],
+          "generation": 4,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "帝喾高辛者，黄帝之曾孙也。高辛父曰蟜极，蟜极父曰玄嚣，玄嚣父曰黄帝。自玄嚣与蟜极皆不得在位，至高辛即帝位。高辛于颛顼为族子。",
+            "高辛生而神灵，自言其名。普施利物，不于其身。聪以知远，明以察微。顺天之义，知民之急。仁而威，惠而信，修身而天下服。取地之财而节用之，抚教万民而利诲之，历日月而迎送之，明鬼神而敬事之。其色郁郁，其德嶷嶷。其动也时，其服也士。帝喾溉执中而遍天下，日月所照，风雨所至，莫不从服。"
+          ]
+        },
+        {
+          "id": "houji",
+          "name": "弃",
+          "aliases": [
+            "后稷"
+          ],
+          "generation": 5,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "周后稷，名弃。其母有邰氏女，曰姜原。姜原为帝喾元妃。姜原出野，见巨人迹，心忻然说，欲践之，践之而身动如孕者。居期而生子，以为不祥，弃之隘巷，马牛过者皆辟不践；徙置之林中，適会山林多人，迁之；而弃渠中冰上，飞鸟以其翼覆荐之。姜原以为神，遂收养长之。初欲弃之，因名曰弃。",
+            "弃为兒时，屹如巨人之志。其游戏，好种树麻、菽，麻、菽美。及为成人，遂好耕农，相地之宜，宜穀者稼穑焉，民皆法则之。帝尧闻之，举弃为农师，天下得其利，有功。帝舜曰：“弃，黎民始饥，尔后稷播时百穀。”封弃於邰，号曰后稷，别姓姬氏。后稷之兴，在陶唐、虞、夏之际，皆有令德。"
+          ]
+        },
+        {
+          "id": "buzhou",
+          "name": "不窋",
+          "generation": 6,
+          "importance": "normal",
+          "bio": [
+            "后稷卒，子不窋立。不窋末年，夏后氏政衰，去稷不务，不窋以失其官而奔戎狄之间。"
+          ]
+        },
+        {
+          "id": "ju",
+          "name": "鞠",
+          "generation": 7,
+          "importance": "normal",
+          "bio": [
+            "不窋卒，子鞠立。鞠卒，子公刘立。"
+          ]
+        },
+        {
+          "id": "gongliu",
+          "name": "公刘",
+          "generation": 8,
+          "importance": "normal",
+          "bio": [
+            "鞠卒，子公刘立。公刘虽在戎狄之间，复修后稷之业，务耕种，行地宜，自漆、沮度渭，取材用，行者有资，居者有畜积，民赖其庆。百姓怀之，多徙而保归焉。周道之兴自此始，故诗人歌乐思其德。公刘卒，子庆节立，国于豳。"
+          ]
+        },
+        {
+          "id": "qingjie",
+          "name": "庆节",
+          "generation": 9,
+          "importance": "normal",
+          "bio": [
+            "公刘卒，子庆节立，国于豳。庆节卒，子皇仆立。"
+          ]
+        },
+        {
+          "id": "huangpu",
+          "name": "皇仆",
+          "generation": 10,
+          "importance": "normal",
+          "bio": [
+            "庆节卒，子皇仆立。皇仆卒，子差弗立。"
+          ]
+        },
+        {
+          "id": "chafu",
+          "name": "差弗",
+          "generation": 11,
+          "importance": "normal",
+          "bio": [
+            "皇仆卒，子差弗立。差弗卒，子毁隃立。"
+          ]
+        },
+        {
+          "id": "huiyu",
+          "name": "毁隃",
+          "generation": 12,
+          "importance": "normal",
+          "bio": [
+            "差弗卒，子毁隃立。毁隃卒，子公非立。"
+          ]
+        },
+        {
+          "id": "gongfei",
+          "name": "公非",
+          "generation": 13,
+          "importance": "normal",
+          "bio": [
+            "毁隃卒，子公非立。公非卒，子高圉立。"
+          ]
+        },
+        {
+          "id": "gaoyu",
+          "name": "高圉",
+          "generation": 14,
+          "importance": "normal",
+          "bio": [
+            "公非卒，子高圉立。高圉卒，子亚圉立。"
+          ]
+        },
+        {
+          "id": "yayu",
+          "name": "亚圉",
+          "generation": 15,
+          "importance": "normal",
+          "bio": [
+            "高圉卒，子亚圉立。亚圉卒，子公叔祖类立。"
+          ]
+        },
+        {
+          "id": "gongshuzulei",
+          "name": "公叔祖类",
+          "generation": 16,
+          "importance": "normal",
+          "bio": [
+            "亚圉卒，子公叔祖类立。公叔祖类卒，子古公亶父立。"
+          ]
+        },
+        {
+          "id": "gugong",
+          "name": "古公亶父",
+          "aliases": [
+            "太王"
+          ],
+          "generation": 17,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "古公亶父复修后稷、公刘之业，积德行义，国人皆戴之。薰育戎狄攻之，欲得财物，予之。已复攻，欲得地与民。民皆怒，欲战。古公曰：“有民立君，将以利之。今戎狄所为攻战，以吾地与民。民之在我，与其在彼，何异。民欲以我故战，杀人父子而君之，予不忍为。”乃与私属遂去豳，度漆、沮，逾梁山，止于岐下。豳人举国扶老携弱，尽复归古公于岐下。及他旁国闻古公仁，亦多归之。于是古公乃贬戎狄之俗，而营筑城郭室屋，而邑别居之。作五官有司。民皆歌乐之，颂其德。",
+            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。",
+            "古公卒，季历立，是为公季。"
+          ]
+        },
+        {
+          "id": "taibo",
+          "name": "太伯",
+          "generation": 18,
+          "importance": "normal",
+          "indexed": false,
+          "bio": [
+            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
+          ]
+        },
+        {
+          "id": "yuzhong",
+          "name": "虞仲",
+          "generation": 18,
+          "importance": "normal",
+          "indexed": false,
+          "bio": [
+            "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
+          ]
+        },
+        {
+          "id": "jili",
+          "name": "季历",
+          "aliases": [
+            "公季"
+          ],
+          "generation": 18,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "古公卒，季历立，是为公季。公季修古公遗道，笃于行义，诸侯顺之。公季卒，子昌立，是为西伯。"
+          ]
+        },
         {
           "id": "wenwang",
           "name": "昌",
@@ -4885,7 +12095,7 @@ window.LINEAGE_LIBRARY = {
             "文王"
           ],
           "title": "周文王",
-          "generation": 1,
+          "generation": 19,
           "importance": "key",
           "honor": "other",
           "indexed": true,
@@ -4904,7 +12114,7 @@ window.LINEAGE_LIBRARY = {
             "武王"
           ],
           "title": "周武王",
-          "generation": 2,
+          "generation": 20,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -4927,7 +12137,7 @@ window.LINEAGE_LIBRARY = {
             "周公"
           ],
           "title": "周公旦",
-          "generation": 2,
+          "generation": 20,
           "importance": "key",
           "honor": "other",
           "indexed": true,
@@ -4946,7 +12156,7 @@ window.LINEAGE_LIBRARY = {
             "成王"
           ],
           "title": "成王",
-          "generation": 3,
+          "generation": 21,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -4963,7 +12173,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "康王"
           ],
-          "generation": 4,
+          "generation": 22,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4979,7 +12189,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "昭王"
           ],
-          "generation": 5,
+          "generation": 23,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -4993,7 +12203,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "穆王"
           ],
-          "generation": 6,
+          "generation": 24,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5011,7 +12221,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "共王"
           ],
-          "generation": 7,
+          "generation": 25,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5027,7 +12237,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "孝王"
           ],
-          "generation": 7,
+          "generation": 25,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5041,7 +12251,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "懿王"
           ],
-          "generation": 8,
+          "generation": 26,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5055,7 +12265,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "夷王"
           ],
-          "generation": 9,
+          "generation": 27,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5070,7 +12280,7 @@ window.LINEAGE_LIBRARY = {
             "厉王"
           ],
           "title": "厉王",
-          "generation": 10,
+          "generation": 28,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -5088,7 +12298,7 @@ window.LINEAGE_LIBRARY = {
             "宣王"
           ],
           "title": "宣王",
-          "generation": 11,
+          "generation": 29,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -5107,7 +12317,7 @@ window.LINEAGE_LIBRARY = {
             "幽王"
           ],
           "title": "幽王",
-          "generation": 12,
+          "generation": 30,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -5124,7 +12334,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "平王"
           ],
-          "generation": 13,
+          "generation": 31,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5140,7 +12350,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "太子泄父"
           ],
-          "generation": 14,
+          "generation": 32,
           "importance": "notable",
           "bio": [
             "五十一年，平王崩，太子泄父蚤死，立其子林，是为桓王。桓王，平王孙也。"
@@ -5152,7 +12362,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "桓王"
           ],
-          "generation": 15,
+          "generation": 33,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5168,7 +12378,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "庄王"
           ],
-          "generation": 16,
+          "generation": 34,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5182,7 +12392,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "厘王"
           ],
-          "generation": 17,
+          "generation": 35,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5196,7 +12406,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "惠王"
           ],
-          "generation": 18,
+          "generation": 36,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5211,7 +12421,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "襄王"
           ],
-          "generation": 19,
+          "generation": 37,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5228,7 +12438,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "顷王"
           ],
-          "generation": 20,
+          "generation": 38,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5242,7 +12452,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "匡王"
           ],
-          "generation": 21,
+          "generation": 39,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5256,7 +12466,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "定王"
           ],
-          "generation": 21,
+          "generation": 39,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5271,7 +12481,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "简王"
           ],
-          "generation": 22,
+          "generation": 40,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5285,7 +12495,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "灵王"
           ],
-          "generation": 23,
+          "generation": 41,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5299,7 +12509,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "景王"
           ],
-          "generation": 24,
+          "generation": 42,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5313,7 +12523,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "悼王"
           ],
-          "generation": 25,
+          "generation": 43,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5327,7 +12537,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "敬王"
           ],
-          "generation": 25,
+          "generation": 43,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5343,7 +12553,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "元王"
           ],
-          "generation": 26,
+          "generation": 44,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5357,7 +12567,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "贞定王"
           ],
-          "generation": 27,
+          "generation": 45,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5371,7 +12581,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "哀王"
           ],
-          "generation": 28,
+          "generation": 46,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5385,7 +12595,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "思王"
           ],
-          "generation": 28,
+          "generation": 46,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5399,7 +12609,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "考王"
           ],
-          "generation": 28,
+          "generation": 46,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5415,7 +12625,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "威烈王"
           ],
-          "generation": 29,
+          "generation": 47,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5429,7 +12639,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "安王"
           ],
-          "generation": 30,
+          "generation": 48,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5443,7 +12653,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "烈王"
           ],
-          "generation": 31,
+          "generation": 49,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5458,7 +12668,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "显王"
           ],
-          "generation": 31,
+          "generation": 49,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5473,7 +12683,7 @@ window.LINEAGE_LIBRARY = {
           "aliases": [
             "慎靓王"
           ],
-          "generation": 32,
+          "generation": 50,
           "importance": "key",
           "honor": "emperor",
           "indexed": false,
@@ -5488,7 +12698,7 @@ window.LINEAGE_LIBRARY = {
             "赧王"
           ],
           "title": "赧王",
-          "generation": 33,
+          "generation": 51,
           "importance": "key",
           "honor": "emperor",
           "indexed": true,
@@ -5794,8 +13004,1684 @@ window.LINEAGE_LIBRARY = {
           "children": [
             "nanwang"
           ]
+        },
+        {
+          "id": "u-huangdi",
+          "parents": [
+            "huangdi"
+          ],
+          "children": [
+            "xuanxiao"
+          ]
+        },
+        {
+          "id": "u-xuanxiao-jiaoji",
+          "parents": [
+            "xuanxiao"
+          ],
+          "children": [
+            "jiaoji"
+          ]
+        },
+        {
+          "id": "u-jiaoji-diku",
+          "parents": [
+            "jiaoji"
+          ],
+          "children": [
+            "diku"
+          ]
+        },
+        {
+          "id": "u-diku",
+          "parents": [
+            "diku"
+          ],
+          "children": [
+            "houji"
+          ]
+        },
+        {
+          "id": "u-houji-buzhou",
+          "parents": [
+            "houji"
+          ],
+          "children": [
+            "buzhou"
+          ]
+        },
+        {
+          "id": "u-buzhou-ju",
+          "parents": [
+            "buzhou"
+          ],
+          "children": [
+            "ju"
+          ]
+        },
+        {
+          "id": "u-ju-gongliu",
+          "parents": [
+            "ju"
+          ],
+          "children": [
+            "gongliu"
+          ]
+        },
+        {
+          "id": "u-gongliu-qingjie",
+          "parents": [
+            "gongliu"
+          ],
+          "children": [
+            "qingjie"
+          ]
+        },
+        {
+          "id": "u-qingjie-huangpu",
+          "parents": [
+            "qingjie"
+          ],
+          "children": [
+            "huangpu"
+          ]
+        },
+        {
+          "id": "u-huangpu-chafu",
+          "parents": [
+            "huangpu"
+          ],
+          "children": [
+            "chafu"
+          ]
+        },
+        {
+          "id": "u-chafu-huiyu",
+          "parents": [
+            "chafu"
+          ],
+          "children": [
+            "huiyu"
+          ]
+        },
+        {
+          "id": "u-huiyu-gongfei",
+          "parents": [
+            "huiyu"
+          ],
+          "children": [
+            "gongfei"
+          ]
+        },
+        {
+          "id": "u-gongfei-gaoyu",
+          "parents": [
+            "gongfei"
+          ],
+          "children": [
+            "gaoyu"
+          ]
+        },
+        {
+          "id": "u-gaoyu-yayu",
+          "parents": [
+            "gaoyu"
+          ],
+          "children": [
+            "yayu"
+          ]
+        },
+        {
+          "id": "u-yayu-gongshuzulei",
+          "parents": [
+            "yayu"
+          ],
+          "children": [
+            "gongshuzulei"
+          ]
+        },
+        {
+          "id": "u-gongshuzulei-gugong",
+          "parents": [
+            "gongshuzulei"
+          ],
+          "children": [
+            "gugong"
+          ]
+        },
+        {
+          "id": "u-gugong",
+          "parents": [
+            "gugong"
+          ],
+          "children": [
+            "taibo",
+            "yuzhong",
+            "jili"
+          ]
+        },
+        {
+          "id": "u-jili",
+          "parents": [
+            "jili"
+          ],
+          "children": [
+            "wenwang"
+          ]
         }
       ]
+    },
+    "qin": {
+      "schemaVersion": 1,
+      "id": "qin",
+      "title": "秦本纪",
+      "subtitle": "《史记·秦本纪》《秦始皇本纪》",
+      "shortTitle": "秦",
+      "period": "秦",
+      "description": "自黄帝至子婴，秦之先世与秦君世系。",
+      "source": "",
+      "defaultPortrait": "assets/portrait.svg",
+      "generations": [
+        {
+          "index": 1,
+          "label": "第一代"
+        },
+        {
+          "index": 2,
+          "label": "第二代"
+        },
+        {
+          "index": 3,
+          "label": "第三代"
+        },
+        {
+          "index": 4,
+          "label": "第四代"
+        },
+        {
+          "index": 5,
+          "label": "第五代"
+        },
+        {
+          "index": 6,
+          "label": "第六代"
+        },
+        {
+          "index": 7,
+          "label": "第七代"
+        },
+        {
+          "index": 8,
+          "label": "第八代"
+        },
+        {
+          "index": 9,
+          "label": "第九代"
+        },
+        {
+          "index": 10,
+          "label": "第十代"
+        },
+        {
+          "index": 11,
+          "label": "第十一代"
+        },
+        {
+          "index": 12,
+          "label": "第十二代"
+        },
+        {
+          "index": 13,
+          "label": "第十三代"
+        },
+        {
+          "index": 14,
+          "label": "第十四代"
+        },
+        {
+          "index": 15,
+          "label": "第十五代"
+        },
+        {
+          "index": 16,
+          "label": "第十六代"
+        },
+        {
+          "index": 17,
+          "label": "第十七代"
+        },
+        {
+          "index": 18,
+          "label": "第十八代"
+        },
+        {
+          "index": 19,
+          "label": "第十九代"
+        },
+        {
+          "index": 20,
+          "label": "第二十代"
+        },
+        {
+          "index": 21,
+          "label": "第二十一代"
+        },
+        {
+          "index": 22,
+          "label": "第二十二代"
+        },
+        {
+          "index": 23,
+          "label": "第二十三代"
+        },
+        {
+          "index": 24,
+          "label": "第二十四代"
+        },
+        {
+          "index": 25,
+          "label": "第二十五代"
+        },
+        {
+          "index": 26,
+          "label": "第二十六代"
+        },
+        {
+          "index": 27,
+          "label": "第二十七代"
+        },
+        {
+          "index": 28,
+          "label": "第二十八代"
+        },
+        {
+          "index": 29,
+          "label": "第二十九代"
+        },
+        {
+          "index": 30,
+          "label": "第三十代"
+        },
+        {
+          "index": 31,
+          "label": "第三十一代"
+        },
+        {
+          "index": 32,
+          "label": "第三十二代"
+        },
+        {
+          "index": 33,
+          "label": "第三十三代"
+        },
+        {
+          "index": 34,
+          "label": "第三十四代"
+        },
+        {
+          "index": 35,
+          "label": "第三十五代"
+        },
+        {
+          "index": 36,
+          "label": "第三十六代"
+        },
+        {
+          "index": 37,
+          "label": "第三十七代"
+        },
+        {
+          "index": 38,
+          "label": "第三十八代"
+        },
+        {
+          "index": 39,
+          "label": "第三十九代"
+        },
+        {
+          "index": 40,
+          "label": "第四十代"
+        },
+        {
+          "index": 41,
+          "label": "第四十一代"
+        },
+        {
+          "index": 42,
+          "label": "第四十二代"
+        },
+        {
+          "index": 43,
+          "label": "第四十三代"
+        },
+        {
+          "index": 44,
+          "label": "第四十四代"
+        },
+        {
+          "index": 45,
+          "label": "第四十五代"
+        },
+        {
+          "index": 46,
+          "label": "第四十六代"
+        },
+        {
+          "index": 47,
+          "label": "第四十七代"
+        },
+        {
+          "index": 48,
+          "label": "第四十八代"
+        },
+        {
+          "index": 49,
+          "label": "第四十九代"
+        },
+        {
+          "index": 50,
+          "label": "第五十代"
+        },
+        {
+          "index": 51,
+          "label": "第五十一代"
+        },
+        {
+          "index": 52,
+          "label": "第五十二代"
+        },
+        {
+          "index": 53,
+          "label": "第五十三代"
+        },
+        {
+          "index": 54,
+          "label": "第五十四代"
+        }
+      ],
+      "people": [
+        {
+          "id": "huangdi",
+          "name": "黄帝",
+          "aliases": [
+            "公孙轩辕"
+          ],
+          "generation": 1,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+            "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+            "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+          ]
+        },
+        {
+          "id": "changyi",
+          "name": "昌意",
+          "generation": 2,
+          "importance": "notable",
+          "bio": [
+            "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其二曰昌意，降居若水。"
+          ]
+        },
+        {
+          "id": "zhuanxu",
+          "name": "颛顼",
+          "aliases": [
+            "高阳"
+          ],
+          "generation": 3,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "帝颛顼高阳者，黄帝之孙而昌意之子也。静渊以有谋，疏通而知事；养材以任地，载时以象天，依鬼神以制义，治气以教化，絜诚以祭祀。北至于幽陵，南至于交趾，西至于流沙，东至于蟠木。动静之物，大小之神，日月所照，莫不砥属。",
+            "昌意娶蜀山氏女，曰昌仆，生高阳，高阳有圣德焉。黄帝崩，葬桥山。其孙昌意之子高阳立，是为帝颛顼也。"
+          ]
+        },
+        {
+          "id": "nuxiu",
+          "name": "女脩",
+          "generation": 5,
+          "importance": "normal",
+          "bio": [
+            "秦之先，帝颛顼之苗裔孙曰女脩。"
+          ]
+        },
+        {
+          "id": "daye",
+          "name": "大业",
+          "generation": 6,
+          "importance": "normal",
+          "bio": [
+            "女脩织，玄鸟陨卵，女脩吞之，生子大业。大业取少典之子，曰女华。"
+          ]
+        },
+        {
+          "id": "dafei",
+          "name": "大费",
+          "aliases": [
+            "柏翳",
+            "伯翳"
+          ],
+          "generation": 7,
+          "importance": "normal",
+          "bio": [
+            "女华生大费，与禹平水土。已成，帝锡玄圭。禹受曰：“非予能成，亦大费为辅。”帝舜曰：“咨尔费，赞禹功，其赐尔皂游。尔后嗣将大出。”乃妻之姚姓之玉女。大费拜受，佐舜调驯鸟兽，鸟兽多驯服，是为柏翳。舜赐姓嬴氏。"
+          ]
+        },
+        {
+          "id": "dalian",
+          "name": "大廉",
+          "generation": 8,
+          "importance": "normal",
+          "bio": [
+            "大费生子二人：一曰大廉，实鸟俗氏；二曰若木，实费氏。"
+          ]
+        },
+        {
+          "id": "ruomu",
+          "name": "若木",
+          "generation": 8,
+          "importance": "normal",
+          "bio": [
+            "大费生子二人：一曰大廉，实鸟俗氏；二曰若木，实费氏。"
+          ]
+        },
+        {
+          "id": "feichang",
+          "name": "费昌",
+          "generation": 12,
+          "importance": "normal",
+          "bio": [
+            "大费生子二人：一曰大廉，实鸟俗氏；二曰若木，实费氏。其玄孙曰费昌，子孙或在中国，或在夷狄。费昌当夏桀之时，去夏归商，为汤御，以败桀于鸣条。"
+          ]
+        },
+        {
+          "id": "mengxi",
+          "name": "孟戏",
+          "generation": 12,
+          "importance": "normal",
+          "bio": [
+            "大廉玄孙曰孟戏、中衍，鸟身人言。帝太戊闻而卜之使御，吉，遂致使御而妻之。自太戊以下，中衍之后，遂世有功，以佐殷国，故嬴姓多显，遂为诸侯。"
+          ]
+        },
+        {
+          "id": "zhongyan",
+          "name": "中衍",
+          "generation": 12,
+          "importance": "normal",
+          "bio": [
+            "大廉玄孙曰孟戏、中衍，鸟身人言。帝太戊闻而卜之使御，吉，遂致使御而妻之。自太戊以下，中衍之后，遂世有功，以佐殷国，故嬴姓多显，遂为诸侯。"
+          ]
+        },
+        {
+          "id": "qin-zhongyu",
+          "name": "中潏",
+          "generation": 16,
+          "importance": "notable",
+          "bio": [
+            "其玄孙曰中潏，在西戎，保西垂。生蜚廉。",
+            "申侯乃言孝王曰：“昔我先郦山之女，为戎胥轩妻，生中潏，以亲故归周，保西垂，西垂以其故和睦。……”"
+          ]
+        },
+        {
+          "id": "qin-feilian",
+          "name": "蜚廉",
+          "generation": 17,
+          "importance": "notable",
+          "bio": [
+            "蜚廉生恶来。恶来有力，蜚廉善走，父子俱以材力事殷纣。周武王之伐纣，并杀恶来。",
+            "是时蜚廉为纣石北方，还，无所报，为坛霍太山而报，得石棺，铭曰“帝令处父不与殷乱，赐尔石棺以华氏”。死，遂葬于霍太山。蜚廉复有子曰季胜。"
+          ]
+        },
+        {
+          "id": "qin-elai",
+          "name": "恶来",
+          "generation": 18,
+          "importance": "notable",
+          "bio": [
+            "蜚廉生恶来。恶来有力，蜚廉善走，父子俱以材力事殷纣。周武王之伐纣，并杀恶来。",
+            "恶来革者，蜚廉子也，蚤死。有子曰女防。"
+          ],
+          "aliases": [
+            "恶来革"
+          ]
+        },
+        {
+          "id": "qin-jisheng",
+          "name": "季胜",
+          "generation": 18,
+          "importance": "normal",
+          "bio": [
+            "蜚廉复有子曰季胜。季胜生孟增。孟增幸于周成王，是为宅皋狼。皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-mengzeng",
+          "name": "孟增",
+          "aliases": [
+            "宅皋狼"
+          ],
+          "generation": 19,
+          "importance": "normal",
+          "bio": [
+            "季胜生孟增。孟增幸于周成王，是为宅皋狼。皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-hengfu",
+          "name": "衡父",
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "皋狼生衡父，衡父生造父。"
+          ]
+        },
+        {
+          "id": "qin-zaofu",
+          "name": "造父",
+          "generation": 21,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "造父以善御幸于周缪王，得骥、温骊、骅骝、騄耳之驷，西巡狩，乐而忘归。徐偃王作乱，造父为缪王御，长驱归周，一日千里以救乱。缪王以赵城封造父，造父族由此为赵氏。",
+            "自蜚廉生季胜已下五世至造父，别居赵。赵衰其后也。"
+          ]
+        },
+        {
+          "id": "qin-nvfang",
+          "name": "女防",
+          "generation": 19,
+          "importance": "normal",
+          "bio": [
+            "恶来革者，蜚廉子也，蚤死。有子曰女防。女防生旁皋，旁皋生太几，太几生大骆，大骆生非子。"
+          ]
+        },
+        {
+          "id": "qin-panggao",
+          "name": "旁皋",
+          "generation": 20,
+          "importance": "normal",
+          "bio": [
+            "女防生旁皋，旁皋生太几，太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。"
+          ]
+        },
+        {
+          "id": "qin-taiji",
+          "name": "太几",
+          "generation": 21,
+          "importance": "normal",
+          "bio": [
+            "旁皋生太几，太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。"
+          ]
+        },
+        {
+          "id": "qin-daluo",
+          "name": "大骆",
+          "generation": 22,
+          "importance": "notable",
+          "bio": [
+            "太几生大骆，大骆生非子。以造父之宠，皆蒙赵城，姓赵氏。",
+            "申侯之女为大骆妻，生子成为適。申侯乃言孝王曰：“……今我复与大骆妻，生適子成。申骆重婚，西戎皆服，所以为王。王其图之。”"
+          ]
+        },
+        {
+          "id": "qin-cheng",
+          "name": "成",
+          "generation": 23,
+          "importance": "normal",
+          "bio": [
+            "申侯之女为大骆妻，生子成为適。",
+            "亦不废申侯之女子为骆適者，以和西戎。"
+          ]
+        },
+        {
+          "id": "qin-feizi",
+          "name": "非子",
+          "aliases": [
+            "秦嬴"
+          ],
+          "generation": 23,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "非子居犬丘，好马及畜，善养息之。犬丘人言之周孝王，孝王召使主马于汧渭之闲，马大蕃息。孝王欲以为大骆適嗣。",
+            "孝王曰：“昔伯翳为舜主畜，畜多息，故有土，赐姓嬴。今其后世亦为朕息马，朕其分土为附庸。”邑之秦，使复续嬴氏祀，号曰秦嬴。"
+          ]
+        },
+        {
+          "id": "qin-hou",
+          "name": "秦侯",
+          "generation": 24,
+          "importance": "normal",
+          "bio": [
+            "秦嬴生秦侯。秦侯立十年，卒。生公伯。"
+          ]
+        },
+        {
+          "id": "qin-gongbo",
+          "name": "公伯",
+          "generation": 25,
+          "importance": "normal",
+          "bio": [
+            "秦侯立十年，卒。生公伯。公伯立三年，卒。生秦仲。"
+          ]
+        },
+        {
+          "id": "qin-zhong",
+          "name": "秦仲",
+          "generation": 26,
+          "importance": "normal",
+          "bio": [
+            "公伯立三年，卒。生秦仲。",
+            "秦仲立三年，周厉王无道，诸侯或叛之。西戎反王室，灭犬丘大骆之族。周宣王即位，乃以秦仲为大夫，诛西戎。西戎杀秦仲。秦仲立二十三年，死于戎。有子五人，其长者曰庄公。"
+          ]
+        },
+        {
+          "id": "qin-zhuanggong",
+          "name": "庄公",
+          "generation": 27,
+          "importance": "normal",
+          "bio": [
+            "秦仲立二十三年，死于戎。有子五人，其长者曰庄公。周宣王乃召庄公昆弟五人，与兵七千人，使伐西戎，破之。于是复予秦仲后，及其先大骆地犬丘并有之，为西垂大夫。",
+            "庄公居其故西犬丘，生子三人，其长男世父。世父曰：“戎杀我大父仲，我非杀戎王则不敢入邑。”遂将击戎，让其弟襄公。襄公为太子。庄公立四十四年，卒，太子襄公代立。"
+          ]
+        },
+        {
+          "id": "qin-shifu",
+          "name": "世父",
+          "generation": 28,
+          "importance": "notable",
+          "bio": [
+            "庄公居其故西犬丘，生子三人，其长男世父。世父曰：“戎杀我大父仲，我非杀戎王则不敢入邑。”遂将击戎，让其弟襄公。襄公为太子。",
+            "襄公二年，戎围犬丘，世父击之，为戎人所虏。岁余，复归世父。"
+          ]
+        },
+        {
+          "id": "qin-xianggong",
+          "name": "襄公",
+          "generation": 28,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "襄公元年，以女弟缪嬴为丰王妻。襄公二年，戎围犬丘，世父击之，为戎人所虏。岁余，复归世父。",
+            "七年春，周幽王用褒姒废太子，立褒姒子为嫡，数欺诸侯，诸侯叛之。西戎犬戎与申侯伐周，杀幽王郦山下。而秦襄公将兵救周，战甚力，有功。周避犬戎难，东徙雒邑，襄公以兵送周平王。平王封襄公为诸侯，赐之岐以西之地。曰：“戎无道，侵夺我岐、丰之地，秦能攻逐戎，即有其地。”与誓，封爵之。襄公于是始国，与诸侯通使聘享之礼，乃用骝驹、黄牛、羝羊各三，祠上帝西畤。",
+            "十二年，伐戎而至岐，卒。生文公。"
+          ]
+        },
+        {
+          "id": "qin-wengong",
+          "name": "文公",
+          "generation": 29,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "文公元年，居西垂宫。三年，文公以兵七百人东猎。四年，至汧渭之会。曰：“昔周邑我先秦嬴于此，后卒获为诸侯。”乃卜居之，占曰吉，即营邑之。十年，初为鄜畤，用三牢。十三年，初有史以纪事，民多化者。",
+            "十六年，文公以兵伐戎，戎败走。于是文公遂收周余民有之，地至岐，岐以东献之周。十九年，得陈宝。二十年，法初有三族之罪。",
+            "四十八年，文公太子卒，赐谥为竫公。竫公之长子为太子，是文公孙也。五十年，文公卒，葬西山。竫公子立，是为宁公。"
+          ]
+        },
+        {
+          "id": "qin-jinggong",
+          "name": "竫公",
+          "aliases": [
+            "静公"
+          ],
+          "generation": 30,
+          "importance": "notable",
+          "bio": [
+            "四十八年，文公太子卒，赐谥为竫公。竫公之长子为太子，是文公孙也。五十年，文公卒，葬西山。竫公子立，是为宁公。"
+          ]
+        },
+        {
+          "id": "qin-ninggong",
+          "name": "宁公",
+          "aliases": [
+            "宪公"
+          ],
+          "generation": 31,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宁公二年，公徙居平阳。遣兵伐荡社。三年，与亳战，亳王奔戎，遂灭荡社。",
+            "十二年，伐荡氏，取之。宁公生十岁立，立十二年卒，葬西山。生子三人，长男武公为太子。武公弟德公，同母鲁姬子，生出子。宁公卒，大庶长弗忌、威垒、三父废太子而立出子为君。"
+          ]
+        },
+        {
+          "id": "qin-chuzi",
+          "name": "出子",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宁公卒，大庶长弗忌、威垒、三父废太子而立出子为君。出子六年，三父等复共令人贼杀出子。出子生五岁立，立六年卒。三父等乃复立故太子武公。"
+          ]
+        },
+        {
+          "id": "qin-wugong",
+          "name": "武公",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "武公元年，伐彭戏氏，至于华山下，居平阳封宫。三年，诛三父等而夷三族，以其杀出子也。",
+            "十年，伐邽、冀戎，初县之。十一年，初县杜、郑。灭小虢。",
+            "二十年，武公卒，葬雍平阳。初以人从死，从死者六十六人。有子一人，名曰白，白不立，封平阳。立其弟德公。"
+          ]
+        },
+        {
+          "id": "qin-degong",
+          "name": "德公",
+          "generation": 32,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "德公元年，初居雍城大郑宫。以牺三百牢祠鄜畤。卜居雍。后子孙饮马于河。梁伯、芮伯来朝。二年，初伏，以狗御蛊。",
+            "德公生三十三岁而立，立二年卒。生子三人：长子宣公，中子成公，少子穆公。长子宣公立。"
+          ]
+        },
+        {
+          "id": "qin-xuangong",
+          "name": "宣公",
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "宣公元年，卫、燕伐周，出惠王，立王子穨。三年，郑伯、虢叔杀子穨而入惠王。四年，作密畤。与晋战河阳，胜之。",
+            "十二年，宣公卒。生子九人，莫立，立其弟成公。"
+          ]
+        },
+        {
+          "id": "qin-chenggong",
+          "name": "成公",
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "成公元年，梁伯、芮伯来朝。齐桓公伐山戎，次于孤竹。",
+            "成公立四年卒。子七人，莫立，立其弟缪公。"
+          ]
+        },
+        {
+          "id": "qin-mugong",
+          "name": "任好",
+          "aliases": [
+            "穆公",
+            "缪公"
+          ],
+          "generation": 33,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "缪公任好元年，自将伐茅津，胜之。四年，迎妇于晋，晋太子申生姊也。",
+            "五年，晋献公灭虞、虢，虏虞君与其大夫百里傒，以璧马赂于虞故也。既虏百里傒，以为秦缪公夫人媵于秦。……缪公释其囚，与语国事。……固问，语三日，缪公大说，授之国政，号曰五羖大夫。",
+            "三十七年，秦用由余谋伐戎王，益国十二，开地千里，遂霸西戎。天子使召公过贺缪公以金鼓。三十九年，缪公卒，葬雍。从死者百七十七人，秦之良臣子舆氏三人名曰奄息、仲行、针虎，亦在从死之中。秦人哀之，为作歌黄鸟之诗。",
+            "缪公子四十人，其太子嵤代立，是为康公。"
+          ],
+          "title": "穆公"
+        },
+        {
+          "id": "qin-kanggong",
+          "name": "嵤",
+          "aliases": [
+            "康公"
+          ],
+          "generation": 34,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "康公元年。往岁缪公之卒，晋襄公亦卒；襄公之弟名雍，秦出也，在秦。晋赵盾欲立之，使随会来迎雍，秦以兵送至令狐。晋立襄公子而反击秦师，秦师败，随会来奔。",
+            "二年，秦伐晋，取武城，报令狐之役。四年，晋伐秦，取少梁。六年，秦伐晋，取羁马。战于河曲，大败晋军。",
+            "康公立十二年卒，子共公立。"
+          ]
+        },
+        {
+          "id": "qin-gonggong",
+          "name": "共公",
+          "generation": 35,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "共公二年，晋赵穿弑其君灵公。三年，楚庄王强，北兵至雒，问周鼎。共公立五年卒，子桓公立。"
+          ]
+        },
+        {
+          "id": "qin-huangong",
+          "name": "桓公",
+          "generation": 36,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "桓公三年，晋败我一将。十年，楚庄王服郑，北败晋兵于河上。当是之时，楚霸，为会盟合诸侯。",
+            "二十四年，晋厉公初立，与秦桓公夹河而盟。归而秦倍盟，与翟合谋击晋。二十六年，晋率诸侯伐秦，秦军败走，追至泾而还。",
+            "桓公立二十七年卒，子景公立。"
+          ]
+        },
+        {
+          "id": "qin-jinggong2",
+          "name": "景公",
+          "generation": 37,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "景公四年，晋栾书弑其君厉公。十五年，救郑，败晋兵于栎。是时晋悼公为盟主。十八年，晋悼公强，数会诸侯，率以伐秦，败秦军。",
+            "三十九年，楚灵王强，会诸侯于申，为盟主，杀齐庆封。景公立四十年卒，子哀公立。后子复来归秦。"
+          ]
+        },
+        {
+          "id": "qin-aigong",
+          "name": "哀公",
+          "generation": 38,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "哀公八年，楚公子弃疾弑灵王而自立，是为平王。十一年，楚平王来求秦女为太子建妻。至国，女好而自娶之。十五年，楚平王欲诛建，建亡；伍子胥奔吴。",
+            "三十一年，吴王阖闾与伍子胥伐楚，楚王亡奔随，吴遂入郢。楚大夫申包胥来告急，七日不食，日夜哭泣。于是秦乃发五百乘救楚，败吴师。吴师归，楚昭王乃得复入郢。",
+            "哀公立三十六年卒。太子夷公，夷公蚤死，不得立，立夷公子，是为惠公。"
+          ]
+        },
+        {
+          "id": "qin-yigong",
+          "name": "夷公",
+          "generation": 39,
+          "importance": "notable",
+          "bio": [
+            "哀公立三十六年卒。太子夷公，夷公蚤死，不得立，立夷公子，是为惠公。"
+          ]
+        },
+        {
+          "id": "qin-huigong",
+          "name": "惠公",
+          "generation": 40,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公元年，孔子行鲁相事。五年，晋卿中行、范氏反晋，晋使智氏、赵简子攻之，范、中行氏亡奔齐。",
+            "惠公立十年卒，子悼公立。"
+          ]
+        },
+        {
+          "id": "qin-daogong",
+          "name": "悼公",
+          "generation": 41,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "悼公二年，齐臣田乞弑其君孺子，立其兄阳生，是为悼公。六年，吴败齐师。齐人弑悼公，立其子简公。九年，晋定公与吴王夫差盟，争长于黄池，卒先吴。吴强，陵中国。",
+            "十二年，齐田常弑简公，立其弟平公，常相之。十三年，楚灭陈。秦悼公立十四年卒，子厉共公立。孔子以悼公十二年卒。"
+          ]
+        },
+        {
+          "id": "qin-ligonggong",
+          "name": "厉共公",
+          "generation": 42,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "厉共公二年，蜀人来赂。十六年，堑河旁。以兵二万伐大荔，取其王城。二十一年，初县频阳。晋取武成。",
+            "二十四年，晋乱，杀智伯，分其国与赵、韩、魏。二十五年，智开与邑人来奔。三十三年，伐义渠，虏其王。三十四年，日食。",
+            "厉共公卒，子躁公立。"
+          ]
+        },
+        {
+          "id": "qin-zaogong",
+          "name": "躁公",
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "躁公二年，南郑反。十三年，义渠来伐，至渭南。十四年，躁公卒，立其弟怀公。"
+          ]
+        },
+        {
+          "id": "qin-huaigong",
+          "name": "怀公",
+          "generation": 43,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "怀公四年，庶长晁与大臣围怀公，怀公自杀。怀公太子曰昭子，蚤死，大臣乃立太子昭子之子，是为灵公。灵公，怀公孙也。"
+          ]
+        },
+        {
+          "id": "qin-zhaozi",
+          "name": "昭子",
+          "generation": 44,
+          "importance": "notable",
+          "bio": [
+            "怀公太子曰昭子，蚤死，大臣乃立太子昭子之子，是为灵公。灵公，怀公孙也。"
+          ]
+        },
+        {
+          "id": "qin-linggong",
+          "name": "灵公",
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "灵公六年，晋城少梁，秦击之。十三年，城籍姑。",
+            "灵公卒，子献公不得立，立灵公季父悼子，是为简公。简公，昭子之弟而怀公子也。"
+          ]
+        },
+        {
+          "id": "qin-jiangong",
+          "name": "简公",
+          "generation": 44,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "灵公卒，子献公不得立，立灵公季父悼子，是为简公。简公，昭子之弟而怀公子也。",
+            "简公六年，令吏初带剑。堑洛。城重泉。十六年卒，子惠公立。"
+          ]
+        },
+        {
+          "id": "qin-huigong2",
+          "name": "惠公",
+          "generation": 45,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公十二年，子出子生。十三年，伐蜀，取南郑。惠公卒，出子立。"
+          ]
+        },
+        {
+          "id": "qin-chuzi2",
+          "name": "出子",
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "惠公十二年，子出子生。十三年，伐蜀，取南郑。惠公卒，出子立。",
+            "出子二年，庶长改迎灵公之子献公于河西而立之。杀出子及其母，沈之渊旁。秦以往者数易君，君臣乖乱，故晋复强，夺秦河西地。"
+          ]
+        },
+        {
+          "id": "qin-xiangong",
+          "name": "献公",
+          "generation": 46,
+          "importance": "key",
+          "honor": "other",
+          "indexed": false,
+          "bio": [
+            "献公元年，止从死。二年，城栎阳。四年正月庚寅，孝公生。十一年，周太史儋见献公曰：“周故与秦国合而别，别五百岁复合，合十七岁而霸王出。”",
+            "二十一年，与晋战于石门，斩首六万，天子贺以黼黻。二十三年，与魏晋战少梁，虏其将公孙痤。二十四年，献公卒，子孝公立，年已二十一岁矣。"
+          ]
+        },
+        {
+          "id": "qin-xiaogong",
+          "name": "孝公",
+          "generation": 47,
+          "importance": "key",
+          "honor": "other",
+          "bio": [
+            "孝公元年，河山以东强国六，与齐威、楚宣、魏惠、燕悼、韩哀、赵成侯并。……秦僻在雍州，不与中国诸侯之会盟，夷翟遇之。孝公于是布惠，振孤寡，招战士，明功赏。下令国中曰：“昔我缪公自岐雍之间，修德行武，东平晋乱，以河为界，西霸戎翟，广地千里，天子致伯，诸侯毕贺，为后世开业，甚光美。……”于是乃出兵东围陕城，西斩戎之獂王。",
+            "三年，卫鞅说孝公变法修刑，内务耕稼，外劝战死之赏罚，孝公善之。……卒用鞅法，百姓苦之；居三年，百姓便之。乃拜鞅为左庶长。",
+            "孝公卒，子惠文君立。是岁，诛卫鞅。"
+          ]
+        },
+        {
+          "id": "qin-huiwenjun",
+          "name": "惠文君",
+          "aliases": [
+            "惠文王",
+            "惠王"
+          ],
+          "generation": 48,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "惠文君元年，楚、韩、赵、蜀人来朝。二年，天子贺。三年，王冠。四年，天子致文武胙。齐、魏为王。",
+            "十年，张仪相秦。魏纳上郡十五县。十一年，县义渠。……十三年四月戊午，魏君为王，韩亦为王。",
+            "十四年，更为元年。……九年，司马错伐蜀，灭之。……十三年，庶长章击楚于丹阳，虏其将屈丐，斩首八万；又攻楚汉中，取地六百里，置汉中郡。",
+            "惠王卒，子武王立。韩、魏、齐、楚、越皆宾从。"
+          ]
+        },
+        {
+          "id": "qin-wuwang",
+          "name": "武王",
+          "aliases": [
+            "悼武王"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "武王元年，与魏襄王会临晋。诛蜀相壮。张仪、魏章皆东出之魏。伐义渠、丹、犁。二年，初置丞相，樗里疾、甘茂为左右丞相。",
+            "四年，拔宜阳，斩首六万。涉河，城武遂。魏太子来朝。武王有力好戏，力士任鄙、乌获、孟说皆至大官。王与孟说举鼎，绝膑。八月，武王死。族孟说。武王取魏女为后，无子。立异母弟，是为昭襄王。"
+          ]
+        },
+        {
+          "id": "qin-zhaoxiangwang",
+          "name": "昭襄王",
+          "aliases": [
+            "昭王"
+          ],
+          "generation": 49,
+          "importance": "key",
+          "honor": "emperor",
+          "bio": [
+            "昭襄王元年，严君疾为相。甘茂出之魏。……四十一年夏，攻魏，取邢丘、怀。四十二年，安国君为太子。",
+            "四十七年，秦攻韩上党，上党降赵，秦因攻赵，赵发兵击秦，相距。秦使武安君白起击，大破赵于长平，四十余万尽杀之。",
+            "五十一年，将军摎攻韩，取阳城、负黍，斩首四万。……五十二年，周民东亡，其器九鼎入秦。周初亡。",
+            "五十六年秋，昭襄王卒，子孝文王立。"
+          ]
+        },
+        {
+          "id": "qin-xiaowenwang",
+          "name": "孝文王",
+          "generation": 50,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "孝文王元年，赦罪人，修先王功臣，褒厚亲戚，弛苑囿。孝文王除丧，十月己亥即位，三日辛丑卒，子庄襄王立。"
+          ]
+        },
+        {
+          "id": "qin-zhuangxiangwang",
+          "name": "庄襄王",
+          "generation": 51,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "庄襄王元年，大赦罪人，修先王功臣，施德厚骨肉而布惠于民。东周君与诸侯谋秦，秦使相国吕不韦诛之，尽入其国。秦不绝其祀，以阳人地赐周君，奉其祭祀。使蒙骜伐韩，韩献成皋、巩。秦界至大梁，初置三川郡。",
+            "三年，蒙骜攻魏高都、汲，拔之。攻赵榆次、新城、狼孟，取三十七城。……五月丙午，庄襄王卒，子政立，是为秦始皇帝。"
+          ]
+        },
+        {
+          "id": "qin-shihuang",
+          "name": "政",
+          "aliases": [
+            "秦始皇",
+            "始皇帝",
+            "秦王政"
+          ],
+          "generation": 52,
+          "importance": "key",
+          "honor": "emperor",
+          "title": "始皇帝",
+          "bio": [
+            "秦始皇帝者，秦庄襄王子也。庄襄王为秦质子于赵，见吕不韦姬，悦而取之，生始皇。以秦昭王四十八年正月生于邯郸。及生，名为政，姓赵氏。年十三岁，庄襄王死，政代立为秦王。",
+            "秦王政立二十六年，初并天下为三十六郡，号为始皇帝。",
+            "王曰：“去‘泰’，著‘皇’，采上古‘帝’位号，号曰‘皇帝’。他如议。”制曰：“可。”追尊庄襄王为太上皇。制曰：“朕闻太古有号毋谥，中古有号，死而以行为谥。如此，则子议父，臣议君也，甚无谓，朕弗取焉。自今已来，除谥法。朕为始皇帝。后世以计数，二世三世至于万世，传之无穷。”",
+            "至平原津而病。始皇恶言死，群臣莫敢言死事。上病益甚，乃为玺书赐公子扶苏曰：“与丧会咸阳而葬。”……七月丙寅，始皇崩于沙丘平台。……太子胡亥袭位，为二世皇帝。"
+          ]
+        },
+        {
+          "id": "qin-chengjiao",
+          "name": "成蟜",
+          "aliases": [
+            "长安君"
+          ],
+          "generation": 52,
+          "importance": "notable",
+          "bio": [
+            "八年，王弟长安君成蟜将军击赵，反，死屯留，军吏皆斩死，迁其民于临洮。"
+          ]
+        },
+        {
+          "id": "qin-fusu",
+          "name": "扶苏",
+          "generation": 53,
+          "importance": "notable",
+          "bio": [
+            "始皇长子扶苏谏曰：“天下初定，远方黔首未集，诸生皆诵法孔子，今上皆重法绳之，臣恐天下不安。唯上察之。”始皇怒，使扶苏北监蒙恬于上郡。",
+            "上病益甚，乃为玺书赐公子扶苏曰：“与丧会咸阳而葬。”书已封，在中车府令赵高行符玺事所，未授使者。……高乃与公子胡亥、丞相斯阴谋破去始皇所封书赐公子扶苏者，而更诈为丞相斯受始皇遗诏沙丘，立子胡亥为太子。更为书赐公子扶苏、蒙恬，数以罪，赐死。"
+          ]
+        },
+        {
+          "id": "qin-jianglv",
+          "name": "将闾",
+          "generation": 53,
+          "importance": "normal",
+          "bio": [
+            "公子将闾昆弟三人囚于内宫，议其罪独后。二世使使令将闾曰：“公子不臣，罪当死，吏致法焉。”将闾曰：“阙廷之礼，吾未尝敢不从宾赞也；廊庙之位，吾未尝敢失节也；受命应对，吾未尝敢失辞也。何谓不臣？愿闻罪而死。”使者曰：“臣不得与谋，奉书从事。”将闾乃仰天大呼天者三，曰：“天乎！吾无罪！”昆弟三人皆流涕拔剑自杀。"
+          ]
+        },
+        {
+          "id": "qin-ershi",
+          "name": "胡亥",
+          "aliases": [
+            "二世皇帝"
+          ],
+          "generation": 53,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "始皇帝五十一年而崩，子胡亥立，是为二世皇帝。三年，诸侯并起叛秦，赵高杀二世，立子婴。子婴立月余，诸侯诛之，遂灭秦。其语在始皇本纪中。",
+            "二世皇帝元年，年二十一。赵高为郎中令，任用事。",
+            "阎乐前即二世数曰：“足下骄恣，诛杀无道，天下共畔足下，足下其自为计。”二世曰：“丞相可得见否？”乐曰：“不可。”……麾其兵进。二世自杀。……以黔首葬二世杜南宜春苑中。"
+          ]
+        },
+        {
+          "id": "qin-ziying",
+          "name": "婴",
+          "aliases": [
+            "子婴"
+          ],
+          "generation": 54,
+          "importance": "key",
+          "honor": "emperor",
+          "indexed": false,
+          "bio": [
+            "阎乐归报赵高，赵高乃悉召诸大臣公子，告以诛二世之状。……立二世之兄子公子婴为秦王。以黔首葬二世杜南宜春苑中。",
+            "子婴遂刺杀高于斋宫，三族高家以徇咸阳。子婴为秦王四十六日，楚将沛公破秦军入武关，遂至霸上，使人约降子婴。子婴即系颈以组，白马素车，奉天子玺符，降轵道旁。",
+            "居月余，诸侯兵至，项籍为从长，杀子婴及秦诸公子宗族。遂屠咸阳，烧其宫室，虏其子女，收其珍宝货财，诸侯共分之。"
+          ]
+        }
+      ],
+      "unions": [
+        {
+          "id": "u-huangdi",
+          "parents": [
+            "huangdi"
+          ],
+          "children": [
+            "changyi"
+          ]
+        },
+        {
+          "id": "u-changyi",
+          "parents": [
+            "changyi"
+          ],
+          "children": [
+            "zhuanxu"
+          ]
+        },
+        {
+          "id": "u-zhuanxu",
+          "parents": [
+            "zhuanxu"
+          ],
+          "children": [
+            "nuxiu"
+          ]
+        },
+        {
+          "id": "u-nuxiu-daye",
+          "parents": [
+            "nuxiu"
+          ],
+          "children": [
+            "daye"
+          ]
+        },
+        {
+          "id": "u-daye-dafei",
+          "parents": [
+            "daye"
+          ],
+          "children": [
+            "dafei"
+          ]
+        },
+        {
+          "id": "u-dafei",
+          "parents": [
+            "dafei"
+          ],
+          "children": [
+            "dalian",
+            "ruomu"
+          ]
+        },
+        {
+          "id": "u-dalian",
+          "parents": [
+            "dalian"
+          ],
+          "children": [
+            "mengxi",
+            "zhongyan"
+          ]
+        },
+        {
+          "id": "u-ruomu-feichang",
+          "parents": [
+            "ruomu"
+          ],
+          "children": [
+            "feichang"
+          ]
+        },
+        {
+          "id": "u-qin-zhongyan",
+          "parents": [
+            "zhongyan"
+          ],
+          "children": [
+            "qin-zhongyu"
+          ]
+        },
+        {
+          "id": "u-qin-zhongyu",
+          "parents": [
+            "qin-zhongyu"
+          ],
+          "children": [
+            "qin-feilian"
+          ]
+        },
+        {
+          "id": "u-qin-feilian",
+          "parents": [
+            "qin-feilian"
+          ],
+          "children": [
+            "qin-elai",
+            "qin-jisheng"
+          ]
+        },
+        {
+          "id": "u-qin-elai",
+          "parents": [
+            "qin-elai"
+          ],
+          "children": [
+            "qin-nvfang"
+          ]
+        },
+        {
+          "id": "u-qin-jisheng",
+          "parents": [
+            "qin-jisheng"
+          ],
+          "children": [
+            "qin-mengzeng"
+          ]
+        },
+        {
+          "id": "u-qin-mengzeng",
+          "parents": [
+            "qin-mengzeng"
+          ],
+          "children": [
+            "qin-hengfu"
+          ]
+        },
+        {
+          "id": "u-qin-hengfu",
+          "parents": [
+            "qin-hengfu"
+          ],
+          "children": [
+            "qin-zaofu"
+          ]
+        },
+        {
+          "id": "u-qin-nvfang",
+          "parents": [
+            "qin-nvfang"
+          ],
+          "children": [
+            "qin-panggao"
+          ]
+        },
+        {
+          "id": "u-qin-panggao",
+          "parents": [
+            "qin-panggao"
+          ],
+          "children": [
+            "qin-taiji"
+          ]
+        },
+        {
+          "id": "u-qin-taiji",
+          "parents": [
+            "qin-taiji"
+          ],
+          "children": [
+            "qin-daluo"
+          ]
+        },
+        {
+          "id": "u-qin-daluo",
+          "parents": [
+            "qin-daluo"
+          ],
+          "children": [
+            "qin-feizi",
+            "qin-cheng"
+          ]
+        },
+        {
+          "id": "u-qin-feizi",
+          "parents": [
+            "qin-feizi"
+          ],
+          "children": [
+            "qin-hou"
+          ]
+        },
+        {
+          "id": "u-qin-hou",
+          "parents": [
+            "qin-hou"
+          ],
+          "children": [
+            "qin-gongbo"
+          ]
+        },
+        {
+          "id": "u-qin-gongbo",
+          "parents": [
+            "qin-gongbo"
+          ],
+          "children": [
+            "qin-zhong"
+          ]
+        },
+        {
+          "id": "u-qin-zhong",
+          "parents": [
+            "qin-zhong"
+          ],
+          "children": [
+            "qin-zhuanggong"
+          ]
+        },
+        {
+          "id": "u-qin-zhuanggong",
+          "parents": [
+            "qin-zhuanggong"
+          ],
+          "children": [
+            "qin-shifu",
+            "qin-xianggong"
+          ]
+        },
+        {
+          "id": "u-qin-xianggong",
+          "parents": [
+            "qin-xianggong"
+          ],
+          "children": [
+            "qin-wengong"
+          ]
+        },
+        {
+          "id": "u-qin-wengong",
+          "parents": [
+            "qin-wengong"
+          ],
+          "children": [
+            "qin-jinggong"
+          ]
+        },
+        {
+          "id": "u-qin-jinggong",
+          "parents": [
+            "qin-jinggong"
+          ],
+          "children": [
+            "qin-ninggong"
+          ]
+        },
+        {
+          "id": "u-qin-ninggong",
+          "parents": [
+            "qin-ninggong"
+          ],
+          "children": [
+            "qin-wugong",
+            "qin-degong",
+            "qin-chuzi"
+          ]
+        },
+        {
+          "id": "u-qin-degong",
+          "parents": [
+            "qin-degong"
+          ],
+          "children": [
+            "qin-xuangong",
+            "qin-chenggong",
+            "qin-mugong"
+          ]
+        },
+        {
+          "id": "u-qin-mugong",
+          "parents": [
+            "qin-mugong"
+          ],
+          "children": [
+            "qin-kanggong"
+          ]
+        },
+        {
+          "id": "u-qin-kanggong",
+          "parents": [
+            "qin-kanggong"
+          ],
+          "children": [
+            "qin-gonggong"
+          ]
+        },
+        {
+          "id": "u-qin-gonggong",
+          "parents": [
+            "qin-gonggong"
+          ],
+          "children": [
+            "qin-huangong"
+          ]
+        },
+        {
+          "id": "u-qin-huangong",
+          "parents": [
+            "qin-huangong"
+          ],
+          "children": [
+            "qin-jinggong2"
+          ]
+        },
+        {
+          "id": "u-qin-jinggong2",
+          "parents": [
+            "qin-jinggong2"
+          ],
+          "children": [
+            "qin-aigong"
+          ]
+        },
+        {
+          "id": "u-qin-aigong",
+          "parents": [
+            "qin-aigong"
+          ],
+          "children": [
+            "qin-yigong"
+          ]
+        },
+        {
+          "id": "u-qin-yigong",
+          "parents": [
+            "qin-yigong"
+          ],
+          "children": [
+            "qin-huigong"
+          ]
+        },
+        {
+          "id": "u-qin-huigong",
+          "parents": [
+            "qin-huigong"
+          ],
+          "children": [
+            "qin-daogong"
+          ]
+        },
+        {
+          "id": "u-qin-daogong",
+          "parents": [
+            "qin-daogong"
+          ],
+          "children": [
+            "qin-ligonggong"
+          ]
+        },
+        {
+          "id": "u-qin-ligonggong",
+          "parents": [
+            "qin-ligonggong"
+          ],
+          "children": [
+            "qin-zaogong",
+            "qin-huaigong"
+          ]
+        },
+        {
+          "id": "u-qin-huaigong",
+          "parents": [
+            "qin-huaigong"
+          ],
+          "children": [
+            "qin-zhaozi",
+            "qin-jiangong"
+          ]
+        },
+        {
+          "id": "u-qin-zhaozi",
+          "parents": [
+            "qin-zhaozi"
+          ],
+          "children": [
+            "qin-linggong"
+          ]
+        },
+        {
+          "id": "u-qin-linggong",
+          "parents": [
+            "qin-linggong"
+          ],
+          "children": [
+            "qin-xiangong"
+          ]
+        },
+        {
+          "id": "u-qin-jiangong",
+          "parents": [
+            "qin-jiangong"
+          ],
+          "children": [
+            "qin-huigong2"
+          ]
+        },
+        {
+          "id": "u-qin-huigong2",
+          "parents": [
+            "qin-huigong2"
+          ],
+          "children": [
+            "qin-chuzi2"
+          ]
+        },
+        {
+          "id": "u-qin-xiangong",
+          "parents": [
+            "qin-xiangong"
+          ],
+          "children": [
+            "qin-xiaogong"
+          ]
+        },
+        {
+          "id": "u-qin-xiaogong",
+          "parents": [
+            "qin-xiaogong"
+          ],
+          "children": [
+            "qin-huiwenjun"
+          ]
+        },
+        {
+          "id": "u-qin-huiwenjun",
+          "parents": [
+            "qin-huiwenjun"
+          ],
+          "children": [
+            "qin-wuwang",
+            "qin-zhaoxiangwang"
+          ]
+        },
+        {
+          "id": "u-qin-zhaoxiangwang",
+          "parents": [
+            "qin-zhaoxiangwang"
+          ],
+          "children": [
+            "qin-xiaowenwang"
+          ]
+        },
+        {
+          "id": "u-qin-xiaowenwang",
+          "parents": [
+            "qin-xiaowenwang"
+          ],
+          "children": [
+            "qin-zhuangxiangwang"
+          ]
+        },
+        {
+          "id": "u-qin-zhuangxiangwang",
+          "parents": [
+            "qin-zhuangxiangwang"
+          ],
+          "children": [
+            "qin-shihuang",
+            "qin-chengjiao"
+          ]
+        },
+        {
+          "id": "u-qin-shihuang",
+          "parents": [
+            "qin-shihuang"
+          ],
+          "children": [
+            "qin-fusu",
+            "qin-jianglv",
+            "qin-ershi"
+          ]
+        },
+        {
+          "id": "u-qin-ziying",
+          "parents": [
+            "qin-shihuang"
+          ],
+          "children": [
+            "qin-ziying"
+          ],
+          "label": "二世之兄子"
+        }
+      ],
+      "extraLinks": []
     }
   }
 };

@@ -757,6 +757,35 @@ button:focus-visible,
   fill: rgba(255, 249, 237, 0.97);
 }
 
+/*
+ * 进左侧索引的重点人物才有底色：帝王淡藤黄、其他淡朱。
+ * 同等级但不入索引的人仍用白底描边，于是「有没有底色」= 「在不在索引里」。
+ */
+.node.node-indexed.node-honor-emperor .node-card {
+  fill: #f6e5b2;
+}
+
+.node.node-indexed.node-honor-other .node-card {
+  fill: #f5dbd3;
+}
+
+.node.node-indexed.node-honor-emperor:hover .node-card {
+  fill: #f9edc9;
+}
+
+.node.node-indexed.node-honor-other:hover .node-card {
+  fill: #f9e5de;
+}
+
+/* 底色上的王冠／五角星改用深色描边，保证看得清 */
+.node.node-indexed.node-honor-emperor .node-key-mark path {
+  stroke: #7b5414;
+}
+
+.node.node-indexed.node-honor-other .node-key-mark path {
+  stroke: #7d2a20;
+}
+
 .node:focus-visible .node-card {
   stroke: var(--cinnabar);
   stroke-width: 2;
@@ -1161,6 +1190,14 @@ button:focus-visible,
 
 .mini-node.mini-other {
   fill: rgba(166, 58, 43, 0.62);
+}
+
+.mini-node.mini-indexed.mini-emperor {
+  fill: rgba(214, 176, 64, 0.95);
+}
+
+.mini-node.mini-indexed.mini-other {
+  fill: rgba(178, 66, 47, 0.9);
 }
 
 .mini-viewport {

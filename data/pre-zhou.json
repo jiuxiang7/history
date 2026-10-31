@@ -5,7 +5,7 @@
   "subtitle": "《史记·周本纪》",
   "shortTitle": "周",
   "period": "夏商周",
-  "description": "自文王受命至赧王，周室三十七王之世。",
+  "description": "自黄帝至赧王，周室先公与列王之世。",
   "source": "据《史记·周本纪》整理。文王以前先公世系见「总览」。",
   "defaultPortrait": "assets/portrait.svg",
   "generations": [
@@ -140,9 +140,293 @@
     {
       "index": 33,
       "label": "第三十三代"
+    },
+    {
+      "index": 34,
+      "label": "第三十四代"
+    },
+    {
+      "index": 35,
+      "label": "第三十五代"
+    },
+    {
+      "index": 36,
+      "label": "第三十六代"
+    },
+    {
+      "index": 37,
+      "label": "第三十七代"
+    },
+    {
+      "index": 38,
+      "label": "第三十八代"
+    },
+    {
+      "index": 39,
+      "label": "第三十九代"
+    },
+    {
+      "index": 40,
+      "label": "第四十代"
+    },
+    {
+      "index": 41,
+      "label": "第四十一代"
+    },
+    {
+      "index": 42,
+      "label": "第四十二代"
+    },
+    {
+      "index": 43,
+      "label": "第四十三代"
+    },
+    {
+      "index": 44,
+      "label": "第四十四代"
+    },
+    {
+      "index": 45,
+      "label": "第四十五代"
+    },
+    {
+      "index": 46,
+      "label": "第四十六代"
+    },
+    {
+      "index": 47,
+      "label": "第四十七代"
+    },
+    {
+      "index": 48,
+      "label": "第四十八代"
+    },
+    {
+      "index": 49,
+      "label": "第四十九代"
+    },
+    {
+      "index": 50,
+      "label": "第五十代"
+    },
+    {
+      "index": 51,
+      "label": "第五十一代"
     }
   ],
   "people": [
+    {
+      "id": "huangdi",
+      "name": "黄帝",
+      "aliases": [
+        "公孙轩辕"
+      ],
+      "generation": 1,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "黄帝者，少典之子，姓公孙，名曰轩辕。生而神灵，弱而能言，幼而徇齐，长而敦敏，成而聪明。",
+        "轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。而蚩尤最为暴，莫能伐。炎帝欲侵陵诸侯，诸侯咸归轩辕。轩辕乃修德振兵，治五气，蓺五种，抚万民，度四方，教熊罴貔貅貙虎，以与炎帝战于阪泉之野。三战，然后得其志。蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。而诸侯咸尊轩辕为天子，代神农氏，是为黄帝。天下有不顺者，黄帝从而征之，平者去之，披山通道，未尝宁居。",
+        "东至于海，登丸山，及岱宗。西至于空桐，登鸡头。南至于江，登熊湘。北逐荤粥，合符釜山，而邑于涿鹿之阿。迁徙往来无常处，以师兵为营卫。官名皆以云命，为云师。置左右大监，监于万国。万国和，而鬼神、山川、封禅与为多焉。获宝鼎，迎日推策。举风后、力牧、常先、大鸿以治民。顺天地之纪，幽明之占，死生之说，存亡之难。时播百谷草木，淳化鸟兽虫蛾，旁罗日月星辰，水波土石金玉，劳勤心力耳目，节用水火材物。有土德之瑞，故号黄帝。"
+      ]
+    },
+    {
+      "id": "xuanxiao",
+      "name": "玄嚣",
+      "aliases": [
+        "青阳"
+      ],
+      "generation": 2,
+      "importance": "notable",
+      "bio": [
+        "黄帝居轩辕之丘，而娶于西陵之女，是为嫘祖。嫘祖为黄帝正妃，生二子，其后皆有天下：其一曰玄嚣，是为青阳，青阳降居江水"
+      ]
+    },
+    {
+      "id": "jiaoji",
+      "name": "蟜极",
+      "generation": 3,
+      "importance": "normal",
+      "bio": [
+        "高辛父曰蟜极，蟜极父曰玄嚣"
+      ]
+    },
+    {
+      "id": "diku",
+      "name": "帝喾",
+      "aliases": [
+        "高辛"
+      ],
+      "generation": 4,
+      "importance": "key",
+      "honor": "emperor",
+      "bio": [
+        "帝喾高辛者，黄帝之曾孙也。高辛父曰蟜极，蟜极父曰玄嚣，玄嚣父曰黄帝。自玄嚣与蟜极皆不得在位，至高辛即帝位。高辛于颛顼为族子。",
+        "高辛生而神灵，自言其名。普施利物，不于其身。聪以知远，明以察微。顺天之义，知民之急。仁而威，惠而信，修身而天下服。取地之财而节用之，抚教万民而利诲之，历日月而迎送之，明鬼神而敬事之。其色郁郁，其德嶷嶷。其动也时，其服也士。帝喾溉执中而遍天下，日月所照，风雨所至，莫不从服。"
+      ]
+    },
+    {
+      "id": "houji",
+      "name": "弃",
+      "aliases": [
+        "后稷"
+      ],
+      "generation": 5,
+      "importance": "key",
+      "honor": "other",
+      "bio": [
+        "周后稷，名弃。其母有邰氏女，曰姜原。姜原为帝喾元妃。姜原出野，见巨人迹，心忻然说，欲践之，践之而身动如孕者。居期而生子，以为不祥，弃之隘巷，马牛过者皆辟不践；徙置之林中，適会山林多人，迁之；而弃渠中冰上，飞鸟以其翼覆荐之。姜原以为神，遂收养长之。初欲弃之，因名曰弃。",
+        "弃为兒时，屹如巨人之志。其游戏，好种树麻、菽，麻、菽美。及为成人，遂好耕农，相地之宜，宜穀者稼穑焉，民皆法则之。帝尧闻之，举弃为农师，天下得其利，有功。帝舜曰：“弃，黎民始饥，尔后稷播时百穀。”封弃於邰，号曰后稷，别姓姬氏。后稷之兴，在陶唐、虞、夏之际，皆有令德。"
+      ]
+    },
+    {
+      "id": "buzhou",
+      "name": "不窋",
+      "generation": 6,
+      "importance": "normal",
+      "bio": [
+        "后稷卒，子不窋立。不窋末年，夏后氏政衰，去稷不务，不窋以失其官而奔戎狄之间。"
+      ]
+    },
+    {
+      "id": "ju",
+      "name": "鞠",
+      "generation": 7,
+      "importance": "normal",
+      "bio": [
+        "不窋卒，子鞠立。鞠卒，子公刘立。"
+      ]
+    },
+    {
+      "id": "gongliu",
+      "name": "公刘",
+      "generation": 8,
+      "importance": "normal",
+      "bio": [
+        "鞠卒，子公刘立。公刘虽在戎狄之间，复修后稷之业，务耕种，行地宜，自漆、沮度渭，取材用，行者有资，居者有畜积，民赖其庆。百姓怀之，多徙而保归焉。周道之兴自此始，故诗人歌乐思其德。公刘卒，子庆节立，国于豳。"
+      ]
+    },
+    {
+      "id": "qingjie",
+      "name": "庆节",
+      "generation": 9,
+      "importance": "normal",
+      "bio": [
+        "公刘卒，子庆节立，国于豳。庆节卒，子皇仆立。"
+      ]
+    },
+    {
+      "id": "huangpu",
+      "name": "皇仆",
+      "generation": 10,
+      "importance": "normal",
+      "bio": [
+        "庆节卒，子皇仆立。皇仆卒，子差弗立。"
+      ]
+    },
+    {
+      "id": "chafu",
+      "name": "差弗",
+      "generation": 11,
+      "importance": "normal",
+      "bio": [
+        "皇仆卒，子差弗立。差弗卒，子毁隃立。"
+      ]
+    },
+    {
+      "id": "huiyu",
+      "name": "毁隃",
+      "generation": 12,
+      "importance": "normal",
+      "bio": [
+        "差弗卒，子毁隃立。毁隃卒，子公非立。"
+      ]
+    },
+    {
+      "id": "gongfei",
+      "name": "公非",
+      "generation": 13,
+      "importance": "normal",
+      "bio": [
+        "毁隃卒，子公非立。公非卒，子高圉立。"
+      ]
+    },
+    {
+      "id": "gaoyu",
+      "name": "高圉",
+      "generation": 14,
+      "importance": "normal",
+      "bio": [
+        "公非卒，子高圉立。高圉卒，子亚圉立。"
+      ]
+    },
+    {
+      "id": "yayu",
+      "name": "亚圉",
+      "generation": 15,
+      "importance": "normal",
+      "bio": [
+        "高圉卒，子亚圉立。亚圉卒，子公叔祖类立。"
+      ]
+    },
+    {
+      "id": "gongshuzulei",
+      "name": "公叔祖类",
+      "generation": 16,
+      "importance": "normal",
+      "bio": [
+        "亚圉卒，子公叔祖类立。公叔祖类卒，子古公亶父立。"
+      ]
+    },
+    {
+      "id": "gugong",
+      "name": "古公亶父",
+      "aliases": [
+        "太王"
+      ],
+      "generation": 17,
+      "importance": "key",
+      "honor": "other",
+      "bio": [
+        "古公亶父复修后稷、公刘之业，积德行义，国人皆戴之。薰育戎狄攻之，欲得财物，予之。已复攻，欲得地与民。民皆怒，欲战。古公曰：“有民立君，将以利之。今戎狄所为攻战，以吾地与民。民之在我，与其在彼，何异。民欲以我故战，杀人父子而君之，予不忍为。”乃与私属遂去豳，度漆、沮，逾梁山，止于岐下。豳人举国扶老携弱，尽复归古公于岐下。及他旁国闻古公仁，亦多归之。于是古公乃贬戎狄之俗，而营筑城郭室屋，而邑别居之。作五官有司。民皆歌乐之，颂其德。",
+        "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。",
+        "古公卒，季历立，是为公季。"
+      ]
+    },
+    {
+      "id": "taibo",
+      "name": "太伯",
+      "generation": 18,
+      "importance": "normal",
+      "indexed": false,
+      "bio": [
+        "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
+      ]
+    },
+    {
+      "id": "yuzhong",
+      "name": "虞仲",
+      "generation": 18,
+      "importance": "normal",
+      "indexed": false,
+      "bio": [
+        "古公有长子曰太伯，次曰虞仲。太姜生少子季历，季历娶太任，皆贤妇人，生昌，有圣瑞。古公曰：“我世当有兴者，其在昌乎？”长子太伯、虞仲知古公欲立季历以传昌，乃二人亡如荆蛮，文身断发，以让季历。"
+      ]
+    },
+    {
+      "id": "jili",
+      "name": "季历",
+      "aliases": [
+        "公季"
+      ],
+      "generation": 18,
+      "importance": "key",
+      "honor": "other",
+      "indexed": false,
+      "bio": [
+        "古公卒，季历立，是为公季。公季修古公遗道，笃于行义，诸侯顺之。公季卒，子昌立，是为西伯。"
+      ]
+    },
     {
       "id": "wenwang",
       "name": "昌",
@@ -151,7 +435,7 @@
         "文王"
       ],
       "title": "周文王",
-      "generation": 1,
+      "generation": 19,
       "importance": "key",
       "honor": "other",
       "indexed": true,
@@ -170,7 +454,7 @@
         "武王"
       ],
       "title": "周武王",
-      "generation": 2,
+      "generation": 20,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -193,7 +477,7 @@
         "周公"
       ],
       "title": "周公旦",
-      "generation": 2,
+      "generation": 20,
       "importance": "key",
       "honor": "other",
       "indexed": true,
@@ -212,7 +496,7 @@
         "成王"
       ],
       "title": "成王",
-      "generation": 3,
+      "generation": 21,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -229,7 +513,7 @@
       "aliases": [
         "康王"
       ],
-      "generation": 4,
+      "generation": 22,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -245,7 +529,7 @@
       "aliases": [
         "昭王"
       ],
-      "generation": 5,
+      "generation": 23,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -259,7 +543,7 @@
       "aliases": [
         "穆王"
       ],
-      "generation": 6,
+      "generation": 24,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -277,7 +561,7 @@
       "aliases": [
         "共王"
       ],
-      "generation": 7,
+      "generation": 25,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -293,7 +577,7 @@
       "aliases": [
         "孝王"
       ],
-      "generation": 7,
+      "generation": 25,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -307,7 +591,7 @@
       "aliases": [
         "懿王"
       ],
-      "generation": 8,
+      "generation": 26,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -321,7 +605,7 @@
       "aliases": [
         "夷王"
       ],
-      "generation": 9,
+      "generation": 27,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -336,7 +620,7 @@
         "厉王"
       ],
       "title": "厉王",
-      "generation": 10,
+      "generation": 28,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -354,7 +638,7 @@
         "宣王"
       ],
       "title": "宣王",
-      "generation": 11,
+      "generation": 29,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -373,7 +657,7 @@
         "幽王"
       ],
       "title": "幽王",
-      "generation": 12,
+      "generation": 30,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -390,7 +674,7 @@
       "aliases": [
         "平王"
       ],
-      "generation": 13,
+      "generation": 31,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -406,7 +690,7 @@
       "aliases": [
         "太子泄父"
       ],
-      "generation": 14,
+      "generation": 32,
       "importance": "notable",
       "bio": [
         "五十一年，平王崩，太子泄父蚤死，立其子林，是为桓王。桓王，平王孙也。"
@@ -418,7 +702,7 @@
       "aliases": [
         "桓王"
       ],
-      "generation": 15,
+      "generation": 33,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -434,7 +718,7 @@
       "aliases": [
         "庄王"
       ],
-      "generation": 16,
+      "generation": 34,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -448,7 +732,7 @@
       "aliases": [
         "厘王"
       ],
-      "generation": 17,
+      "generation": 35,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -462,7 +746,7 @@
       "aliases": [
         "惠王"
       ],
-      "generation": 18,
+      "generation": 36,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -477,7 +761,7 @@
       "aliases": [
         "襄王"
       ],
-      "generation": 19,
+      "generation": 37,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -494,7 +778,7 @@
       "aliases": [
         "顷王"
       ],
-      "generation": 20,
+      "generation": 38,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -508,7 +792,7 @@
       "aliases": [
         "匡王"
       ],
-      "generation": 21,
+      "generation": 39,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -522,7 +806,7 @@
       "aliases": [
         "定王"
       ],
-      "generation": 21,
+      "generation": 39,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -537,7 +821,7 @@
       "aliases": [
         "简王"
       ],
-      "generation": 22,
+      "generation": 40,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -551,7 +835,7 @@
       "aliases": [
         "灵王"
       ],
-      "generation": 23,
+      "generation": 41,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -565,7 +849,7 @@
       "aliases": [
         "景王"
       ],
-      "generation": 24,
+      "generation": 42,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -579,7 +863,7 @@
       "aliases": [
         "悼王"
       ],
-      "generation": 25,
+      "generation": 43,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -593,7 +877,7 @@
       "aliases": [
         "敬王"
       ],
-      "generation": 25,
+      "generation": 43,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -609,7 +893,7 @@
       "aliases": [
         "元王"
       ],
-      "generation": 26,
+      "generation": 44,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -623,7 +907,7 @@
       "aliases": [
         "贞定王"
       ],
-      "generation": 27,
+      "generation": 45,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -637,7 +921,7 @@
       "aliases": [
         "哀王"
       ],
-      "generation": 28,
+      "generation": 46,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -651,7 +935,7 @@
       "aliases": [
         "思王"
       ],
-      "generation": 28,
+      "generation": 46,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -665,7 +949,7 @@
       "aliases": [
         "考王"
       ],
-      "generation": 28,
+      "generation": 46,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -681,7 +965,7 @@
       "aliases": [
         "威烈王"
       ],
-      "generation": 29,
+      "generation": 47,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -695,7 +979,7 @@
       "aliases": [
         "安王"
       ],
-      "generation": 30,
+      "generation": 48,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -709,7 +993,7 @@
       "aliases": [
         "烈王"
       ],
-      "generation": 31,
+      "generation": 49,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -724,7 +1008,7 @@
       "aliases": [
         "显王"
       ],
-      "generation": 31,
+      "generation": 49,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -739,7 +1023,7 @@
       "aliases": [
         "慎靓王"
       ],
-      "generation": 32,
+      "generation": 50,
       "importance": "key",
       "honor": "emperor",
       "indexed": false,
@@ -754,7 +1038,7 @@
         "赧王"
       ],
       "title": "赧王",
-      "generation": 33,
+      "generation": 51,
       "importance": "key",
       "honor": "emperor",
       "indexed": true,
@@ -1059,6 +1343,170 @@
       ],
       "children": [
         "nanwang"
+      ]
+    },
+    {
+      "id": "u-huangdi",
+      "parents": [
+        "huangdi"
+      ],
+      "children": [
+        "xuanxiao"
+      ]
+    },
+    {
+      "id": "u-xuanxiao-jiaoji",
+      "parents": [
+        "xuanxiao"
+      ],
+      "children": [
+        "jiaoji"
+      ]
+    },
+    {
+      "id": "u-jiaoji-diku",
+      "parents": [
+        "jiaoji"
+      ],
+      "children": [
+        "diku"
+      ]
+    },
+    {
+      "id": "u-diku",
+      "parents": [
+        "diku"
+      ],
+      "children": [
+        "houji"
+      ]
+    },
+    {
+      "id": "u-houji-buzhou",
+      "parents": [
+        "houji"
+      ],
+      "children": [
+        "buzhou"
+      ]
+    },
+    {
+      "id": "u-buzhou-ju",
+      "parents": [
+        "buzhou"
+      ],
+      "children": [
+        "ju"
+      ]
+    },
+    {
+      "id": "u-ju-gongliu",
+      "parents": [
+        "ju"
+      ],
+      "children": [
+        "gongliu"
+      ]
+    },
+    {
+      "id": "u-gongliu-qingjie",
+      "parents": [
+        "gongliu"
+      ],
+      "children": [
+        "qingjie"
+      ]
+    },
+    {
+      "id": "u-qingjie-huangpu",
+      "parents": [
+        "qingjie"
+      ],
+      "children": [
+        "huangpu"
+      ]
+    },
+    {
+      "id": "u-huangpu-chafu",
+      "parents": [
+        "huangpu"
+      ],
+      "children": [
+        "chafu"
+      ]
+    },
+    {
+      "id": "u-chafu-huiyu",
+      "parents": [
+        "chafu"
+      ],
+      "children": [
+        "huiyu"
+      ]
+    },
+    {
+      "id": "u-huiyu-gongfei",
+      "parents": [
+        "huiyu"
+      ],
+      "children": [
+        "gongfei"
+      ]
+    },
+    {
+      "id": "u-gongfei-gaoyu",
+      "parents": [
+        "gongfei"
+      ],
+      "children": [
+        "gaoyu"
+      ]
+    },
+    {
+      "id": "u-gaoyu-yayu",
+      "parents": [
+        "gaoyu"
+      ],
+      "children": [
+        "yayu"
+      ]
+    },
+    {
+      "id": "u-yayu-gongshuzulei",
+      "parents": [
+        "yayu"
+      ],
+      "children": [
+        "gongshuzulei"
+      ]
+    },
+    {
+      "id": "u-gongshuzulei-gugong",
+      "parents": [
+        "gongshuzulei"
+      ],
+      "children": [
+        "gugong"
+      ]
+    },
+    {
+      "id": "u-gugong",
+      "parents": [
+        "gugong"
+      ],
+      "children": [
+        "taibo",
+        "yuzhong",
+        "jili"
+      ]
+    },
+    {
+      "id": "u-jili",
+      "parents": [
+        "jili"
+      ],
+      "children": [
+        "wenwang"
       ]
     }
   ]

@@ -163,30 +163,37 @@ function computeLayout(lineage, hiddenIds = new Set()) {
   /*
    * 排布规则
    * 1. 单子相传时，孩子在父母的正下方：offset 恒为 0，连线是一条直线，不会拐弯。
-   * 2. 多个子女共享同一个「等距步长」：步长取「任意两棵子树 × 任意一层」中最紧的约束，
-   *    于是兄弟之间的横向间距尽量平均，同时保证更深的后代在任何一层都不会挤在一起。
+   * 2. 多个子女逐个靠拢：相邻两棵子树只在这一对真正要相撞的那一层让开距离，
+   *    其余兄弟不再被最宽的一对拖着走，所以同一代的后代尽量挤在一起。
    * 3. 每棵子树记录自己在各层的左右轮廓（相对根节点），父辈据此知道自己占多宽。
    */
   const shapeCache = new Map();
   const HALF = NODE.width / 2;
 
-  function groupStep(subs, gaps) {
-    let step = NODE_STEP;
-    for (let i = 0; i < subs.length; i += 1) {
-      for (let j = i + 1; j < subs.length; j += 1) {
-        // 轮廓按「相隔几行」索引；同一行 o 在两棵子树里对应不同的局部下标
-        const span = Math.max(gaps[i] + subs[i].left.length, gaps[j] + subs[j].left.length);
-        for (let o = 0; o < span; o += 1) {
-          const rightEdge = subs[i].right[o - gaps[i]];
-          const leftEdge = subs[j].left[o - gaps[j]];
-          if (rightEdge === undefined || leftEdge === undefined) continue;
-          // 两棵子树在这一行一共要让出的宽度，平摊到它们之间隔着的那几步上
-          const need = (rightEdge + leftEdge + NODE.colGap) / (j - i);
-          if (need > step) step = need;
-        }
-      }
+  // 相邻两棵子树在任意一层都不重叠时，所需的最小中心距
+  function pairNeed(a, b, gapA, gapB) {
+    let need = 0;
+    const span = Math.max(gapA + a.right.length, gapB + b.left.length);
+    for (let o = 0; o < span; o += 1) {
+      // 轮廓按「相隔几行」索引；same o 在两棵子树里对应不同的局部下标
+      const rightEdge = a.right[o - gapA];
+      const leftEdge = b.left[o - gapB];
+      if (rightEdge === undefined || leftEdge === undefined) continue;
+      const require = rightEdge + leftEdge + NODE.colGap;
+      if (require > need) need = require;
     }
-    return step;
+    return need;
+  }
+
+  // 从左到右依次贴紧，再把整组挪回父节点正下方（首末子节点中点对齐）
+  function packOffsets(subs, gaps) {
+    if (subs.length <= 1) return subs.map(() => 0);
+    const pos = [0];
+    for (let i = 1; i < subs.length; i += 1) {
+      pos.push(pos[i - 1] + pairNeed(subs[i - 1], subs[i], gaps[i - 1], gaps[i]));
+    }
+    const mid = (pos[0] + pos[pos.length - 1]) / 2;
+    return pos.map((x) => x - mid);
   }
 
   function buildShape(id) {
@@ -205,10 +212,7 @@ function computeLayout(lineage, hiddenIds = new Set()) {
       (childId) => (rowOfPerson.get(childId) ?? 0) - (rowOfPerson.get(id) ?? 0)
     );
     // 独子：不挪位，保证「父 → 子」是一条竖直直线
-    const offsets =
-      subs.length === 1
-        ? [0]
-        : subs.map((_, index) => (index - (subs.length - 1) / 2) * groupStep(subs, gaps));
+    const offsets = packOffsets(subs, gaps);
 
     const left = [HALF];
     const right = [HALF];
@@ -242,10 +246,10 @@ function computeLayout(lineage, hiddenIds = new Set()) {
 
   if (roots.length) {
     const rootShapes = roots.map((person) => buildShape(person.id));
-    const offsets =
-      roots.length === 1
-        ? [0]
-        : rootShapes.map((_, index) => (index - (roots.length - 1) / 2) * groupStep(rootShapes));
+    const offsets = packOffsets(
+      rootShapes,
+      rootShapes.map(() => 0)
+    );
     roots.forEach((person, index) => assign(person.id, offsets[index]));
   }
 
